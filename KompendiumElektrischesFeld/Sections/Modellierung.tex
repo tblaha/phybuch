@@ -1,0 +1,126 @@
+%%%%% Elektrisches Feld %%%%%
+%% #2 Modellierung und Mathematisierung %%
+
+
+%Some sample text to be displayed above the first subsection
+
+%\subsection{Prinzip}
+
+%Ein Zyklotron besteht aus Zwei hohlen, halbzylindrischen und Duanden an denen eine Spannung mit unterschiedlichem Vorzeichen anliegt, und darüber bzw. darunter liegende Magneten, die ein homogenes Magnetfeld erzeugen. Zudem gibt es einen Einlass und einen Auslass für Teilchen.
+
+%\begin{wrapfigure}{r}{0.4\textwidth} \label{Zyklo}
+%
+%	\vspace{-10pt}
+%	\includegraphics[width=0.35\textwidth]{Zyklotron_Prinzipskizze02.png}
+%	\vspace{-13pt}
+%	\caption{Prinzipskizze eines Zyklotrons}
+%	\vspace{-5pt}	
+%	
+%\end{wrapfigure}
+
+%\subsubsection{Anwendung}
+
+% Some Formula:
+
+%\begin{equation}
+%	x= \frac{y \cdot 13 \pi z}
+%			{\cos \alpha}
+%\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Eigentlicher Beginn %
+%%%%%%%%%%%%%%%%%%%%%%%
+
+Um das Phänomen der Influenz und vieles Weitere rund um die Elektrizität zu beschreiben, wurde das Modell des Elektrischen entwickelt. 
+
+\begin{leftbar}
+Nice to know: in der Physik generell geht es nicht unbedingt darum, zu erläutern, wie etwas genau funktioniert, da vieles, wie zum Beispiel die eigentliche Beschaffenheit von Feldern, gar nicht genau zu erklären ist. Es geht darum, Modelle zu entwickeln, mit deren Hilfe sich mathematische Ausdrücke zur Beschreibung von diesen Phänomenen ableiten lassen.
+\end{leftbar}
+
+
+\subsection{Feldlinien}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{EFeld}
+	\caption{Feldlinien zwischen zwei geladenen Teilchen}
+\end{figure}
+
+Feldlinien\footnote{Abbildung von: \url{https://elearning.physik.uni-frankfurt.de/data/FB13-PhysikOnline/lm_data/lm_282/auto/kap16/picts/epm.gif}} sind ein Modell zur Verdeutlichung von grundlegenden Eigenschaften eines elektrischen Feldes. Sie schneiden sich nie und haben eine Richtung, die durch Pfeile angezeigt wird. Sollten sie von einem Körper ausgehen oder auf einen Körper auftreffen, stehen sie senkrecht auf der Oberfläche. Außerdem gibt die Dichte der Linien die Stärke des Feldes an.\footnote{Armin Kunz: Bewertung der 1. Klausur vom 09.10.2014} Die Pfeile der Feldlinien zeigen immer zur negativen Ladung.
+
+
+\subsection{Coulomb'sches Gesetz}
+
+Wenn nun gesetzt ist, dass sich Ladungen beeinflussen, ist der nächste Schritt diesen \glqq Einfluss\grqq{} mathematisch auszudrücken. Dazu gibt es das Coulomb'sche Gesetz, welches die Kraft die zwei Körper aufeinander auswirken, in Abhängigkeit von deren Ladungen und dem Abstand angibt:
+
+\begin{equation}\label{eq:coulomb_gesetz}
+	F = \frac{1}{4\pi \cdot \epsilon_0} \cdot \frac{Q_1 \cdot Q_2}{d^{2}}
+\end{equation}
+
+Die Gleichung besteht aus einem konstanten Faktor, der die Feldkonstante $\epsilon_0$ beinhaltet, und einem variablem Teil der die Beträge der beiden Ladungen $Q_1$ und $Q_2$, und den Abstand der Mittelpunkte $d$ enthält.
+
+Die Einheit Ladung ist $C$ (sprich: Coulomb), was gleich $A \cdot s$ ist. Eine Einheitenrechnung sieht dann wie folgt aus:
+
+\begin{align}\label{eq:coulomb_gesetz_einheiten}
+\begin{split}
+	N 							&= \frac{1}{\epsilon_0} \cdot \frac{As \cdot As}{m^{2}} \\
+	\frac{kg \cdot m}{s^{2}} 	&= \frac{1}{\epsilon_0} \cdot \frac{A^{2} \cdot s^{2}}{m^{2}}
+\end{split}
+\end{align}
+
+Daraus ergibt sich als Einheit für die Feldkonstante $\epsilon_0$:
+
+\begin{align}\label{eq:feldkonstante_einheiten}
+\begin{split}
+	\epsilon_0 &= \frac{A^{2} \cdot s^{2}}{m^{2}} \cdot \frac{s^{2}}{kg \cdot m} \\
+	\epsilon_0 &= \frac{A^{2} \cdot s^{4}}{m^{3} \cdot kg} \\
+	\epsilon_0 &= \frac{As}{Vm}
+\end{split}
+\end{align}
+
+\begin{leftbar}
+Aufgabe: Versuche über die Definition des Volts ($V=\frac{kg \cdot m^2}{A \cdot s^3}$) von der vorletzten auf die letzte Umformung zu kommen!
+\end{leftbar}
+
+\begin{leftbar}
+Nice to know: diese Form der Gleichung ist analog zu Newtons Gravitationsgesetz: $F = G \cdot \frac{m_1 \cdot m_2}{d^2}$. $G$ ist hierbei ebenfalls eine Konstante.
+\end{leftbar}
+
+
+
+\subsection{Feldstärke} 
+
+In einem homogenen Feld ist die Feldstärke (Formelzeichen: $E$) also an jedem Punkt gleich. Sie ordnet jedem geladenen Körper eine Kraft und, sollte mit Vektoren gerechnet werden, eine Richtung zu:
+
+\begin{equation} \label{eq:feldstaerke}
+	\vec{E} = \frac{\vec{F}}{q}
+\end{equation}
+
+$q$ ist hierbei die \emph{vorzeichenbehaftete} Ladung des Probekörpers im Feld. Als Einheit ergibt sich $\frac{N}{C}$ für die Feldstärke $E$. 
+
+Umgeformt für $F$ ergibt sich aus der Gleichung:
+
+\begin{equation} \label{eq:feldstaerke_nach_F}
+	\vec{F} = q \cdot \vec{E}
+\end{equation}
+
+
+\subsection{Homogenes Feld} \label{subsec:EFeldHomogen}
+
+Das elektrische Feld zwischen zwei geladenen Körpern ist meistens inhomogen. Das heißt, dass die Feldstärke, also die Dichte der Feldlinien nicht überall gleich ist. Für Berechnungen würde dies das Lösen von komplexe Differentialgleichungen voraussetzen. Daher wird in der Schulphysik immer von einem homogenen Feld ausgegangen, wenn Berechnungen an einem elektrischen Feld anstehen:
+
+\begin{itemize}
+	\item Die Feldlinien zeigen alle in dieselbe Richtung
+	\item Die Feldlinien haben alle denselben Abstand zueinander
+\end{itemize} 
+
+Eine Möglichkeit, so ein Feld zu generieren, ist der Plattenkondensator (\referenz{sec:plattenkondensator}).
+
+
+
+
+
+
+
+
+

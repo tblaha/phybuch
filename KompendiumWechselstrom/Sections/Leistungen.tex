@@ -1,0 +1,35 @@
+%%%%% Physik Kompendium Nr.2 %%%%%
+%% 07 -- Leistungen %%
+
+
+\subsection{Wirkleistung und Blindleistung}
+
+Auch und vor allem bei der Leistung muss im Wechselstromkreis zwischen Wirk- und Blindleistung unterschieden werden. Die Wirkleistung ist am Ende nutzbar, während die Blindleistung allein die Bauteile belastet und nicht genutzt wird. Das bedeutet, dass es sein kann, dass obwohl ein Stromkreis nur eine bestimmte effektive Wirkleistung umsetzt, aber durch Phasenverschiebungen die Bauteile deutlich stärker belastet werden.
+
+
+\subsection{Scheinleistung}
+
+Diese ist, analog zur Impedanz (Siehe Sektion \ref{subsec:WiderstaendeZeigerdiagram} auf Seite \pageref{subsec:WiderstaendeZeigerdiagram}), die Hypotenuse eines rechtwinkligen Dreiecks, deren Katheten die Wirkleistung und die Blindleistung sind. Der Winkel $\varphi$ ist ebenfalls der Phasenverschiebungswinkel.
+
+
+\subsection{Gleichungen}
+
+Die Wirkleistung sowie Blindleistung lassen sich auf viele Arten bestimmen. \\
+\vspace{11pt}
+Abhängig von der effektiven Spannung und der effektiven Stromstärke:
+
+\begin{align}		\label{eq:ScheinleistungUI}
+	P_{Schein} &= U_{eff} \cdot I_{eff}						\\
+	P_{Wirk}   &= U_{eff} \cdot I_{eff} \cdot \cos \varphi	\\
+	P_{Blind}  &= U_{eff} \cdot I_{eff} \cdot \sin \varphi	
+\end{align}
+
+Abhängig von der Blindleistung und der Wirkleistung:
+
+\begin{align}		\label{eq:ScheinleistungPP}
+	P_{Schein}  &= \sqrt{P_{Wirk}^2 + P_{Blind}^2}
+\end{align}
+
+
+
+
