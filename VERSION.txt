@@ -1,0 +1,26 @@
+25.12.15 -- v0.0.0.3 - preAlpha -- Till Blaha
+
+Leichte Verbesserungen:
+- Zyklotron: Verbesserte Erkärung und Herleitung
+
+Nicht für die allgemeine Veröffentlichung bestimmt.
+
+--###############################################################################--
+
+23.12.15 -- v0.0.0.2 - preAlpha -- Till Blaha
+
+Leichteste Verbesserungen:
+- Kondensator: \epsilon_0 nicht \approx 0 sondern \approx 1
+
+Nicht für die allgemeine Veröffentlichung bestimmt.
+
+
+--###############################################################################--
+
+22.12.15 -- v0.0.0.1 - preAlpha -- Till Blaha & Leonard Geilen
+
+Allererste Version
+- Schlechte Grafiken, unsaubere Formatierung, möglicherweise inhaltliche Fehler
+- Atomphysik und Quantenphänomene fehlen
+
+Nicht für die allgemeine Veröffentlichung bestimmt.

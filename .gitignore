@@ -1,0 +1,7 @@
+*.bak
+build/
+*.log
+*.aux
+*.pdf
+*.synctex.gz
+*~
