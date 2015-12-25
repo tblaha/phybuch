@@ -2,6 +2,9 @@
 build/
 *.log
 *.aux
-*.pdf
+*.toc
+*.out
+head.pdf
 *.synctex.gz
 *~
+.~lock*

@@ -31,9 +31,11 @@
 % Eigentlicher Beginn %
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Prinzip}
+\subsection{Prinzip} 
 
-Ein Zyklotron besteht aus Zwei hohlen, halbzylindrischen und Duanden an denen eine Spannung mit unterschiedlichem Vorzeichen anliegt, und darüber bzw. darunter liegende Magneten, die ein homogenes Magnetfeld erzeugen. Zudem gibt es einen Einlass und einen Auslass für Teilchen.\footnote{„Zyklotron Prinzipskizze02“ von KlausFoehl - Eigenes Werk. Lizenziert unter Gemeinfrei über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Zyklotron_Prinzipskizze02.svg}}
+Ein Zyklotron besteht aus 2 hohlen, halbzylindrischen Duanden, an denen eine Spannung mit unterschiedlichem Vorzeichen anliegt. Zwischen den Duanden befindet sich ein kleiner Zwischenraum, in welchem dann ein homogenes elektrisches Feld entsteht, dessen Feldlinien von der einen zur anderen Duande verlaufen (Siehe \referenz{subsec:EFeldHomogen}). Aus 2 darüber bzw. darunter liegenden Magneten ergibt sich ein homogenes Magnetfeld (Siehe \referenz{subsec:MFeldHomogen}).
+
+Darüber hinaus gibt es einen Einlass und einen Auslass für Teilchen.\footnote{„Zyklotron Prinzipskizze02“ von KlausFoehl - Eigenes Werk. Lizenziert unter Gemeinfrei über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Zyklotron_Prinzipskizze02.svg}}
 
 
 \begin{wrapfigure}{o}{0.4\textwidth} \label{Zyklo}
@@ -46,12 +48,14 @@ Ein Zyklotron besteht aus Zwei hohlen, halbzylindrischen und Duanden an denen ei
 	
 \end{wrapfigure}
 
-Die Teilchenquelle im Inneren des Zyklotrons setzt Elektronen oder Protonen frei. Diese Teilchen werden durch das Magnetfeld mithilfe der Lorentzkraft auf eine Kreisbahn gezwungen. Das Teilchen wird nun zum entgegengesetzt geladenen Duanden gezogen und beschreibt in diesem eine 180\degree{} Kurve und sobald es wieder in den Spalt zwischen den Duanden eintritt, werden diese umgepolt, sodass das Teilchen nun zum anderen Duanden gezogen wird. Die Umpolungsfrequenz bleibt über den ganzen Versuch gleich. 
+Die Teilchenquelle im Inneren des Zyklotrons setzt Elektronen oder Protonen frei, welche durch den Einlass in das elektrische Feld zwischen den Duanden eintreten und durch dieses Feld zu einer der Beiden hin beschleunigt werden. Diese Teilchen werden gleichzeitig durch das Magnetfeld, über die Lorentzkraft, auf eine Kreisbahn gezwungen (Siehe \referenz{sec:lorentzkraft}), sodass sie im hohlen Duanden eine 180\degree{} Kurve beschreiben. Sobald wieder der Spalt zwischen den Duanden erreicht ist, wird die Spannung umgepolt, sodass die Teilchen nun zum anderen Duanden hingezogen werden. Diese Umpolungsfrequenz bleibt über den ganzen Versuch konstant.
 
-In diesem Spalt wird das Teilchen abermals und abermals beschleunigt bis es aus dem Zyklotron austritt.
+In dem Spalt werden die Teilchen abermals und abermals beschleunigt bis der Radius so groß ist, dass die Teilchen aus dem Zyklotron austreten.
 
 
 \subsection{Gesetze}
+
+Für die Beschleunigung für \emph{Elektronen} gelten folgende Gesetzmäßigkeiten.
 
 \subsubsection{Radius}
 
@@ -60,7 +64,7 @@ Aus der Gleichsetzung der Zentrifugalkraft und der Lorentzkraft ergibt sich:
 \begin{align}
 \begin{split}
 	F_{Zf} &= F_{Lr} \\
-	\frac{m \cdot v^2}{r} &= e \cdot v \cdot B
+	\frac{m \cdot v^2}{r} &= q_e \cdot v \cdot B
 \end{split}
 \end{align}
 
@@ -68,14 +72,14 @@ Aus der Gleichsetzung der Zentrifugalkraft und der Lorentzkraft ergibt sich:
 
 \begin{align} \label{eq:ZyklotronRadius}
 \begin{split}
-	r = \frac{m_e \cdot v}{B \cdot e}
+	r = \frac{m_e \cdot v}{B \cdot q_e}
 \end{split}
 \end{align}
 
 
 \subsubsection{Frequenz}
 
-Aus der folgenden Betrachtungen für die Umlaufzeit $T = \frac{s}{v} = \frac{2 \pi r}{v}$ und für den Radius (Siehe Gleichung \ref{eq:ZyklotronRadius}) ergibt sich für die Frequenz: \\
+Aus den Betrachtungen der Umlaufzeit $T = \frac{s_{Umlauf}}{v} = \frac{2 \pi r}{v}$ und des Radius (Siehe Gleichung \ref{eq:ZyklotronRadius}) ergibt sich für die Frequenz der Umpolung mit $f=\frac{1}{T}$: \\
 
 \begin{align}
 \begin{split}
@@ -86,7 +90,7 @@ Aus der folgenden Betrachtungen für die Umlaufzeit $T = \frac{s}{v} = \frac{2 \
 \end{split}
 \end{align}
 
-
+\noindent Damit ist gezeigt, dass die Frequenz nicht abhängig von der Geschwindigkeit der Teilchen ist und auch sonst nur von konstanten Größen abhängig ist. Daher ist die Frequenz ebenfalls über den gesamten Versuch konstant.
 
 
 
