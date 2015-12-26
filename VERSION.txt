@@ -1,9 +1,7 @@
-26.12.15 -- v0.0.0.3 - preAlpha -- Till Blaha
+25.12.15 -- v0.0.0.3 - preAlpha -- Till Blaha
 
-Verbesserungen:
+Leichte Verbesserungen:
 - Zyklotron: Verbesserte Erkärung und Herleitung
-- Erweiterung Schwingkreis
-- Generelle Fehlerkorrektur Magnetfeld
 
 Nicht für die allgemeine Veröffentlichung bestimmt.
 
