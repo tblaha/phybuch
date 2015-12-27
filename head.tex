@@ -1,12 +1,16 @@
-\documentclass[a4paper, 11pt]{book}
+\documentclass[9pt, twopage]{book}
 
 % Language and Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 
 % Paper and Font sizes
-\usepackage[top=35mm, bottom=23mm, left=25mm, right=25mm]{geometry}
+\usepackage{extsizes}
+\usepackage{geometry}
+\geometry{papersize={125mm, 190mm}, margin=20mm}
 \sloppy
+
+% Numbering of Sections
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{2}
 
@@ -20,6 +24,7 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=NavyBlue}
 \newcommand{\referenz}[1]{Sektion \ref{#1} auf Seite \pageref{#1}: \nameref{#1}}
+\newcommand{\kapitelreferenz}[1]{Kapitel \ref{#1} auf Seite \pageref{#1}: \nameref{#1}}
 \newcommand{\gleichungsreferenz}[1]{Gleichung \ref{#1} auf Seite \pageref{#1}}
 \newcommand{\casio}[1]{Casio fx-991xx: Konstante Nr. #1}
 
@@ -29,11 +34,39 @@
 \usepackage{multicol}
 \usepackage{tabto}
 \usepackage{verbatim}
+\newenvironment{NiceToKnow}
+               {\begin{leftbar}
+               \noindent \textbf{Nice to know:} }
+               {\end{leftbar}}
+\newenvironment{Anmerkung}
+               {\begin{leftbar}
+               \noindent \textbf{Anmerkung:} }
+               {\end{leftbar}}
+\newenvironment{Wichtig}
+               {\begin{leftbar}
+               \noindent \textbf{Wichtig:} }
+               {\end{leftbar}}
+\newenvironment{Aufgabe}
+               {\begin{leftbar}
+               \noindent \textbf{Aufgabe:} }
+               {\end{leftbar}}
 
 % Math Symbols and environments
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{gensymb}
+\usepackage{letltxmacro}
+\makeatletter
+% "Closed" root symbol
+\let\oldr@@t\r@@t
+\def\r@@t#1#2{%
+\setbox0=\hbox{$\oldr@@t#1{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.15\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+\LetLtxMacro{\oldsqrt}{\sqrt}
+\renewcommand*{\sqrt}[2][\ ]{\oldsqrt[#1]{#2}}
+\makeatother
 
 % Fonts
 \usepackage[T1]{fontenc}
@@ -53,32 +86,34 @@
 \title{Physik Kompendium -- 11. Klasse bis zum Abitur}
 \author{Till Blaha \& Leonard Geilen}
 
-
 \begin{document}
 \maketitle
+
+\newgeometry{top=23mm, bottom=15mm, outer=13mm, inner=19mm}
+
 \tableofcontents
 \newpage
 
 
-\chapter*{Vorwort}
+\chapter*{Vorwort} \label{ch:Vorwort}
 \input{vorwort}
 
-\chapter{Elektrisches Feld}
+\chapter{Elektrisches Feld} \label{ch:EFeld}
 \input{KompendiumElektrischesFeld/ElektrischesFeld}
 
-\chapter{Magnetisches Feld}
+\chapter{Magnetisches Feld} \label{ch:MFeld}
 \input{KompendiumE-M-Feld/ElektrischesUndMagnetischesFeld}
 
-\chapter{Induktion}
+\chapter{Induktion} \label{ch:Induktion}
 \input{KompendiumInduktion/Induktion}
 
-\chapter{Wechselstrom}
+\chapter{Wechselstrom} \label{ch:Wechselstrom}
 \input{KompendiumWechselstrom/Wechselstrom}
 
-\chapter{Schwingungen und Wellen}
+\chapter{Schwingungen und Wellen} \label{ch:Wellen}
 \input{KompendiumSchwingungen/Schwingungen}
 
-\chapter{Quanten}
+\chapter{Quanten} \label{ch:Quanten}
 \input{KompendiumQuanten/Quanten}
 
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
