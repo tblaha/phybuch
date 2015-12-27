@@ -17,7 +17,7 @@
 % Graphics and Colors
 \usepackage{graphicx}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\graphicspath{{Pictures/}}
+\graphicspath{{AA_Pictures/}}
 
 % Links and Hyperrefs
 \usepackage{url}
@@ -80,7 +80,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Version
-\newcommand{\version}{0.0.0.3 pre-alpha}
+\newcommand{\version}{0.1 alpha}
 
 % Meta
 \title{Physik Kompendium -- 11. Klasse bis zum Abitur}
@@ -96,25 +96,34 @@
 
 
 \chapter*{Vorwort} \label{ch:Vorwort}
-\input{vorwort}
+\input{ZZ_OtherTeX/vorwort}
+
+\chapter{Mechanik} \label{ch:Mechanik}
+\input{Mechanik/AA_Chapter}
 
 \chapter{Elektrisches Feld} \label{ch:EFeld}
-\input{KompendiumElektrischesFeld/ElektrischesFeld}
+\input{ElektrischesFeld/AA_Chapter}
 
 \chapter{Magnetisches Feld} \label{ch:MFeld}
-\input{KompendiumE-M-Feld/ElektrischesUndMagnetischesFeld}
+\input{MagnetischesFeld/AA_Chapter}
 
 \chapter{Induktion} \label{ch:Induktion}
-\input{KompendiumInduktion/Induktion}
+\input{Induktion/AA_Chapter}
 
 \chapter{Wechselstrom} \label{ch:Wechselstrom}
-\input{KompendiumWechselstrom/Wechselstrom}
+\input{Wechselstrom/AA_Chapter}
 
-\chapter{Schwingungen und Wellen} \label{ch:Wellen}
-\input{KompendiumSchwingungen/Schwingungen}
+\chapter{Schwingungen} \label{ch:Schwingungen}
+\input{Schwingungen/AA_Chapter}
+
+\chapter{Wellen} \label{ch:Wellen}
+\input{Wellen/AA_Chapter}
+
+\chapter{Optik} \label{ch:Optik}
+\input{Optik/AA_Chapter}
 
 \chapter{Quanten} \label{ch:Quanten}
-\input{KompendiumQuanten/Quanten}
+\input{Quanten/AA_Chapter}
 
 %\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 %\appendix
