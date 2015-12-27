@@ -32,11 +32,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 
 
-Der Millikanversuch war ein Experiment des amerikanischen Physikers Robert Millikan von 1910, dessen Auswertung ihm 1923 den Nobelpreis einbrachte. Mit diesem Versuch konnte die Ladung eines Elektrons sehr genau bestimmt werden und die Existenz einer kleinsten Ladung nachgewiesen werden.
+Der Millikanversuch war ein Experiment des amerikanischen Physikers Robert Millikan von 1910, dessen Ergebnisse ihm 1923 den Nobelpreis einbrachte. Mit diesem Versuch konnte die Existenz einer kleinsten Elementarladung nachgewiesen werden und diese Elektronenladung recht genau bestimmt werden.
 
 \subsection{Vorgehensweise}
 
-Millikans Ansatz war recht simpel. Er zerstäubte flüssiges Öl mit einer Pumpe so, dass die Tropfen extrem klein wurden und durch Reibung mit der Pumpendüse negativ geladen. Diese wurden in einen Plattenkondensator geleitet und mit einem Mikroskop deren Bahn beobachtet. Mittels Einstellen der Spannung am Kondensator wurde ein Tröpfchen zum Stillstand gebracht, indem das elektrische Feld entgegen der Fallbeschleunigung der Erde wirkte.
+Millikans Ansatz war recht simpel. Er zerstäubte flüssiges Öl mit einer Pumpe so, dass die Tropfen extrem klein und durch Reibung mit der Pumpendüse negativ geladen wurden. Diese wurden in einen Plattenkondensator geleitet und mit einem Mikroskop deren Bahn beobachtet. Mittels Einstellen der Spannung am horizontal zur Erdoberfläche ausgerichteten Kondensator wurde ein Tröpfchen zum Schweben gebracht, indem das elektrische Feld entgegen der Fallbeschleunigung der Erde wirkte.
 
 Damit ergab sich der Ansatz, die elektrische Kraft $F_{el}=q \cdot E$ (\gleichungsreferenz{eq:feldstaerke_nach_F}) gleich der Gewichtskraft $F_G = m \cdot q$ zu setzten. Wie schon so oft kann dann für $E$ die homogene Feldstärke im Kondensator eingesetzt werden: $E = \frac{U}{d}$:
 
@@ -52,13 +52,13 @@ Damit ergab sich der Ansatz, die elektrische Kraft $F_{el}=q \cdot E$ (\gleichun
 
 \subsection{Umgehung der direkten Massebestimmung}
 
-Bis auf die Masse sind in der obigen Gleichung alle Größen gegeben, bzw. messbar. Das bestimmen der Masse stellte allerdings ein Problem dar, da die Tröpfchen viel zu klein waren um ihre Masse auf klassische Art zu bestimmen (z.B. wiegen). Auch die Bestimmung über das Volumen und die Dichte des Öls erwiesen sich als unpraktisch, da die Größe aufgrund von optischen Eigenschaften der Mikroskoplinsen nur sehr unpräzise gemessen werden konnte.
+Bis auf die Masse sind in der obigen Gleichung alle Größen gegeben bzw. messbar. Das bestimmen der Masse stellte allerdings ein Problem dar, da die Tröpfchen viel zu klein waren um ihre Masse auf klassische Art zu bestimmen (z.B. wiegen). Auch die Bestimmung über das Volumen und die Dichte des Öls erwiesen sich als unpraktisch, da der Durchmesser eines Tröpfchens aufgrund von optischen Eigenschaften der Mikroskoplinsen nur sehr unpräzise gemessen werden konnte.
 
 Daher hat sich Robert Millikan dem Gesetz von Stokes\footnote{Gesetz von Stokes: \url{https://de.wikipedia.org/wiki/Gesetz_von_Stokes}} zur Reibung von spährischen (\glqq kugelförmigen\grqq) Körpern in Gasen oder Flüssigkeiten bedient: 
 
 Mit dem Gesetz lässt sich der Radius eines Öltröpfchens über dessen Fallgeschwindigkeit berechnen, welche im selben Experiment bestimmt werden kann: Durch Abschalten der Kondensatorspannung und Stoppen der Zeit, die der Tropfen für das Zurücklegen einer bestimmten Strecke benötigte, die in Form eines Rasters auf dem Mikroskop erkennbar war, konnte die Fallgeschwindigkeit berechnet werden. Zudem war diese Geschwindigkeit nach einer kurzen Beschleunigungsphase durch die Luftreibung konstant.
 
-Die Stokesreibung ist im Schwebefall gleich der Differenz aus Gewichtskraft und Auftrieb des Tröpfchens: $F_R = F_G - F_A$. Setzt man die entsprechenden Teilgleichungen (Gewichtskraft einer Kugel $F_G = V \rho g = \frac{4}{3} \pi r^3 \rho_{O} g$ und Auftrieb einer Kugel in der Luft $F_A = V \rho g = \frac{4}{3} \pi r^3 \rho_L g$) ein, erhält man für, umgestellt für $r$:
+Die Stokesreibung ist im Schwebefall gleich der Differenz aus Gewichtskraft und Auftrieb des Tröpfchens: $F_R = F_G - F_A$. Setzt man die entsprechenden Teilgleichungen (Gewichtskraft einer Kugel $F_G = V \rho g = \frac{4}{3} \pi r^3 \rho_{O} g$ und Auftrieb einer Kugel in der Luft $F_A = V \rho g = \frac{4}{3} \pi r^3 \rho_L g$) ein, erhält man für $r$:
 
 \begin{align} \label{eq:StokesReibungFuerR}
 \begin{split}
@@ -68,9 +68,9 @@ Die Stokesreibung ist im Schwebefall gleich der Differenz aus Gewichtskraft und 
 \end{split}
 \end{align}
 
-Hierbei ist $v_{0}$ besagte Fallgeschwindigkeit, $\eta$ (spricht: \glqq klein Eta\grqq) die Viskosität der Luft, $\rho$ (sprich: \glqq klein Rho\grqq) jeweils die Dichten des Öls ($O$), respektive von Luft ($L$) und $g$ die Fallbeschleunigung.
+Hierbei ist $v_{0}$ besagte Fallgeschwindigkeit, $\eta$ (spricht: \glqq klein Eta\grqq) die Viskosität der Luft, $\rho$ (sprich: \glqq klein Rho\grqq) jeweils die Dichte des Öls ($\rho_O$), respektive von Luft ($\rho_L$) und $g$ die Fallbeschleunigung.
 
-Nun muss $F_{el}$ nicht gleich $F_{G}$ gesetzt werden, sondern gleich der Differenz $F_{G} - F_{A}$:
+Nun muss $F_{el}$ nicht gleich $F_{G}$ gesetzt werden, sondern gleich der Differenz $F_{G} - F_{A}$ um den Auftrieb in der Luft, welcher klein, aber bei dieser Größenordnung nicht zu vernachlässigen ist, mit einzubeziehen:
 
 \begin{align}
 \begin{split}
@@ -81,7 +81,7 @@ Nun muss $F_{el}$ nicht gleich $F_{G}$ gesetzt werden, sondern gleich der Differ
 \end{split}
 \end{align}
 
-Jetzt noch $r$ einsetzten:
+\noindent Jetzt noch $r$ von der Stokesreibung einsetzten:
 
 \begin{align}
 \begin{split}
@@ -92,13 +92,12 @@ Jetzt noch $r$ einsetzten:
 
 Damit existiert eine Gleichung für die Ladung $q$ eines Öltröpfchen, die nur aus messbaren Größen besteht.
 
-\begin{leftbar}
-Anmerkung: Natürlich kann und muss die Herleitung als Schüler nicht komplett nachvollzogen werden. Wichtig sind ist der Ansatz und das Auftreten des Masseproblems. Wie genau dieses gelöst würde, ist nicht von unabdingbarer Bedeutung. Das Curriculum legt den Fokus mehr auf die richtige Interpretation der Ergebnisse; beschrieben im nächsten Abschnitt.
-\end{leftbar}
+\begin{Anmerkung}
+Natürlich kann und muss die Herleitung als Schüler nicht komplett nachvollzogen werden. Wichtig sind ist der Ansatz und das Auftreten des Masseproblems. Wie genau dieses gelöst würde, ist nicht von unabdingbarer Bedeutung. Das Curriculum legt den Fokus mehr auf die richtige Interpretation der Ergebnisse; beschrieben im nächsten Abschnitt.
+\end{Anmerkung}
 
 
 \subsection{Ergebnisse}
-% Cue for bib %http://physik-am-gymnasium.de/SekII/Elektrisches_Feld/millikan_auswertung.html
 
 \begin{figure}[h!]
 	\center
@@ -108,15 +107,15 @@ Anmerkung: Natürlich kann und muss die Herleitung als Schüler nicht komplett n
 	\label{fig:millikan_auswertung}
 \end{figure}
 
-Wenn man die Ergebnisse wie in Grafik \ref{fig:millikan_auswertung} \footnote{Abbildung von: \url{http://physik-am-gymnasium.de/SekII/Elektrisches_Feld/millikan_auswertung.html}} aufführt, fällt auf, dass sich eine sogenannte Quantisierung einstellt. Das heißt, dass die Ladung nicht \glqq Stufenlos\grqq{} sondern in \glqq Sprüngen\grqq{} größer wird. Mathematisch heißt das, dass die Ladungen der Tröpfchen Vielfache einer kleinsten Einheit, eines \glqq Elementarladung\grqq , sind. 
+Wenn man die Ergebnisse wie in Grafik \ref{fig:millikan_auswertung} \footnote{Abbildung von: \url{http://physik-am-gymnasium.de/SekII/Elektrisches_Feld/millikan_auswertung.html}} aufführt, fällt auf, dass sich eine sogenannte Quantisierung einstellt. Das heißt, dass die Ladung nicht \glqq Stufenlos\grqq{} sondern in \glqq Sprüngen\grqq{} existiert. Mathematisch heißt das, dass die Ladungen der Tröpfchen Vielfache einer kleinsten Einheit sind, Vielfache der \glqq Elementarladung\grqq .
 
-Dieses Elementarladung (in Coulomb $C$) mit Formelzeichen $q_e$ oder $e$ (seltener auch einfach $q$, wobei Verwechslungsgefahr mit der generellen Ladung eines Körpers, ebenfalls $q$, besteht) wurde von den Forschern als Ladung eines einzelnen Elektrons interpretiert\footnote{\url{https://nl.wikipedia.org/wiki/Proef_van_Millikan}}. Auf dem Casio fx991xx Taschenrechner existiert die Konstante Nr. 23:
+Diese Elementarladung (in Coulomb $C$) mit Formelzeichen $q_e$ oder $e$ (seltener auch einfach $q$, wobei Verwechslungsgefahr mit der generellen Ladung eines Körpers, ebenfalls $q$, besteht) wurde von den Forschern als Ladung eines einzelnen Elektrons interpretiert\footnote{\url{https://nl.wikipedia.org/wiki/Proef_van_Millikan}}. Auf dem Casio fx991xx Taschenrechner existiert die Konstante Nr. 23:
 
 \begin{align}
 	q_e \approx 1,602 \cdot 10^{-19} C
 \end{align}
 
-Alle Ladungen, die uns begegnen sind also Vielfache dieser Elementarladung. Für diese Zeit eine ziemlich bahnbrechende Entdeckung, die Millikan schließlich auch den Nobelpreis einbrachte. Man kann mit ihr z.B. berechnen, wie groß der Überschuss an Elektronen auf einem Körper ist, wenn man dessen Ladung kennt:
+Alle Ladungen, die uns begegnen sind also Vielfache dieser Elementarladung. Dies war eine ziemlich bahnbrechende Entdeckung, die Millikan schließlich auch den Nobelpreis einbrachte. Man kann mit ihr z.B. berechnen, wie groß der Überschuss an Elektronen über Protonen auf einem Körper ist, wenn man dessen Ladung kennt:
 
 \begin{align}
 	n_{ueberschuss} = \frac{Q}{q_e}
