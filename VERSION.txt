@@ -1,28 +1,9 @@
-26.12.15 -- v0.0.0.3 - preAlpha -- Till Blaha
+27.12.2015 -- Till Blaha & Leonard Geilen -- Version 0.1 Alpha
 
-Verbesserungen:
-- Zyklotron: Verbesserte Erkärung und Herleitung
-- Erweiterung Schwingkreis
-- Generelle Fehlerkorrektur Magnetfeld
+Alpha vs. preAlpha:
+--Bei beiden sind Ihnalte unvollständig, aber in der jetzigen Version (Alpha) stimmt die Struktur und der Umfang ist festgelegt.
 
-Nicht für die allgemeine Veröffentlichung bestimmt.
+Aktuelle Lage:
+--Kapitel Elektrisches Feld, Magnetisches Feld und Induktion gelten als stabil.
+--Nicht für die allgemeine Veröffentlichung bestimmt!
 
---###############################################################################--
-
-23.12.15 -- v0.0.0.2 - preAlpha -- Till Blaha
-
-Leichteste Verbesserungen:
-- Kondensator: \epsilon_0 nicht \approx 0 sondern \approx 1
-
-Nicht für die allgemeine Veröffentlichung bestimmt.
-
-
---###############################################################################--
-
-22.12.15 -- v0.0.0.1 - preAlpha -- Till Blaha & Leonard Geilen
-
-Allererste Version
-- Schlechte Grafiken, unsaubere Formatierung, möglicherweise inhaltliche Fehler
-- Atomphysik und Quantenphänomene fehlen
-
-Nicht für die allgemeine Veröffentlichung bestimmt.
