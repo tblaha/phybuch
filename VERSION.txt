@@ -1,3 +1,13 @@
+28.12.2015 -- Till Blaha & Leonard Geilen -- Version 0.2 Alpha
+
+Viele Bugfixes
+
+Aktuelle Lage:
+--Kapitel Elektrisches Feld, Magnetisches Feld, Induktion und Wechselstrom gelten als stabil.
+--Nicht für die allgemeine Veröffentlichung bestimmt!
+
+
+
 27.12.2015 -- Till Blaha & Leonard Geilen -- Version 0.1 Alpha
 
 Alpha vs. preAlpha:

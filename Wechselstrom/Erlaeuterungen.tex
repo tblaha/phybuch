@@ -8,43 +8,55 @@
 
 \subsubsection{Wechselstrom}
 
-Wechselstrom bezeichnet die einen Strom der nicht nur von einem Punkt zum Anderen fließt, sondern mit einer Frequenz die Fließrichtung wechselt. Obwohl am Ende unter dem Strich keine Elektronen vollständig \glqq übergelaufen\grqq{} sind, wird trotzdem Energie verbraucht.
+Mit Wechselstrom bezeichnet einen Strom, der nicht nur von einem Punkt zum Anderen fließt, sondern mit einer Frequenz die Fließrichtung wechselt. Interessant ist, dass obwohl unter dem Strich keine Elektronen vollständig \glqq überlaufen\grqq{} , trotzdem Energie verbraucht wird.
 
-Typischerweise weißt die Spannungskurve den Verlauf der Sinuskurve auf.
+Im Idealfall, von dem auch bei allen folgenden Betrachtungen ausgegangen wird, weist die Spannungs- und Stromkurve den Verlauf einer Sinuskurve auf.
 
 
 \subsubsection{Amplitude}
 
-Ist die maximale Auslenkung der Spannung oder der Stromstärke, also der Scheitelwert der Sinuskurve. Oft mit $\hat{U}$ bzw. $\hat{I}$ oder $U_{0}$ bzw. $I_{0}$ angegeben.
-
-
-\subsubsection{Frequenz}
-
-Bezeichnet die Anzahl Perioden pro Zeiteinheit. \\ Einheit ist $Hz$, also $\frac{1}{T}$, wobei $T$ die Zeit für eine Periode ist.
+Die Amplitude ist die maximale Auslenkung der Spannung oder der Stromstärke, also der Scheitelwert (y-Wert). Oft mit $\hat{U}$ bzw. $\hat{I}$, $U_{0}$ bzw. $I_{0}$ oder $U_{max}$ bzw. $I_{max}$ angegeben.
 
 
 \subsubsection{Periode}
 
 Dauer, bis eine volle Sinuskurve der Spannung vollendet ist, also die Spannung wieder den Nullpunkt aus der selben Richtung passiert, wie beim ersten Durchlauf.
 
-Bei einem Wechselstromgenerator (siehe Sektion \ref{sec:Generator} auf Seite \pageref{sec:Generator}) ist dies die Dauer, bis sich die Spule um 360\degree gedreht hat.
+Bei einem Wechselstromgenerator (siehe \referenz{sec:Generator}) ist dies die Dauer, bis sich die Spule einmal um 360\degree{} gedreht hat.
+
+
+\subsubsection{Frequenz}
+
+Bezeichnet die Anzahl Perioden pro Zeiteinheit. 
+
+\noindent Aus der Periodendauer ist die Formel $f=\frac{1}{T}$, wobei $T$ die Periodendauer, die Zeit für eine Periode, ist. Die Einheit ist $Hz$ (spricht: \glqq Hertz\grqq), also $\frac{1}{s}$.
+
 
 
 \subsubsection{Winkelgeschwindigkeit}
 
-Zeit pro Winkel. Im \textbf{Bogenmaß} (Taschenrechner bei Winkeln umstellen!) berechnet mit:
+Die Länge einer Periode einer Sinuskurve kann man auch mit $360\degree$ ausdrücken, was praktisch ist, wenn man keine absolute Zeitspanne benötigt, sondern mit Anteilen bzw. Abschnitten rechnet oder argumentiert. Obwohl sich $360\degree$ recht gut teilen lässt, rechnet man in der Physik meistens im Bogenmaß. $360\degree$ entsprechen dann $2\pi$.
+
+\begin{NiceToKnow}
+Umrechnung des Winkels $\alpha$ von Grad ins Bogenmaß: $\frac{\alpha}{180} \cdot \pi$
+\end{NiceToKnow}
+
+Die Winkelgeschwindigkeit gibt nun an, wie groß der Abschnitt ist, der pro Zeit absolviert wird:
 
 \begin{equation}	\label{eq:Winkelgeschwindigkeit}
 	\omega = \frac{2\pi}{T} = 2\pi f
 \end{equation}
 
+\begin{Wichtig}
+Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq w\grqq . Daran Denken, dass der Taschenrechner bei Winkelfunktionen ($\sin$, $\cos$ usw.) und Rechnung im Bogenmaß auf \glqq Radiant\grqq{} stehen muss. Beim Casio-fx991xx [SHIFT] + [SET UP] + [4] drücken. [SHIFT] + [SET UP] + [4] stellt wieder auf Gradmaß um.
+\end{Wichtig}
 
 
 \subsection{Weitere Begriffe}	\label{subsec:ErlaeuterungenWeitere}
 
 \subsubsection{Effektive Spannung}
 
-Diese beschreibt die durchschnittliche Spannung, die zum weiteren Rechnen wie eine Spannung im Gleichstromkreis behandelt werden kann.
+Diese beschreibt die durchschnittliche Spannung im Wechselstromkreis, die zum weiteren Rechnen wie eine Spannung im Gleichstromkreis behandelt werden kann.
 
 Für eine Sinuskurve lässt sie sich wie folgt, in Abhängigkeit der maximalen Spannung, berechnen:
 
@@ -55,7 +67,7 @@ Für eine Sinuskurve lässt sie sich wie folgt, in Abhängigkeit der maximalen S
 
 \subsubsection{Effektive Stromstärke}
 
-Diese beschreibt die durchschnittliche Stromstärke, die zum weiteren Rechnen wie eine Stromstärke im Gleichstromkreis behandelt werden kann.
+Diese beschreibt die durchschnittliche Stromstärke im Wechselstromkreis, die zum weiteren Rechnen wie eine Stromstärke im Gleichstromkreis behandelt werden kann.
 
 Für eine Sinuskurve lässt sie sich wie folgt, in Abhängigkeit der maximalen Stromstärke, berechnen:
 
@@ -66,18 +78,18 @@ Für eine Sinuskurve lässt sie sich wie folgt, in Abhängigkeit der maximalen S
 
 \subsubsection{Phasenverschiebung}
 
-Eine Phasenverschiebung ist die x-Achsen-Verschiebung einer Kurve, typischerweise der Sinus-Kurve des Stroms. Sie wird in Grad und relativ zur Kurve der Spannung angegeben.\footnote{Illustration von \url{http://upload.wikimedia.org/wikipedia/commons/d/db/Phasenverschiebung_kapazitiv.svg}}
+Eine Phasenverschiebung ist die Verschiebung einer Kurve entlang der x-Achsen, typischerweise die Verschiebung der Kurve des Stroms relativ zur Kurve der Spannung. Sie wird in Grad oder im Bogenmaß angegeben.\footnote{"Phasenverschiebung kapazitiv" by Hyperstryke - In Inkscape selbst erstellt. Licensed under Public Domain via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Phasenverschiebung_kapazitiv.svg}}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Pictures/Phasenverschiebung}
-	\caption{\glqq Die Spannung eilt dem Strom voraus.\grqq }
+	\includegraphics[width=0.7\textwidth]{Phasenverschiebung}
+	\caption{\glqq Der Strom hinkt der Spannung um $\frac{1}{2}\pi$ bzw. 90\degree{} hinterher.\grqq }
 \end{figure}
 
 
 \subsubsection{Impedanz}
 
-Die Impedanz $Z$ ist der Gesamtwiderstand im Wechselstromkreis, die sich durch den Quotienten aus der Spannung und der Stromstärke berechnen lässt:
+Die Impedanz $Z$ ist der effektive Gesamtwiderstand im Wechselstromkreis. Die Impedanz trägt wie der Ohm'sche Widerstand die Einheit Ohm mit Zeichen $\Omega$. Sie ist der Quotient aus der Spannung und der Stromstärke:
 
 \begin{equation}		\label{eq:Impedanz}
 	Z = \frac{U_{eff}}{I_{eff}}
@@ -87,12 +99,12 @@ Die Impedanz $Z$ ist der Gesamtwiderstand im Wechselstromkreis, die sich durch d
 
 \subsubsection{Kapazitiver Widerstand}
 
-Für den kapazitiven Widerstand $X_C$, der von Kondensatoren im Wechselstromkreis ausgeht, siehe Sektion \ref{subsec:KapazitiverWiderstand} auf Seite \pageref{subsec:KapazitiverWiderstand}.
+Für den kapazitiven Widerstand $X_C$, der von Kondensatoren im Wechselstromkreis ausgeht, siehe \referenz{subsec:KapazitiverWiderstand}.
 
 
 \subsubsection{Induktiver Widerstand}
 
-Für den induktiven Widerstand $X_C$, der von Spulen im Wechselstromkreis ausgeht, siehe Sektion \ref{subsec:InduktiverWiderstand} auf Seite \pageref{subsec:InduktiverWiderstand}.
+Für den induktiven Widerstand $X_L$, der von Spulen im Wechselstromkreis ausgeht, siehe \referenz{subsec:InduktiverWiderstand}.
 
 
 
