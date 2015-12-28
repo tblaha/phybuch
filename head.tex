@@ -1,13 +1,12 @@
-\documentclass[9pt, twopage]{book}
+\documentclass{book}
 
 % Language and Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 
 % Paper and Font sizes
-\usepackage{extsizes}
-\usepackage{geometry}
-\geometry{papersize={125mm, 190mm}, margin=20mm}
+\usepackage[papersize={4.5in,6in},margin=0.5cm]{geometry}
+\setlength{\parskip}{2pt}
 \sloppy
 
 % Numbering of Sections
@@ -80,7 +79,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Version
-\newcommand{\version}{0.3 Alpha}
+\newcommand{\version}{0.3 Alpha, optimiert für Ebook-Reader}
 
 % Meta
 \title{Physik Kompendium -- 11. Klasse bis zum Abitur}
@@ -88,8 +87,6 @@
 
 \begin{document}
 \maketitle
-
-\newgeometry{top=23mm, bottom=15mm, outer=13mm, inner=19mm}
 
 \section*{\Huge Vorwort} \label{sec:Vorwort}
 \input{ZZ_OtherTeX/vorwort}
