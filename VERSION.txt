@@ -1,4 +1,16 @@
-28.12.2015 -- Till Blaha & Leonard Geilen -- Version 0.2 Alpha
+28.12.2015 -- Till Blaha -- Version 0.3 Alpha
+
+Alle References gefixt, Grafiken und Bilder ausgetauscht und ergänzt
+Schwingungen, Wellen und Optik korrigiert
+
+Aktuelle Lage:
+-- Kapitel Elektrisches Feld, Magnetisches Feld, Induktion, Wechselstrom, Schwingungen, Wellen und Optik gelten als stabil.
+-- Optik: Interferenz an dünnen Schichten fehlt noch
+-- Nicht für die allgemeine Veröffentlichung bestimmt!
+
+
+
+28.12.2015 -- Till Blaha -- Version 0.2 Alpha
 
 Viele Bugfixes
 

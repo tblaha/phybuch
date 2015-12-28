@@ -1,28 +1,46 @@
 \subsection{Begriff}
-\begin{itemize}
-\item Polarisation ist festgelegt durch die Schwingungsebene der elektrischen Feldstärke des Lichtes.
-\item Natürliches Licht ist unpolarisiert, d.h. es enthält Licht aller Polarisationsrichtungen, also in allen Schwingungsebenen.
-\end{itemize}
+
+Die Polarisation ist festgelegt durch die Schwingungsebene der elektrischen Feldstärke des Lichtes. Natürliches Licht ist unpolarisiert, das heißt es enthält Licht aller Polarisationsrichtungen, also in allen Schwingungsebenen.
+
+Mit Schwingungsebene meint man die Ausrichtung der Ebene, in der sich die Schwingungsvektoren des elektrischen Feldes befinden. Diese stehen immer Senkrecht auf dem Vektor der Ausbreitungsrichtung, aber es gibt trotzdem unendlich viele Möglichkeiten für die Ausrichtung des Feldes. Siehe Abbildung \ref{fig:emwelle} auf Seite \pageref{fig:emwelle}: die blauen Vektorpfeile sind die Schwingungsvektoren des elektrischen Feldes.
 
 \subsection{Polarisationsfilter}
-\begin{itemize}
-\item In eine einzige Richtung polarisiertes Licht wird zu 100\% durchgelassen, wenn sicher der Filter in Transmissionsrichtung befindet. Bei 90\degree zur Trasmissionsrichtung wird es zu 100\% abgeschirmt.
-\item Malus'sches Gesetz: Intensität $I_1$ vor Filter; $I_2$ nach Filter
-\item $I_2 = I_1 \cdot cos^2(\Theta)$
-\end{itemize}
+
+Ein Polarisationsfilter lässt nur Licht, welches in eine bestimmte Richtung polarisiert ist, zu 100\% durch. 
+
+Wenn Licht bereits polarisiert ist, also nur noch eine Schwingungsebene existiert, wird es vom Filter 100\% durchgelassen, wenn er sich in der sogenannten Transmissionsrichtung befindet. Steht er 90\degree{} zur Transmissionsrichtung, wird das Licht zu 100\% abgeschirmt, also nichts durchgelassen.
+
+Das Malus'sche Gesetzt gibt die resultierende Intensität des Lichtes nach dem Filter in Abhängigkeit von der Anfangsintensität $I_1$ und dem Winkel des Filters zur Transmissionsrichtung $\Theta$ (sprich: \glqq groß Theta\grqq ) an:
+
+\begin{align}
+\begin{split}
+	I_2 = I_1 \cdot cos^2(\Theta)
+\end{split}
+\end{align}
+
 
 \subsection{Brewster-Winkel}
-\begin{itemize}
-\item Licht kann auch durch Reflexion polarisiert werden. Wenn das Licht im Brewter-Winkel auftrifft, wird der reflektierte Strahl vollständig polarisiert.
-(E-Feld steht dann parallel zur Reflexionsebene)
-\item Bedingung für vollständige Polarisation: Winkel zwischen reflektiertem und gebrochenem Strahl muss gleich 90\degree sein.
-\item $\beta = 90\degree - \alpha_B$
-\item $\frac{\sin{\alpha_B}}{\sin{90\degree - \alpha}} = \frac{n_2}{n_1}$ \tabto{4cm}; siehe Brechungsgesetz
-\item $\frac{\sin{\alpha_B}}{\cos{\alpha_B}} = \tan{\alpha_B} = n_2$ \tabto{4cm}; $n_1$ ist 1 für Luft bzw. Vakuum
 
-\begin{figure}[h!]
-\centering \includegraphics[width=0.8\textwidth]{brewster_winkel}
-\caption{Abbildung von \url{http://phy.wdfiles.com/local--files/polarisiertes-licht-c-j/Brewster\%20Winkel\%204.png}}
-\end{figure}
+\begin{wrapfigure}{o}{0.5\textwidth}
+	\centering \includegraphics[width=0.5\textwidth]{brewster_2}
+	\caption{Illustration des Brewster-Winkels}
+	\label{fig:brewster}
+\end{wrapfigure}
 
-\end{itemize}
+Licht kann auch durch Reflexion polarisiert werden. Aber nur, wenn das Licht im Brewster-Winkel auf der Reflexionsebene auftrifft, wird der reflektierte Strahl vollständig polarisiert. Nach der Polarisation steht die Ebene das elektrischen Feldes parallel zur Reflexionsebene.
+
+Die Bedingung für vollständige Polarisation: Der Winkel zwischen reflektiertem und gebrochenem Strahl muss $= 90\degree$ sein. Dies ist die Definition des Brewster Winkels.
+
+Man kann ihn sich mit der Grafik \ref{fig:brewster} \footnote{"Brewsters-angle" by Pajs - Eigen werk. Licensed under Publiek domein via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Brewsters-angle.svg} modifiziert von Till Blaha} herleiten:
+
+Mit dem Brechungsgesetz (Siehe \gleichungsreferenz{eq:brechungsgesetz}) und $n_1$ der Luft $\approx 1$, gilt:
+
+\begin{align}
+\begin{split}
+	\beta &= 90\degree - \alpha_B \\
+	\frac{\sin{\alpha_B}}{\sin{90\degree - \alpha}} &= \frac{n_2}{n_1} \\
+	\frac{\sin{\alpha_B}}{\cos{\alpha_B}} &= n_2 \\
+	\tan{\alpha_B} &= n_2 \\
+	\alpha_B &= \arctan{n_2}
+\end{split}
+\end{align}

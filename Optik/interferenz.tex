@@ -1,56 +1,74 @@
 \subsection{Wellen am Doppelspalt} \label{subsec:doppelspalt}
 
-Wenn nun eine räumlich und zeitlich kohärente Wellen, das heißt Wellenfronten deren Wellen sowohl parallel als auch phasengleich (mit derselben Wellenlänge und Gangunterschied $\delta= k \cdot \lambda$) verlaufen, auf ein Hindernis mit 2 schmalen Spalten trifft, bildet sich folgendes Interferenzmuster:
+Wenn nun räumlich und zeitlich kohärente Wellen, das heißt Wellen, die phasengleich (mit derselben Wellenlänge und Gangunterschied $\delta= k \cdot \lambda$) verlaufen, und deren Fronten parallel sind (Vergleiche Abbildung \ref{fig:brechung}) auf ein Hindernis mit 2 schmalen Spalten trifft, bilden sich dahinter zeitlich stabile Interferenzen.
 
-%\begin{figure}[h!]
-%	\center
-%	\includegraphics[width=0.4\textwidth]{doppelspalt_wasser}
-%	\caption{Eine kohärente Welle am Doppelspalt}
-%\end{figure}
+Die Interferenzen werden verursacht durch die Überlagerung von Wellen, in diesem Fall von den zwei Wellen, die von den Spalten ausgehen (Siehe \referenz{subsec:ueberlagerung}). Ein beliebiger Punkt hinter dem Spalt hat einen unterschiedlichen Abstand zu den beiden Schlitzen, das heißt es kann sein, dass sich an diesem Punkt sowohl ein Wellenberg von der einen Welle als auch ein Wellenberg der anderen Welle treffen und zu einem noch höheren Maximum addieren. Allerdings ist auch das umgekehrte Extrem und jedes Dazwischen möglich.
 
-Dies ist mit dem Huygens'schen Prinzip (\referenz{subsec:ausbreitung}) zu erklären: Angenommen, in jedem Spalt gäbe es nur ein schwingendes Teilchen. Dieses wird von der Wellenfront erfasst und ist selber Auslöser einer zirkularen Wellen. Da dieser Oszillator an dieser Stelle der einzige ist, gibt es keine gerade Wellenfront als Einhüllende, sondern einzig die Zirkularwelle des angeregten Oszillators.
+\begin{wrapfigure}{o}{0.5\textwidth}
+	\center
+	\includegraphics[width=0.5\textwidth]{doppelspalt}
+	\caption{Kohärente Welle am Doppelspalt, man kann sie sich als Wasserwellen vorstellen.}
+	\label{fig:doppelspaltwasser}
+\end{wrapfigure}
+
+Diese Ausbreitung (man betrachte Grafik \ref{fig:doppelspaltwasser} \footnote{Animiertes .gif von: \url{https://www.itp.uni-hannover.de/~zawischa/ITP/beugg.html}}) der zwei Wellen hinter den Spalten ist mit dem Huygens'schen Prinzip (\referenz{subsec:ausbreitung}) zu erklären: Angenommen, in jedem Spalt gäbe es nur ein schwingendes Teilchen. Dieses wird von der Wellenfront erfasst und ist selber Auslöser einer zirkularen Welle. Da dieser Oszillator an dieser Stelle der einzige ist, gibt es keine gerade Wellenfront als Einhüllende, sondern einzig die Zirkularwelle des angeregten Oszillators.
+
+Natürlich gibt es immer mehr als nur ein Teilchen im Spalt, aber wenn der Spalt noch einigermaßen klein ist, ist die resultierende Welle immer noch annähernd kreisförmig, mit Toleranzen, die bei der Mathematisierung zu vernachlässigen sind.
 
 
 \subsubsection{Mathematisierung}
 
-	Der Versuch ist auch mit Laserlicht, also Monochromatisch (eine einzige Wellenlänge) und Kohärent, durchführbar. Das Licht wird durch einen schmalen Doppelspalt mit dem Spaltabstand $d \leq 2mm$ hinter dem sich im Abstand $a$ ein Schirm befindet. 
+Der Versuch ist auch mit Laserlicht durchführbar, welches Monochromatisch (eine einzige Wellenlänge) und kohärent ist. Das Licht wird durch einen schmalen Doppelspalt mit dem Spaltabstand $d \leq 2mm$ hinter dem sich im Abstand $a$ ein Schirm befindet. 
 	
-	Auf dem Schirm ist ein Interferenzmuster zu beobachten. In der Mitte ist ein heller Streifen, links und rechts davon, symmetrisch, sind weniger intensive Lichtpunkte. Diese Punkte werden Maxima genannt, da in diesen Punkten konstruktive Interferenz herrscht (\referenz{sec:interferenz}). An den Minimalstellen herrschen destruktive Interferenzen. Der Gangunterschied ergibt sich hier durch den Unterschiedlichen Abstand der Punkte auf dem Schirm zu dem beiden Schlitzen.
+Auf dem Schirm ist das Interferenzmuster zu beobachten. In der Mitte ist ein heller Streifen, links und rechts davon, symmetrisch, sind weniger intensive Lichtpunkte. Alle diese hellen Punkte werden Maxima genannt, da in diesen Punkten konstruktive Interferenz herrscht (\referenz{sec:interferenz}). An den Minimalstellen herrschen destruktive Interferenzen. Der Gangunterschied ergibt sich hier durch den Unterschiedlichen Abstand der Punkte auf dem Schirm zu dem beiden Schlitzen.
 	
-	Eine Zeichnung:
+Eine Zeichnung\footnote{„Double-slit schematic“ von Peter Suppenhuhn, svg version by Trutz Behn - Eigenes Werk. Lizenziert unter Gemeinfrei über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Double-slit_schematic.svg}}:
+
+\begin{figure}[h!]
+		\center
+		\includegraphics[width=0.8\textwidth]{doppelspaltzeichnung}
+		\caption{Zeichnung zur Herleitung}
+\end{figure}
 	
-%	\begin{figure}[h!]
-%		\center
-%		\includegraphics[width=0.8\textwidth]{default}
-%		\caption{Das Maxima 1. Ordnung am Doppelspalt}
-%	\end{figure}
+Die Winkel $\alpha_a$ und $\alpha_d$ sind gleich und werden im Folgen schlicht als $\alpha$ bezeichnet. Für $\alpha$ ergeben sich aus den trigonomischen Winkelfunktionen im rechtwinkligen Dreieck 2 Gleichungen: $sin{\alpha}=\frac{\delta}{d}$ und $tan{\alpha}=\frac{d_k}{a}$. Da $a>>d_k$ ist $\alpha<10 \degree$ und die Kleinwinkelnäherung $sin{\alpha} \approx \tan{\alpha}$ kann verwendet werden. Der Gangunterschied $\delta$ muss der Bedingung für konstruktive Interferenz $\delta = k \cdot \lambda$ genügen (Siehe Gleichung \ref{eq:kon_interferenz} auf Seite \pageref{eq:kon_interferenz}). Daraus Ergibt sich:
 	
-	Die Winkel $\alpha_a$ und $\alpha_d$ sind gleich und werden im Folgen schlicht als $\alpha$ bezeichnet. Für $\alpha$ ergeben sich aus den trigonomischen Winkelfunktionen im rechtwinkligen Dreieck 2 Gleichungen: $sin{\alpha}=\frac{\delta}{d}$ und $tan{\alpha}=\frac{d_k}{a}$. Da $a>>d_k$ ist $\alpha<10 \degree$ und die Kleinwinkelnäherung $sin{\alpha} \approx \tan{alpha}$ kann verwendet werden. Der Gangunterschied $\delta$ muss der Bedingung für konstruktive Interferenz $\delta = k \cdot \lambda$ genügen (Siehe Gleichung \ref{eq:kon_interferenz} auf Seite \pageref{eq:kon_interferenz}). Daraus Ergibt sich:
+\begin{align}
+\begin{split}
+	\sin{\alpha} &= \tan{\alpha} \\
+	\frac{\delta}{d} &= \frac{d_k}{a} \\
+	\frac{k \cdot \lambda}{d} &= \frac{d_k}{a}  \ \ \ wobei \ \ k \in 1,2,3... \\
+	\lambda &= \frac{d_{k} \cdot d}{a \cdot k}  \ \ \ wobei \ \ k \in 1,2,3...
+\end{split}
+\end{align}
 	
-	\begin{align}
-		\sin{\alpha} &= \tan{\alpha} \\
-		\frac{\delta}{d} &= \frac{d_k}{a} \\
-		\frac{k \cdot \lambda}{d} &= \frac{d_k}{a}  \ \ \ wobei \ \ k \in 1,2,3... \\
-		\lambda &= \frac{d_{k} \cdot d}{a \cdot k}  \ \ \ wobei \ \ k \in 1,2,3...
-	\end{align}
-	
-	Für $k$ muss die Ordnung des betrachteten Maxima eingesetzt werden.
+Für $k$ muss die Ordnung des betrachteten Maxima eingesetzt werden.
 		
 
 \subsubsection{Ohne Kleinwinkelnäherung}
 
-	Um präziser ablesen zu können, kann ein Gitter statt einem Doppelspalt verwendet werden. Das Gitter weist einen wesentlich geringeren Abstand zwischen den Schlitzen auf (z.B. $\frac{1}{600}mm$), sodass die Interferenzmaxima deutlich weiter auseinander liegen. Der Fakt, dass der Lichtdurchsatz durch das Hinzufügen von mehr Schlitzen zu einem Gitter erhöht wurde, ändert nichts an den mathematischen Grundlagen des Versuchs.
+Um die Wellenlänge präziser bestimmen zu können, kann ein Gitter statt einem Doppelspalt verwendet werden. Das Gitter weist einen wesentlich geringeren Abstand zwischen den Schlitzen auf (z.B. $\frac{1}{600}mm$), sodass die Interferenzmaxima deutlich weiter auseinander liegen. Der Fakt, dass der Lichtdurchsatz durch das Hinzufügen von mehr Schlitzen zu einem Gitter erhöht wurde, ändert nichts an den mathematischen Grundlagen des Versuchs.
 	
-	Allerdings geht mit dem größeren Abstand der Punkte auf dem Schirm die Gültigkeit der Kleinwinkelnäherung verloren. Allerdings kann die Größe des Winkels $\alpha_a$ über $\arctan{\frac{d_k}{a}}$ berechnet werden und in die Gleichung $\sin{\alpha} = \frac{\delta}{d}$ eingesetzt werden:
+Allerdings geht mit dem größeren Abstand der Punkte auf dem Schirm die Gültigkeit der Kleinwinkelnäherung verloren. Allerdings kann die Größe des Winkels $\alpha_a$ über $\arctan{\frac{d_k}{a}}$ berechnet werden und in die Gleichung $\sin{\alpha} = \frac{\delta}{d}$ eingesetzt werden:
 	
-	\begin{align}
+\begin{align}
+\begin{split}
 		\frac{\delta}{d} &= \sin{\alpha} \\
 		 \delta &= \sin{(\arctan{\frac{d_k}{a}})} \cdot d \\
 		\lambda \cdot k &= \sin{(\arctan{\frac{d_k}{a}})} \cdot d \ \ \ wobei \ \ k \in 1,2,3... \\
 		\lambda &= \frac{\sin{(\arctan{\frac{d_k}{a}})} \cdot d}{k} \ \ \ wobei \ \ k \in 1,2,3...
-	\end{align}
+\end{split}
+\end{align}
 
 
 \subsection{Lichtspektrum am Doppelspalt}
 
-Wenn ein Lichtspektrum (z.B. weißes Licht von einer Glühbirne) auf einen Doppelspalt oder ein Gitter trifft, dann tritt dasselbe Phänomen wie bei monochromatischem Licht, mit dem Unterschied, dass die unterschiedlichen Wellenlängen im Spektrum ihren eigenen, von der Wellenlänge abhängigen, Abstand $d_k$ haben. Dadurch wird das Lichtspektrum von violett bis rot aufgefächert (Dispersion).
+Wenn ein Lichtspektrum (z.B. weißes Licht von einer Glühbirne) auf einen Doppelspalt oder ein Gitter trifft, welches weder monochromatisch noch kohärent ist, dann tritt dasselbe Phänomen wie bei monochromatischem Licht, mit dem Unterschied, dass die unterschiedlichen Wellenlängen im Spektrum ihren eigenen, von der Wellenlänge abhängigen, Abstand $d_k$ haben. Dadurch wird das Lichtspektrum von violett bis rot aufgefächert (Dispersion).
+
+\begin{Aufgabe}
+Wird violettes Licht in einer Dispersion, vom Mittelpunkt des Schirmes aus gesehen, außen oder innen im Spektrum liegen?
+\end{Aufgabe}
+
+
+\subsection{Interferenz an dünnen Schichten}
+
+Coming Soon
