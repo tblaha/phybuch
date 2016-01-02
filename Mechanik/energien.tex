@@ -1,0 +1,95 @@
+\begin{quote}
+\glqq Energie ist eine Zustandsgröße von Körpern, die dessen Potential angibt, Arbeit zu verrichten.\grqq
+\end{quote}
+
+\subsection{Arbeit}
+
+Die physikalische \glqq Arbeit\grqq{} (Formelzeichen $W$ von engl. \glqq Work\grqq ) ist definiert als Kraft mal Strecke, also wird Arbeit verrichtet wenn ein Körper über eine bestimmte Strecke hinweg von einer Kraft bewegt wird:
+
+\begin{align}
+	W = F \cdot s
+\end{align}
+
+\noindent Damit ergibt sich als Einheit der $Nm$ (sprich: \glqq Newtonmeter\grqq ) welcher auch als $J$ (sprich: \glqq Joule\grqq ).
+
+\begin{Anmerkung}
+Der Newtonmeter wird auch als Einheit für das Drehmoment verwendet, welches bei einer Drehbewegung die Kraft und unter Berücksichtigung der Länge des Hebelarms angibt. Das Drehmoment hat aber als Größe nichts mit der Arbeit oder der Energie zu tun.
+\end{Anmerkung}
+
+
+\subsection{Energie}
+
+\glqq Arbeit verrichten\grqq{} heißt Energie von einer Form in eine andere umzuwandeln. Daraus folgt, dass Energie im strengen Sinne nicht verloren gehen oder gewonnen werden kann, sie kann nur umgewandelt werden.
+
+Die mathematische Definition der Energie ist daher dieselbe wie bei der Arbeit, nur dass das Formelzeichen $E$ ist:
+
+\begin{align}	\label{eq:energiedef}
+	E = F \cdot s
+\end{align}
+
+\noindent Auch die Basiseinheit ist $J$, in SI-Basiseinheiten $J=\frac{kg \cdot m^2}{s^2}$
+
+
+\subsection{Energieerhaltung}
+
+Aus dem Fakt, dass Energie nur in andere Formen umgewandelt werden kann, ergibt sich der Energieerhaltungssatz, der besagt, dass die Summe aller Energien in einem abgeschlossenen System konstant sein muss, egal wie viele Umwandlungen sich vollziehen. 
+
+
+\subsection{Energieformen}
+
+Es gibt zwei wichtige Energieformen in der Mechanik:
+
+\subsubsection{Potentielle Energie}
+
+Die potentielle Energie, auch Lageenergie oder Höhenenergie genannt, besitzen Körper, die sich in einer bestimmten Höhe befindet, relativ zu einem Referenzsystem (beispielsweise die Höhe eines Körpers relativ zum Fußboden). Wenn die Masse des Körpers bekannt ist, ist die Energie nur noch Abhängig von der Fallbeschleunigung, auch Gravität oder Schwerkraft genannt (Formelzeichen $g$) und der Höhe $h$. Auf der Erde beträgt die Fallbeschleunigung $\approx 9,81 \frac{m}{s^2}$.
+
+Aus der allgemeinen Form für die Energie (Siehe \gleichungsreferenz{eq:energiedef}) und der Gewichtskraft $F_G = m \cdot g$ (Siehe \referenz{subsec:Gewichtskraft}) ergibt sich für $E_{pot}$:
+
+\begin{align} \label{eq:epot}
+	E_{pot} = m \cdot g \cdot h
+\end{align}
+
+\noindent Wenn dieser Körper nun fallen gelassen wird, wird diese potentielle Energie in kinetische Energie umgewandelt
+
+\subsubsection{Kinetische Energie}
+
+Kinetische Energie besitzen Körper, die bewegt sind. Sie ist abhängig von der Masse und von der Geschwindigkeit des Körpers:
+
+\begin{align} \label{eq:ekin}
+	E_{kin} = \frac{1}{2} m \cdot v^2
+\end{align}
+
+
+
+\subsection{Beispiel: Vorgänge beim Fall}
+
+Fragestellung: Wenn ein Körper in einem luftleeren Raum (damit jegliche Luftreibung vernachlässigt werden kann) auf der Erde (damit gilt $g=9,81\frac{m}{s^2}$) aus $10m$ Höhe auf den Boden fällt, wie hoch ist seine Geschwindigkeit mit der er auf dem Boden auftrifft?
+
+Ansatz: Bei diesem Vorgang wird potentielle Energie in kinetische Energie umgewandelt. Wenn der Körper bei Beginn des Falls ruhte, also keine Geschwindigkeit hatte, war dort die kinetische Energie $0$ und auf dem Boden ist die Höhe $0$, sodass die potentielle Energie ebenfalls $0$ ist. Daraus geht hervor, dass die potentielle Energie vollständig in kinetische umgewandelt wurde. Der Ansatz ist also, die beiden Gleichungen einander gleichzusetzen und dann nach $v$ umzustellen.
+
+Anmerkung: Bei anfänglichen Betrachten der Gleichungen fällt auf, dass sie beide von $m$ abhängig sind, welches in der Fragestellung allerdings nicht gegeben ist. Das macht aber nichts, weil sich die Masse \glqq rauskürzt\grqq , wie man in der Herleitung sieht:
+
+\begin{align}
+\begin{split}
+	E_{pot} &= E_{kin} \\
+	mgh &= \frac{1}{2}m \cdot v^2 \\
+	gh &= \frac{1}{2} \cdot v^2 \\
+	2gh &= v^2 \\
+	v &= \sqrt{2gh}
+\end{split}
+\end{align}
+
+\noindent Mit eingesetzten Größen für $g$ und $h$:
+
+\begin{align}
+\begin{split}
+	v &= \sqrt{2 \cdot 9,81 \cdot 10} \cdot \sqrt{\frac{m}{s^2} \cdot m} \\
+	v &\approx 14 \frac{m}{s}
+\end{split}
+\end{align}
+
+
+
+
+
+

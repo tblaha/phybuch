@@ -1,0 +1,66 @@
+Die Gesetze der Bewegung, auch Translation genannt ist ein wiederkehrendes Thema in der Physik. Die Gesetze beschreiben die Bewegung von Körpern und geben den Ort in Abhängigkeit einer Variablen, meistens der Zeit, an:
+
+\subsection{Gleichförmige Bewegung}
+
+Die gleichförmige Bewegung ist eine Bewegung, die nicht beschleunigt ist. Also bewegt sich der Körper mit einer konstanten Geschwindigkeit, daher gilt für die insgesamt zurückgelegte Strecke $s$:
+
+\begin{align} \label{eq:gleichfoermig}
+	s(t) = v \cdot t + s_0
+\end{align}
+
+\noindent Dabei ist $s_0$ die Anfangsstrecke, die schon zu Beginn, bevor die Translation betrachtet wird, zurückgelegt wurde.
+
+\begin{Wichtig}
+$v$ ist konstant!
+\end{Wichtig}
+
+\subsection{Gleichmäßig beschleunigte Bewegung}
+% Cue for diagrams
+Eine Bewegung kann auch mit einer sich ändernden Geschwindigkeit von statten gehen. Sollte diese Beschleunigung konstant sein, nennt man diese Bewegung eine gleichmäßig beschleunigte Bewegung.
+
+\subsubsection{Gesamtstrecke}
+
+Bei dieser Bewegung lässt sich die Durchschnittsgeschwindigkeit über einen Zeitraum $t$ mit $\frac{1}{2}a \cdot t$ berechnen, da die Endgeschwindigkeit $a \cdot t$ ist: Die Änderung der Geschwindigkeit $a$, angewandt über den Zeitraum $t$, resultiert in der Endgeschwindigkeit. Da die Beschleunigung konstant ist und damit die Geschwindigkeit proportional zur Zeit, ist der Faktor, der zur gemittelten Geschwindigkeit führt $\frac{1}{2}$.
+
+Dann kann dieses $\frac{1}{2}a \cdot t$ für das $v$ im ersten Glied der Gleichung \ref{eq:gleichfoermig} eingesetzt werden und man erhält die Bewegungsgleichung für die gleichmäßig beschleunigte Bewegung:
+
+\begin{align} \label{eq:streckegleichmaessig}
+	s(t) = \frac{1}{2}a \cdot t^2 + v_0 \cdot t + s_0
+\end{align}
+
+\noindent Neben der Anfangsstrecke $s_0$ kommt nun aber auch noch die Anfangsgeschwindigkeit $v_0$ dazu, die von Belang ist, wenn man einen Fall hat, bei dem der Körper vor Einwirkung der Beschleunigung schon eine Geschwindigkeit $>0$ hatte.
+
+\begin{NiceToKnow}
+	Diese Gleichung ist das zeitliche Integral der Bewegungsgleichung für $s$ der gleichförmigen Beschleunigung.
+\end{NiceToKnow}
+
+
+\subsubsection{Endgeschwindigkeit}
+
+Wie schon angesprochen, ist die Endgeschwindigkeit proportional zur verstrichenen Zeit, was aber oben in der Herleitung noch nicht berücksichtigt wurde (in der Gleichung schon) ist, dass auch für die Endgeschwindigkeit im Zeitraum $t$ die Anfangsgeschwindigkeit $v_0$ eine Rolle spielt:
+
+\begin{align}	\label{eq:geschwindigkeitgleichmaessig}
+	v(t) = a \cdot t + v_0
+\end{align}
+
+\noindent Dies ist die zeitliche Ableitung der Gleichung \ref{eq:streckegleichmaessig}
+
+
+\subsubsection{Beziehungen über die Ableitungen}
+
+Würde man noch eine Ableitung machen bekäme man die Gleichung für die Beschleunigung. Das wäre aber witzlos, da die Beschleunigung konstant ist und damit ist $s''(t)=v'(t)=a(t)=a= const$.
+
+Dennoch ist es wichtig, dieses Beziehungen im Kopf zu haben:
+
+\begin{align}
+\begin{split}
+	s'(t) &= v(t) \\
+	v'(t) &= a \\
+	s''(t) &= v'(t)= a
+\end{split}
+\end{align}
+
+\noindent Die Ableitung des Weges, also die zeitliche Änderung des Weges, ist die Geschwindigkeit. Die zeitliche Änderung der Geschwindigkeit ist die Beschleunigung. Daher ist die zeitliche Änderung der zeitlichen Änderung des Weges die Beschleunigung.
+
+
+

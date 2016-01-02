@@ -1,0 +1,121 @@
+Bei der Beschreibung von Würfen, also von Flugbahnen von Körpern, wendet man die Bewegungsgesetze an und kombiniert diese zumeist.
+
+
+\subsection{Vertikaler Wurf}
+
+Der vertikale Wurf ist eine eindimensionale Bewegung, bei der ein Körper mit einer bestimmten Geschwindigkeit senkrecht nach oben geworfen wird und durch die Erdbeschleunigung wieder nach unten beschleunigt wird.
+
+Daher lässt sich die Bewegung mit der \gleichungsreferenz{eq:streckegleichmaessig} ausdrücken:
+
+\begin{align} \label{eq:wurfvertikal}
+	h(t) = -\frac{1}{2}g \cdot t^2 + v_0 \cdot t + h_0
+\end{align}
+
+\noindent Diese Gleichung kann gleich $0$ gesetzt werden um den Zeitpunkt zu erhalten, bei dem der Körper wieder auf der Erde aufschlägt. Um die Geschwindigkeit, mit der der Körper auftrifft zu erhalten, muss der errechnete Zeitpunkt in die Gleichung für die Geschwindigkeit (siehe: \gleichungsreferenz{eq:geschwindigkeitgleichmaessig}) eingesetzt werden.
+
+
+\subsection{Waagerechter Wurf}
+
+Der waagerechte Wurf tritt bspw. ein, wenn ein Flugzeug Ladung abwirft.
+
+Die Bewegung des Ladungskörpers in x-Richtung, also entlang der Flugrichtung, verläuft gleichförmig (Luftreibung wird ignoriert), also mit konstanter Geschwindigkeit. Die Bewegung in y-Richtung ist, wie beim vertikalen Wurf eine gleichmäßig beschleunigte Bewegung mit der Erdbeschleunigung.
+
+Folgende zwei Gleichungen sind zur Beschreibung nötig, wobei nicht mehr $s$, sondern $x$ und $h$ (Höhe) für die Strecken verwendet wird, da es ja nun 2 Richtungen gibt:
+
+\begin{align}
+	x(t) = v_x \cdot t
+\end{align}
+
+\begin{align}
+	h(t) = -\frac{1}{2}g \cdot t^2 + h_0
+\end{align}
+
+\noindent Bei $x(t)$ wurde absichtlich die mögliche Anfangsstrecke weggelassen, zur Vereinfachung der weiteren Rechnung
+
+Nun ist es praktisch, nur eine Gleichung für ein Bewegungsgesetz zu haben. Dafür wird $x(t)$ nach $t$ umgestellt und dieses $t$ dann in $h(t)$  eingesetzt, sodass man eine Gleichung für die Höhe in Abhängigkeit von der Strecke in x-Richtung hat, was oft deutlich handlicher ist, also eine Gleichung für $h$ in Abhängigkeit der Zeit:
+
+\begin{align}
+\begin{split}
+	x(t) &= v_x \cdot t \\
+	t(x) &= \frac{x}{v_x}
+\end{split}
+\end{align}
+
+\noindent Eingesetzt in $h(t)$:
+
+\begin{align} \label{eq:waagerechtgesamt}
+\begin{split}
+	h(t) &= -\frac{1}{2}g \cdot t^2 + h_0 \\
+	h(x) &= -\frac{1}{2}g \cdot \frac{x^2}{v_x^2} + h_0
+\end{split}
+\end{align}
+
+
+\subsection{Schiefer Wurf}
+
+Beim schiefen Wurf wird ein Körper unter einem Winkel geworfen, sodass der eine Wurfparabel beschreibt.
+
+Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten wie beim waagerechten Wurf, aber mit der Schwierigkeit, dass aus dem Abwurfwinkel $\alpha$ und der Abwurfgeschwindigkeit $v_0$ erst die Anfangsgeschwindigkeiten in die beiden Richtung, $x$ in Richtung des Wurfes und $y$ in die Höhe, berechnet werden müssen:
+%Cue for pic of triagle
+
+\begin{align}
+\begin{split}
+	\cos{\alpha} &= \frac{v_x}{v_0} \\
+	v_x &= \cos{\alpha} \cdot v_0
+\end{split}
+\end{align}
+
+\begin{align}
+\begin{split}
+	\sin{\alpha} &= \frac{v_{y0}}{v_0} \\
+	v_{y0} &= \sin{\alpha} \cdot v_0
+\end{split}
+\end{align}
+
+\noindent Damit können die Bewegungsgesetze eingefüllt werden:
+
+\begin{align}
+\begin{split}
+	x(t) &= v_x \cdot t \\
+	x(t) &= \cos{\alpha} \cdot v_0 \cdot t
+\end{split}
+\end{align}
+
+\begin{align}
+\begin{split}
+	y(t) = -\frac{1}{2}g \cdot t^2 + v_{y0} \cdot t + y_0 \\
+	y(t) = -\frac{1}{2}g \cdot t^2 + \sin{\alpha} \cdot v_0 \cdot t + y_0
+\end{split}
+\end{align}
+
+
+\subsubsection{Gesamtgleichung}
+
+
+Jetzt kann wieder $t$ in $y(t)$ mit der nach $t$ umgestellten Gleichung für $x(t)$ ersetzt werden und man erhält die Gesamtgleichung.
+
+\begin{align}
+\begin{split}
+	x(t) &= \cos{\alpha} \cdot v_0 \cdot t \\
+	t(x) &= \frac{x}{\cos{\alpha} \cdot v_0}
+\end{split}
+\end{align}
+
+\noindent Einsetzen:
+
+\begin{align}
+\begin{split}
+	y(t) &= -\frac{1}{2}g \cdot t^2 + \sin{\alpha} \cdot v_0 \cdot t + y_0 \\
+	y(x) &= -\frac{1}{2}g \cdot \frac{x^2}{\cos{\alpha}^2 \cdot v_0^2} + \sin{\alpha} \cdot v_0 \cdot \frac{x}{\cos{\alpha} \cdot v_0} + y_0 \\
+	y(x) &= -\frac{1}{2}g \cdot \frac{x^2}{\cos{\alpha}^2 \cdot v_0^2} + \frac{\sin{\alpha} \cdot v_0 \cdot x}{\cos{\alpha} \cdot v_0} + y_0 \\
+	y(x) &= -\frac{1}{2}g \cdot \frac{x^2}{\cos{\alpha}^2 \cdot v_0^2} + \tan{\alpha} \cdot x + y_0 \\
+\end{split}
+\end{align}
+
+\noindent Diese Gesamtgleichung kann nun zur Berechnung benutzt werden, z.B. zur Wurfweitenbestimmung muss die Gleichung gleich $0$ gesetzt werden, etc.:
+
+\begin{align}
+\begin{split}
+	y(x) &= \tan{\alpha} \cdot x - \frac{g \cdot x^2}{2\cos{\alpha}^2 \cdot v_0^2} + y_0
+\end{split}
+\end{align}

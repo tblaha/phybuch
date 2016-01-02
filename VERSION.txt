@@ -1,3 +1,12 @@
+01.01.2016 -- Till Blaha -- Version 0.4 Alpha
+
+Mechanik hinzugefügt, Kreisbeweung fehlt noch
+
+Aktuelle Lage:
+-- Kapitel Elektrisches Feld, Magnetisches Feld, Induktion, Wechselstrom, Schwingungen, Wellen und Optik gelten als stabil.
+-- Optik: Interferenz an dünnen Schichten fehlt noch, Quanten: vieles fehlt noch
+-- Nicht für die allgemeine Veröffentlichung bestimmt!
+
 28.12.2015 -- Till Blaha -- Version 0.3 Alpha
 
 Alle References gefixt, Grafiken und Bilder ausgetauscht und ergänzt
