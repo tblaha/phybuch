@@ -1,6 +1,6 @@
 01.01.2016 -- Till Blaha -- Version 0.4 Alpha
 
-Mechanik hinzugefügt, Kreisbeweung fehlt noch
+Mechanik hinzugefügt, Kreisbeweung noch shakey
 
 Aktuelle Lage:
 -- Kapitel Elektrisches Feld, Magnetisches Feld, Induktion, Wechselstrom, Schwingungen, Wellen und Optik gelten als stabil.
