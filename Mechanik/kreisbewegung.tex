@@ -1,19 +1,25 @@
-Die Gesetze der Kreisbewegung Beschreiben einen Körper, der sich mir einer konstanten Geschwindigkeit auf einer Kreisbahn mit konstantem Radius bewegt.
+Die Gesetze der Kreisbewegung beschreiben einen Körper, der sich mit einer konstanten Geschwindigkeit auf einer Kreisbahn mit konstantem Radius bewegt.
 
 
 \subsection{Frequenz}
 
-Die Frequenz $f$ bezeichnet die Anzahl an Kreisumläufen pro Zeiteinheit. Die Einheit $Hz$ (spricht: \glqq Hertz\grqq ), also $\frac{1}{s}$.
+Die Frequenz $f$ bezeichnet die Anzahl an Kreisumläufen pro Zeiteinheit. Die Einheit ist $Hz$ (sprich: \glqq Hertz\grqq ), also $\frac{1}{s}$.
+
+Die Dauer \emph{eines} Kreisumlaufes nennt man auch die Periodendauer $T$. Dann gilt:
+
+\begin{align}
+	f = \frac{1}{T}
+\end{align}
 
 \subsection{Winkelgeschwindigkeit}
 
-Die Winkelgeschwindigkeit gibt in an, wie groß der Umfangsabschnitt ist, der in einer bestimmten Zeit absolviert wird:
+Die Winkelgeschwindigkeit gibt an, wie groß der Umfangsabschnitt ist, der in einer bestimmten Zeit absolviert wird:
 
 \begin{align}
-	\omega = 2 \pi f
+	\omega = 2 \pi f = \frac{2 \pi}{T}
 \end{align}
 
-\noindent Die Einheit ist $\frac{rad}{s}$ (sprich: \glqq Radiant pro Sekunde\grqq ) und ein Umlauf entspricht $2\pi$
+\noindent Die Einheit ist $\frac{rad}{s}$ (sprich: \glqq Radiant pro Sekunde\grqq ) und ein Umlauf entspricht $2\pi$.
 
 \begin{Wichtig}
 Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq w\grqq .
@@ -25,14 +31,14 @@ Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq w\grqq .
 Die Bahngeschwindigkeit gibt in absoluten Einheiten ($\frac{m}{s}$) an, wie schnell sich das Objekt auf der Bahn fortbewegt. Zusätzlich zur Winkelgeschwindigkeit, muss bei der Kreisbahn daher noch der Radius bekannt sein:
 
 \begin{align} \label{eq:bahngeschwindigkeit}
-	v=\frac{2r\pi}{T}=\omega r
+	v=\omega r= 2r\pi f = \frac{2r\pi}{T}
 \end{align}
 
-Eine andere Herleitung aus dem Kreisumfang $U=2r\pi$, der Periodendauer $T$ und der generellen Formel für Bahngeschwindigkeit $v=\frac{s(t)}{t}$ könnte wie folgt Aussehen:
+Eine andere Herleitung aus dem Kreisumfang $U=2r\pi$, der Periodendauer $T$ und der generellen Formel für Bahngeschwindigkeit $v=\frac{s}{t}$ könnte wie folgt Aussehen:
 
 \begin{align}
-	v&=\frac{s(t)}{t} \\
-	v&=\frac{2r\pi}{T}
+	v &=\frac{s}{t} \\
+	v &=\frac{2r\pi}{T}
 \end{align}
 
 
@@ -44,6 +50,7 @@ Um auf einer Kreisbahn zu bleiben, muss eine Zentripetalbeschleunigung auf einen
 	a_z=\frac{v^2}{r}=\omega^2 r
 \end{align}
 
+Eine tolle Herleitung findet sich \href{http://www.schule-bw.de/unterricht/faecher/physik/online\_material/mechanik2/kreis/zentripetalkraft.htm}{hier}\footnote{\url{http://www.schule-bw.de/unterricht/faecher/physik/online_material/mechanik2/kreis/zentripetalkraft.htm}}.
 
 \subsection{Zentripetalkraft}
 

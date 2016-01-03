@@ -8,7 +8,7 @@ Kräfte sind unsichtbar. Man kann allein deren Auswirkung, beispielsweise das Be
 
 \subsection{Einheit}
 
-Kräfte haben die Einheit $N$ (sprich: \glqq Newton\grqq ), welche, ausgeschrieben in SI-Basiseinheiten, $\frac{kg \cdot m}{s^2}$ entspricht. Dies lässt sich aus Newtons 2. Axiom ableiten. 
+Kräfte haben die Einheit $N$ (sprich: \glqq Newton\grqq ), welche, ausgeschrieben in SI-Basiseinheiten, $\frac{kg \cdot m}{s^2}$ entspricht. Dies lässt sich aus Newtons 2. Axiom ableiten:
 
 Da die Einheit für Masse $kg$ und die Einheit für Beschleunigung $\frac{m}{s^2}$ ist, folgt die Definition des Newtons direkt aus $F = m \cdot a$.
 
@@ -18,14 +18,16 @@ Da die Einheit für Masse $kg$ und die Einheit für Beschleunigung $\frac{m}{s^2
 Da Kräfte gerichtete Größen sind, geben sie nicht nur den Betrag der Kraft sondern auch eine Richtung an, in welche sie einen Körper beschleunigen, weshalb sie in Formeln oft als Vektor $\vec{F}$ geschrieben werden, um diese Eigenschaft anzuzeigen.
 
 \begin{Anmerkung}
-In der Schulphysik ist es allerdings nur wichtig diese Eigenschaft zu kennen um Kräfteparallelogrammen zu begründen, Vektorrechnungen werden nicht vollzogen. Sollte die Richtung einer Kraft für eine Aufgabe von Bedeutung sein, wird mit Winkelbeziehungen hergeleitet.
+In der Schulphysik ist es allerdings nur wichtig, diese Eigenschaft zu kennen, um Kräfteparallelogramme (Siehe: \referenz{subsec:kraefteaddition}) zu begründen, Vektorrechnungen werden nicht vollzogen. Sollte die Richtung einer Kraft für eine Aufgabe von Bedeutung sein, wird mit Winkelbeziehungen hergeleitet.
 \end{Anmerkung}
 
-\subsection{Kräfteaddition}
+\subsection{Kräfteaddition} \label{subsec:kraefteaddition}
 
-Wenn mehrere Kräfte an einem Körper wirken, dann gibt es eine resultierende Kraft ($F_{res}$ oder $F_{ges}$ geschrieben), welche die Addition der beiden ist. Diese Addition muss aber grafisch vollzogen werden, da nicht nur die Beträge, sondern auch die Richtung zählt. Zwei gleich große Kräfte, die einander entgegengesetzt sind, sind in der Addition $0$.
+Wenn mehrere Kräfte an einem Körper wirken, dann gibt es eine resultierende Kraft ($F_{res}$ oder $F_{ges}$ geschrieben), welche die Addition der beiden ist. Diese Addition muss aber grafisch vollzogen werden, da nicht nur die Beträge, sondern auch deren Richtungen zählen. Zwei gleich große Kräfte, die einander entgegengesetzt sind, sind in der Addition $0$.
 
-In einem Kräftediagramm werden die Kräfte so eingezeichnet, dass deren Richtung durch die Richtung der Pfeile und deren Betrag durch die Länge der Pfeile angegeben wird. Zudem greifen die Kräfte immer im Mittelpunkt des (hier blauen) Körpers. So wird die Addition zwei entgegengesetzten Kräfte klar:
+\subsubsection{Entgegengesetzte Kräfte}
+
+In einem Kräftediagramm, auch Kräfteparallelogramm genannt, werden die Kräfte so eingezeichnet, dass deren Richtung durch die Richtung der Pfeile und deren Betrag durch die Länge der Pfeile angegeben wird. Zudem greifen die Kräfte immer im Mittelpunkt des (hier blauen) Körpers an. So wird die Addition zweier entgegengesetzter Kräfte klar:
 
 \begin{figure}[h!]
 	\centering
@@ -34,7 +36,7 @@ In einem Kräftediagramm werden die Kräfte so eingezeichnet, dass deren Richtun
 	\label{fig:kraefte_gleich}
 \end{figure}
 
-\noindent Bei zwei Kräfte mit unterschiedlichem Betrag, die entgegengesetzt sind, müssen für den Betrag der Resultierenden die beiden Kräfte von einander abgezogen werden:
+\noindent Bei zwei Kräften mit unterschiedlichem Betrag, die entgegengesetzt sind, müssen für den Betrag der Resultierenden die beiden Kräfte von einander abgezogen werden:
 
 \begin{figure}[h!]
 	\centering
@@ -43,9 +45,11 @@ In einem Kräftediagramm werden die Kräfte so eingezeichnet, dass deren Richtun
 	\label{fig:kraefte_gleicherichtung}
 \end{figure}
 
-\noindent Die Pfeile von Kräften dürfen, z.B. zur erleichterten Herleitung von Gesetzen, verschoben werden, wenn ihre Länge und Richtung gewahrt wird. Dann wird immer der Fuß eines Kraftpfeils an die Spitze des anderen Kraftpfeils angelegt und die Spitze zeigt dann die Spitze der Resultierenden an.
+\subsubsection{Kräfte im rechten Winkel}
 
-Dadurch ergibt sich aus dem folgenden Diagramm \ref{fig:kraefte_rechterwinkel} für zwei im rechten Winkel angreifende Kräfte mit dem Satz des Pythagoras:
+\noindent Die Pfeile von Kräften dürfen, z.B. zur erleichterten Herleitung von Gesetzen, verschoben werden, wenn ihre Länge und Richtung gewahrt werden. Dann wird kann der Fuß eines Kraftpfeils an die Spitze des anderen Kraftpfeils angelegt und die Spitze zeigt dann die Spitze der Resultierenden an.
+
+Dadurch ergibt sich aus dem Diagramm \ref{fig:kraefte_rechterwinkel} für zwei im rechten Winkel angreifende Kräfte mit dem Satz des Pythagoras:
 
 \begin{align}
 	F_{Res} = \sqrt{F_1^2 + F_2^2}
@@ -58,7 +62,10 @@ Dadurch ergibt sich aus dem folgenden Diagramm \ref{fig:kraefte_rechterwinkel} f
 	\label{fig:kraefte_rechterwinkel}
 \end{figure}
 
-\noindent Für einen beliebigen Winkel muss mit dem Kosinussatz der Betrag der übrigen Seite $F_{Res}$ in der Grafik \ref{fig:kraefte_beliebig} ermittelt werden:
+
+\subsubsection{Kräfte im beliebigen Winkel}
+
+\noindent Für einen beliebigen Winkel muss mit dem Kosinussatz der Betrag der übrigen Seite $F_{Res}$ in der Grafik\footnote{Abbildungen \ref{fig:kraefte_gleich} bis \ref{fig:kraefte_beliebig} von Till Blaha - Eigene Werke. Lizenziert unter Gemeinfrei} \ref{fig:kraefte_beliebig} ermittelt werden:
 
 \begin{align}
 	F_{Res} = \sqrt{F_1^2 + F_2^2 - 2F_1 F_2 \cdot \cos{\alpha '}}
@@ -72,7 +79,7 @@ Dadurch ergibt sich aus dem folgenden Diagramm \ref{fig:kraefte_rechterwinkel} f
 \end{figure}
 
 
-%Cue for footnote
+
 
 \subsection{Kräftesystem}
 
@@ -81,17 +88,14 @@ Aus dem dritten Newton'schen Axiom kann gefolgert werden, dass in einem abgeschl
 Dies ist wichtig für einige Herleitung, z.B. am Federpendel (Siehe \referenz{subsec:gesetze_federpendel}).
 
 
-\subsection{Bestimmte Kräfte}
+\subsection{Gewichtskraft}
 
-Es gibt in der Mechanik einige Kräfte, die besondere Bedeutung haben:
-
-
-\subsubsection{Gewichtskraft}
-
-Die Gewichtskraft $F_{G}$ ist die Kraft die ein Gravitationsfeld auf einen Körper auswirkt. Sie ist gemäß $F = m \cdot a$ abhängig von einer Beschleunigung, in diesem Fall der Erdbeschleunigung $g \approx 9,81 \frac{m}{s^2}$, und von der Masse des Körpers:
+Die Gewichtskraft $F_{G}$ ist die Kraft, die in der Mechanik eine besondere Bedeutung hat. Sie ist die Kraft, die ein Gravitationsfeld auf einen Körper auswirkt. Sie ist gemäß $F = m \cdot a$ abhängig von einer Beschleunigung, in diesem Fall der Erdbeschleunigung $g \approx 9,81 \frac{m}{s^2}$, und von der Masse des Körpers:
 
 \begin{align}
 	F_{G} = m \cdot g
 \end{align}
 
 \noindent Die Einheit bleibt logischerweise das Newton.
+
+\subsubsection{Gewichtskraft}

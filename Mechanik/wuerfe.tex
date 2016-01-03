@@ -1,4 +1,4 @@
-Bei der Beschreibung von Würfen, also von Flugbahnen von Körpern, wendet man die Bewegungsgesetze an und kombiniert diese zumeist.
+Bei der Beschreibung von Würfen, also von Flugbahnen von Körpern, wendet man die Bewegungsgesetze an und kombiniert diese falls notwendig.
 
 
 \subsection{Vertikaler Wurf}
@@ -11,7 +11,7 @@ Daher lässt sich die Bewegung mit der \gleichungsreferenz{eq:streckegleichmaess
 	h(t) = -\frac{1}{2}g \cdot t^2 + v_0 \cdot t + h_0
 \end{align}
 
-\noindent Diese Gleichung kann gleich $0$ gesetzt werden um den Zeitpunkt zu erhalten, bei dem der Körper wieder auf der Erde aufschlägt. Um die Geschwindigkeit, mit der der Körper auftrifft zu erhalten, muss der errechnete Zeitpunkt in die Gleichung für die Geschwindigkeit (siehe: \gleichungsreferenz{eq:geschwindigkeitgleichmaessig}) eingesetzt werden.
+\noindent Diese Gleichung kann gleich $0$ gesetzt werden um den Zeitpunkt zu erhalten, bei dem der Körper wieder auf der Erde aufschlägt. Um die Geschwindigkeit, mit der der Körper auftrifft zu erhalten, muss der errechnete Zeitpunkt in die Gleichung für die Geschwindigkeit (Siehe: \gleichungsreferenz{eq:geschwindigkeitgleichmaessig}) für $t$ und die negative Erdbeschleunigung ($-g$) für $a$ eingesetzt werden.
 
 
 \subsection{Waagerechter Wurf}
@@ -20,7 +20,7 @@ Der waagerechte Wurf tritt bspw. ein, wenn ein Flugzeug Ladung abwirft.
 
 Die Bewegung des Ladungskörpers in x-Richtung, also entlang der Flugrichtung, verläuft gleichförmig (Luftreibung wird ignoriert), also mit konstanter Geschwindigkeit. Die Bewegung in y-Richtung ist, wie beim vertikalen Wurf eine gleichmäßig beschleunigte Bewegung mit der Erdbeschleunigung.
 
-Folgende zwei Gleichungen sind zur Beschreibung nötig, wobei nicht mehr $s$, sondern $x$ und $h$ (Höhe) für die Strecken verwendet wird, da es ja nun 2 Richtungen gibt:
+Folgende zwei Gleichungen sind zur Beschreibung nötig, wobei nicht mehr $s$, sondern $x$ und $h$ (Höhe) für die Strecken verwendet werden, da es ja nun 2 Richtungen gibt:
 
 \begin{align}
 	x(t) = v_x \cdot t
@@ -30,9 +30,9 @@ Folgende zwei Gleichungen sind zur Beschreibung nötig, wobei nicht mehr $s$, so
 	h(t) = -\frac{1}{2}g \cdot t^2 + h_0
 \end{align}
 
-\noindent Bei $x(t)$ wurde absichtlich die mögliche Anfangsstrecke weggelassen, zur Vereinfachung der weiteren Rechnung
+\noindent Bei $x(t)$ wurde absichtlich die mögliche Anfangsstrecke weggelassen, zur Vereinfachung der weiteren Rechnung.
 
-Nun ist es praktisch, nur eine Gleichung für ein Bewegungsgesetz zu haben. Dafür wird $x(t)$ nach $t$ umgestellt und dieses $t$ dann in $h(t)$  eingesetzt, sodass man eine Gleichung für die Höhe in Abhängigkeit von der Strecke in x-Richtung hat, was oft deutlich handlicher ist, also eine Gleichung für $h$ in Abhängigkeit der Zeit:
+Nun ist es praktisch, nur eine Gleichung für die Beschreibung einer Bewegung zu haben. Dafür wird $x(t)$ nach $t$ umgestellt und dieses $t$ dann in $h(t)$  eingesetzt, sodass man eine Gleichung für die Höhe in Abhängigkeit von der Strecke in x-Richtung hat, was oft deutlich handlicher ist, als eine Gleichung für $h$ in Abhängigkeit der Zeit:
 
 \begin{align}
 \begin{split}
@@ -53,9 +53,9 @@ Nun ist es praktisch, nur eine Gleichung für ein Bewegungsgesetz zu haben. Daf�
 
 \subsection{Schiefer Wurf}
 
-Beim schiefen Wurf wird ein Körper unter einem Winkel geworfen, sodass der eine Wurfparabel beschreibt.
+Beim schiefen Wurf wird ein Körper unter einem Winkel geworfen, sodass dieser eine Wurfparabel beschreibt.
 
-Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten wie beim waagerechten Wurf, aber mit der Schwierigkeit, dass aus dem Abwurfwinkel $\alpha$ und der Abwurfgeschwindigkeit $v_0$ erst die Anfangsgeschwindigkeiten in die beiden Richtung, $x$ in Richtung des Wurfes und $y$ in die Höhe, berechnet werden müssen:
+Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten wie beim waagerechten Wurf, aber mit der Schwierigkeit, dass aus dem Abwurfwinkel $\alpha$ und der Abwurfgeschwindigkeit $v_0$ erst die Anfangsgeschwindigkeiten in die beiden Richtungen, $v_x$ in Richtung des Wurfes und $v_y0$ in die Höhe, berechnet werden müssen. Die Anfangsgeschwindigkeit in y-Richtung wird deshalb nicht einfach $v_y$ genannt, weil sie, im Gegensatz von $v_x$, im Laufe des Wurfes variiert:
 %Cue for pic of triagle
 
 \begin{align}
@@ -83,8 +83,8 @@ Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten 
 
 \begin{align}
 \begin{split}
-	y(t) = -\frac{1}{2}g \cdot t^2 + v_{y0} \cdot t + y_0 \\
-	y(t) = -\frac{1}{2}g \cdot t^2 + \sin{\alpha} \cdot v_0 \cdot t + y_0
+	y(t) &= -\frac{1}{2}g \cdot t^2 + v_{y0} \cdot t + y_0 \\
+	y(t) &= -\frac{1}{2}g \cdot t^2 + \sin{\alpha} \cdot v_0 \cdot t + y_0
 \end{split}
 \end{align}
 
