@@ -1,98 +1,154 @@
-\begin{itemize}
-\item Aufgrund der De Broglie-Wellenlänge haben Elektronen eine Wellenlänge, wenn sie einen Impuls besitzen.
-\item Die Wellenlänge eines Elektron ist bei bestimmten Konfigurationen groß genug, dass Interferenzerscheinungen auftreten (Das Elektron \textbf{verhält} sich wie eine Welle, ist aber keine.)
-\item Theoretisch lässt sich seinen Wellenlänge $\lambda$ durch das Gleichsetzen der Gleichung des Impulses $\vec{p}=m\cdot\vec{v}$ mit der Formel für den Photonenimpuls $\vec{p}=\frac{h}{\lambda}$:
+Aufgrund der De Broglie-Wellenlänge haben auch Elektronen eine Wellenlänge, wenn sie einen Impuls besitzen, also bewegt sind.
 
-$m\cdot\vec{v}=\frac{h}{\lambda}$ \tabto{0.5\textwidth} ; umstellen nach $\lambda$
+Nun gilt es, Interferenzerscheinungen zu zeigen, was die Theorie beweisen würde, da es Wellencharakteristika zeigen würden.
 
-$\lambda = \frac{h}{m \cdot v} $
+\subsection{Theoretische Bestimmung der Wellenlänge}
 
-\item Um die Geschwindigkeit $v$, bei einem Versuch mit Elektronenbeschleunigung durch ein elektrisches Feld, zu ersetzen, setzt man zunächst die Gleichungen der kinetischen Energie $E_{kin}$ mit der Gleichung der Elektrischen $E_{el}$ gleich und formt anschließend nach $v$ um.
+Theoretisch lässt sich seine Wellenlänge $\lambda$ durch das Gleichsetzen der Gleichung des Impulses $\vec{p}=m\cdot\vec{v}$ mit der Formel für den Photonenimpuls $\vec{p}=\frac{h}{\lambda}$ berechnen:
 
-$\frac{1}{2} m_e \cdot v^2 = e \cdot U_a$ \tabto{0.5\textwidth} ; $U_a$ ist die Beschleunigungsspannung, mit der das Elektron in dem jeweiligen Versuch beschleunigt wurde.
+\begin{align}	\label{eq:LambdaTheorie}
+\begin{split}
+	m \cdot v &= \frac{h}{\lambda} \\
+	\lambda &= \frac{h}{m \cdot v}
+\end{split}
+\end{align}
 
-$v = \sqrt{\frac{2e \cdot U_a}{m_e}}$
+Um die Geschwindigkeit $v$, bei einem Versuch mit Elektronenbeschleunigung durch ein elektrisches Feld zu ersetzen, setzt man die Gleichungen der kinetischen Energie $E_{kin}$ mit der Gleichung der Elektrischen $E_{el}$ gleich und formt anschließend nach $v$ um (Siehe: \referenz{sec:BraunscheRoehre}):
 
-durch Einsetzen folgt dann:
+\begin{align}
+\begin{split}
+	v = \sqrt{\frac{2e \cdot U_B}{m_e}}
+\end{split}
+\end{align}
 
-\Large $\lambda = \frac{h \sqrt{m_e}}{m \cdot \sqrt{2e \cdot U_a}} $
-\end{itemize}
+\noindent Durch Einsetzen in Gleichung \ref{eq:LambdaTheorie} folgt dann:
 
-\subsection{...an Grafit}
-\begin{itemize}
-\item Da Elektronen demnach eine sehr kleine Wellenlänge haben, benutzt man oft Kristalle um Interferenzmuster zu erzeugen.
-\item An den Netzebenen des Kristalls, in denen die Atome regelmäßig angeordnet sind, werden Elektronen, ähnlich wie Licht an dünnen Schichten (Glimmer), gestreut.
-\item Auf dem Leuchtschirm der Röhre kommt es je nach Gangunterschied über die verschiedenen Netzebenen zu Maxima und Minima.
-\item Wichtig: Bei Grafit haben die Atome in einer Ebene einen anderen Abstand d zu einander, als die Atome zwischen den Ebenen. Es gibt als zwei "Spaltabstände" und folglich auch zwei Maxima 1. (2.,...,n.) Ordnung.
+\begin{align}
+\begin{split}
+	\lambda = \frac{h \sqrt{m_e}}{m \cdot \sqrt{2e \cdot U_B}}
+\end{split}
+\end{align}
 
-\item Der Gangunterschied $\delta = 2d\cdot\sin{\alpha} $ für konstruktive Interferenz muss ein natürliches vielfaches der Wellenlänge $\lambda$ sein.
+\subsection{Interferenz an Graphit}
 
-$n \cdot \lambda = 2d \cdot \sin{\alpha}$
+Da Elektronen der Theorie nach eine sehr kleine Wellenlänge haben, benutzt man oft Kristalle um Interferenzmuster zu erzeugen. An den Netzebenen des Kristalls, in denen die Atome regelmäßig angeordnet sind, werden Elektronen, ähnlich wie Licht an dünnen Schichten%Cue for ref
+, gestreut. Auf dem Leuchtschirm der Röhre kommt es je nach Gangunterschied über die verschiedenen Netzebenen zu Maxima und Minima.
 
-\Large $\sin{\alpha} = \frac{n \cdot \lambda}{2d}$ Bragg'sche Bedingung / Gleichung
-\end{itemize}
-
-Achtung in der Zeichnung ist $\alpha$ mit $\Theta$ vertauscht!
+\begin{Wichtig}
+	Bei Grafit haben die Atome in einer Ebene einen anderen Abstand $d$ zu einander, als die Atome zwischen den Ebenen. Es gibt also zwei "Spaltabstände" und folglich auch zwei Maxima 1. (2., $\cdots$, n.) Ordnung.
+\end{Wichtig}
 
 \begin{figure}[h!]
-\centering \includegraphics[width=0.8\textwidth]{Streuung_an_Graphit}
-\caption{Abbildung von: \url{https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bragg.svg/548px-Bragg.svg.png}}
+	\centering 
+	\includegraphics[width=\textwidth]{Streuung_an_Graphit}
+	\caption{Darstellungen der Beziehungen. Achtung: $\alpha$ ist hier mit $\Theta$ vertauscht!}
+	\label{fig:e-angrafit}
 \end{figure}
 
+Abbildung von: \url{https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bragg.svg/548px-Bragg.svg.png}
+
+Der Gangunterschied $\delta$, siehe Zeichnung\footnote{"Bragg" by Dipl.-Phys. (JPG-version), Matthias M. (SVG-version) - /home/matthias/Desktop. Licensed under Public Domain via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Bragg.svg}}, ist $\delta = 2d \cdot \sin{\alpha}$ und für konstruktive Interferenz, also ein Maximum, muss er natürliches vielfaches der Wellenlänge $\lambda$ sein:
+
+\begin{align}
+\begin{split}
+	n \cdot \lambda = 2d \cdot \sin{\alpha}
+\end{split}
+\end{align}
+
+\noindent Daraus folgt die Bragg'sche Bedingung:
+
+\begin{align}
+\begin{split}
+	\sin{\alpha} = \frac{n \cdot \lambda}{2d}
+\end{split}
+\end{align}
 
 
 \subsubsection{Versuch}
-\begin{itemize}
-\item Im Versuch wird ein Elektronenstrahl auf einen Graphitkristall geleitet, an diesem kommt es zu Streuung und es bilden sich jeweils zwei ringförmige Maxima auf dem Schirm.
-\item Bezeichnet man den Abstand vom Maximum n. Ordnung zum Maximum 0. Ordnung mit $r$ und den Abstand vom Kristall zum Schirm mit $l$ folgt:
 
-$\tan{2\alpha} = \frac{r}{l}$
-\item Um die Wellenlänge der Elektronen experimentell zu bestimmen, setzten wir dies Formel mit der Bragg'schen Gleichung gleich.
+Im Versuch wird ein Elektronenstrahl auf einen Graphitkristall geleitet. An diesem kommt es zu Streuung und es bilden sich jeweils zwei ringförmige Maxima auf dem Schirm.
 
-$2\sin{\alpha} = tan{2\alpha}$
+Bezeichnet man den Abstand vom Maximum n. Ordnung zum Maximum 0. Ordnung mit $r$ und den Abstand vom Kristall zum Schirm mit $a$ folgt gemäß Winkelbeziehungen:
 
-wendet man die Kleinwinkelnäherung an, folgt: \\
-\Large $\frac{n\cdot\lambda}{2d}=\frac{r}{l}$
+\begin{align}
+	\tan{2\alpha} = \frac{r}{a}
+\end{align}
 
-\normalsize
+Um die Wellenlänge der Elektronen nun experimentell zu bestimmen, setzt man diese Formel mit der Bragg'schen Gleichung gleich. Man kann folgende Kleinwinkelnäherung für $\alpha > 10\degree$ anwenden:
 
-umgestellt nach $\lambda$:\\
-\Large $\lambda = \frac{2dr}{n\cdot l}$
+\begin{align}
+\begin{split}
+	2\sin{\alpha} = tan{2\alpha}
+\end{split}
+\end{align}
 
-\normalsize
+\noindent Dann folgt:
 
-ohne Winkelnäherung:\\
-\Large $2\cdot\arcsin(\frac{n\cdot \lambda}{2d})=\arctan(\frac{r}{l}) $
+\begin{align}
+\begin{split}
+	\frac{n\cdot\lambda}{2d} &= \frac{r}{a} \\
+	\lambda = \frac{2dr}{n\cdot l}
+\end{split}
+\end{align}
 
-\Large $\arcsin(\frac{n\cdot \lambda}{2d})=\frac{1}{2}\cdot\arctan(\frac{r}{l})$ 
+\noindent \textbf{Hiermit hat man eine Gleichung in der nur messbare Werte stecken und kann das Ergebnis mit dem theoretischen Ergebnis von oben vergleichen.}
 
-\Large $\frac{n\cdot \lambda}{2d}=\sin(\frac{1}{2}\cdot\arctan(\frac{r}{l}))$ 
+\paragraph{Ohne Winkelnäherung}
 
-\Large $\lambda=\sin(\frac{1}{2}\cdot\arctan(\frac{r}{l}))\cdot 2d \cdot \frac{1}{n}$ \tabto{0.5\textwidth} ; meistens ist n=1 
+\begin{align}
+\begin{split}
+	2\cdot\arcsin(\frac{n\cdot \lambda}{2d}) &= \arctan(\frac{r}{l})  \\
+	\arcsin(\frac{n\cdot \lambda}{2d}) &= \frac{1}{2}\cdot\arctan(\frac{r}{l}) \\
+	\frac{n\cdot \lambda}{2d} &= \sin(\frac{1}{2}\cdot\arctan(\frac{r}{l})) \\
+	\lambda &= \sin(\frac{1}{2}\cdot\arctan(\frac{r}{l}))\cdot 2d \cdot \frac{1}{n}
+\end{split}
+\end{align}
 
-\normalsize
+\begin{NiceToKnow}
+Es kommt nur zur Interferenz, wenn die Bragg'sche Gleichung erfüllt ist. Dafür muss $\alpha$, für eine bestimmte Wellenlänge, auch eine bestimmte Größe haben. Im Experiment wird deshalb eine Graphitfolie benutzt, auf der die Kristallgitter in den verschiedensten Anordnungen liegen. So ist statistisch gesehen immer ein Kristall im richtigen Winkel zum Elektronenstrahl.
+\end{NiceToKnow}
 
-\item Nice to know: Es kommt nur zur Interferenz, wenn die Bragg'sche Gleichung erfüllt ist. Dafür muss $\alpha$, für eine bestimmte Wellenlänge, auch eine bestimmte Größe haben. Im Experiment wird deshalb eine Graphitfolie benutzt, auf der die Kristallgitter in den verschiedensten Anordnungen liegen. So ist statistisch gesehen immer ein Kristall im richtigen Winkel zum Elektronenstrahl.
-\end{itemize}
 
-\subsection{...am Doppelstpalt}
-\begin{itemize}
-\item Grundsätzlich gelten die gleichen Formeln wie bei Interferenz mit Licht. Allerdings muss der Spaltabstand $d$, aufgrund der ebenfalls sehr kleinen Wellenlängen, sehr klein sein, um überhaupt ein Interferenzmuster detektieren zu kommen.\\
-Das Interferenz Muster ist so klein, dass man es nur mit einem Elektronenmikroskop sichtbar machen kann.
-\item Bedingungen für konstruktive Interferenz: $\delta = n \cdot \lambda$\\
-für destruktive Interferenz: $\delta = (n-\frac{1}{2}) \cdot \lambda$
-\end{itemize}
+\subsection{Interferenz am Doppelstpalt}
+
+Grundsätzlich gelten die gleichen Formeln wie bei der Interferenz mit Licht (Siehe \referenz{sec:interferenz_licht}). Allerdings muss der Spaltabstand $d$, aufgrund der ebenfalls sehr kleinen Wellenlängen, sehr klein sein, damit man überhaupt ein Interferenzmuster detektieren kann. Das Interferenz Muster ist trotzdem so klein, dass man es nur mit einem Elektronenmikroskop sichtbar machen kann.
+
+Bedingungen für konstruktive Interferenz: $\delta = n \cdot \lambda$; für destruktive Interferenz: $\delta = (n-\frac{1}{2}) \cdot \lambda$
+
 
 \subsubsection{Versuch}
-\begin{itemize}
-\item Um die Wellenlänge $\lambda$ experimentell herauszufinden, gilt, wenn $d$ der Spaltabstand ist, $a$ der Abstand zum Schirm und $d_k$ der Abstand des k. Maximum zum 0. Maximum ist:
 
-$\tan{\alpha}=\frac{d_k}{a}$ und $\sin{\alpha}=\frac{k \cdot\lambda}{d}$
+Um die Wellenlänge $\lambda$ experimentell herauszufinden, gilt, wenn $d$ der Spaltabstand ist, $a$ der Abstand zum Schirm und $d_k$ der Abstand des k. Maximum zum 0. Maximum, ist:
 
-Dann entweder durch Kleinwinkelnäherung:\\
-\Large $\lambda = \frac{d_k \cdot d}{k \cdot a}$
+\begin{align}
+\begin{split}
+	\tan{\alpha} = \frac{d_k}{a}
+\end{split}
+\end{align}
 
-\normalsize oder ohne:
+\noindent und:
 
-\Large $\lambda = \sin(\arctan(\frac{d_k}{a})) \cdot \frac{d}{k}$
-\end{itemize}
+\begin{align}
+\begin{split}
+	\sin{\alpha} = \frac{k \cdot\lambda}{d}
+\end{split}
+\end{align}
+
+\noindent Dann entweder durch Kleinwinkelnäherung:
+
+\begin{align}
+\begin{split}
+	\lambda = \frac{d_k \cdot d}{k \cdot a}
+\end{split}
+\end{align}
+
+\noindent oder ohne:
+
+\begin{align}
+\begin{split}
+	\lambda = \sin(\arctan(\frac{d_k}{a})) \cdot \frac{d}{k}
+\end{split}
+\end{align}
+
+
+\noindent Für Weiteres, bitte die umfassendere Herleitung in \referenz{sec:interferenz_licht} betrachten!

@@ -1,11 +1,13 @@
-\begin{itemize}
-\item Wenn man Photonen mit ausreichend Energie (ab ca. 100keV) auf gebundene Elektronen schießt, wird das Phänomen durch den Photoeffekt beschrieben. Es kommt zur vollständigen Impulsübertragung vom Photon auf das Elektron.
-\item Wenn man Photonen gegen ein freies Elektron schießt, wird das Phänomen durch den Compton-Effekt beschrieben:
-\begin{itemize}
-\item Es kommt nicht immer zu einer vollständigen Impulsübertrag.
-\item Wenn nicht der ganze Impuls übertragen wird, kommt es zur Compton-Streuung.
-Das Elektron wird in eine Richtung wird durch den Teilimpuls in eine Richtung beschleunigt, und das Photon wird in eine andere abgelenkt.\\
-Nach dem Zusammenstoß hat das Photon einen geringeren Impuls, und da seine Geschwindigkeit konstant $c$ ist, ändert sich seine Wellenlänge (sie wird größer).
+Wenn man Photonen mit ausreichend Energie (ab ca. 100keV) auf gebundene Elektronen schießt, wird das Phänomen durch den Fotoeffekt (Siehe \referenz{sec:fotoeffekt}) beschrieben. Es kommt zur vollständigen Impulsübertragung vom Photon auf das Elektron.
+
+Wenn man ein Photon nun gegen ein freies Elektron schießt, wird das Phänomen durch den Compton-Effekt beschrieben:
+
+\subsection{Effekt}
+
+Es kommt nicht immer zu einer vollständigen Impulsübertrag, nämlich kann das Elektron auch zur Seite abgelenkt und das Photon dann in der Konsequenz nicht in die entgegengesetzte Richtung reflektiert. Wenn nicht der ganze Impuls übertragen wird, kommt es zur Compton-Streuung. 
+
+Das Elektron wird in eine Richtung wird durch den Teilimpuls in eine Richtung beschleunigt, und das Photon wird in eine andere abgelenkt. Nach dem Zusammenstoß hat das Photon einen geringeren Impuls, und da seine Geschwindigkeit konstant $c$ ist, ändert sich, bedingt durch den Impulserhaltungssatz, seine Wellenlänge (sie wird größer).
+
 \begin{comment}\item Durch den Impulserhaltungssatz gilt:\\
 Vor Kollision:\\
 $p_{gesamt} = p_{Phot} \rightarrow p_{gesamt}=\frac{h}{\lambda}$
@@ -57,7 +59,7 @@ $\Delta \lambda = \lambda_c = \frac{h}{m \cdot v}$ \\
 
 
 \end{comment}
-\end{itemize}
+
 \begin{comment}
 \item Compton-Wellenlänge hergeleitet:
 
@@ -86,19 +88,22 @@ Dann noch nach $\Delta \lambda$ umformen und man erhält die Compton Wellenläng
 $\Delta \lambda = \lambda_c = \frac{h}{m \cdot v}$ \\
 \end{comment}
 
-Für ein Elektron als Teilchen, an dem gestreut wird, gilt folgende Konstante (Taschenrechner: Konstante 12: "Compton-Wellenlänge des Elektrons"): \\
-$\Delta \lambda = \lambda_c = \frac{h}{m_e \cdot v} \approx 2,426 \cdot 10^{-12}m $ \\
+Für ein Elektron als Teilchen, an dem gestreut wird, gilt die Compton-Wellenlänge des Elektrons (\casio{12}):
+
+\begin{equation}
+	\Delta \lambda = \lambda_c = \frac{h}{m_e \cdot v} \approx 2,426 \cdot 10^{-12}m
+\end{equation}
+
+Wenn $\lambda$ die Wellenlänge des Lichts vor dem Stoß und $\lambda'$ die Wellenlänge nach dem Stoß, dann ist die Wellenlängenänderung, in Abhängigkeit des Streuungswinkels $\Theta$:
+
+\begin{align}
+\begin{split}
+	\lambda' - \lambda &= \frac{h}{m \cdot c}-\frac{h}{m \cdot c} \cos{\Theta} \\
+	\Delta\lambda &= \frac{h}{m \cdot c}(1-\cos{\Theta}) \\
+	\Delta\lambda &= \lambda_c \cdot (1-\cos{\Theta})
+\end{split}
+\end{align}
 
 
-\item Wellenlängenänderung in Abhängigkeit des Streuungswinkels $\Theta$:
-
-$\lambda' -\lambda = \frac{h}{m \cdot c}-\frac{h}{m \cdot c} \cos{\Theta}$
-
-$\Delta\lambda = \frac{h}{m \cdot c}(1-\cos{\Theta})$ \tabto{0.5\textwidth} ; $\lambda_c = \frac{h}{m \cdot c}$
-
-$\Delta\lambda = \lambda_c \cdot (1-\cos{\Theta})$
-
-\item Maximum ist bei $\Theta = 180\degree \rightarrow (1-\cos{180\degree})=2$
-\item Minimum ist bei $\Theta = 0\degree \rightarrow (1-\cos{0\degree})=0$
-
-\end{itemize}
+\noindent Das Maximum dieser Gleichung liegt bei $\Theta = 180\degree \rightarrow (1-\cos{180\degree})=2$. \\
+Das Minimum ist bei $\Theta = 0\degree \rightarrow (1-\cos{0\degree})=0$.

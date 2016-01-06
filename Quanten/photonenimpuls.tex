@@ -1,36 +1,48 @@
-\begin{itemize}
-\item Der Impuls $\vec{p}$ eines beliebigen Körpers mit Masse ist definiert als: 
+Der Impuls $\vec{p}$ eines beliebigen Körpers mit Masse ist definiert als $\vec{p} = m \cdot \vec{v}$ (Siehe: \referenz{subsec:impuls}). 
 
-$\vec{p} = m \cdot \vec{v}$
-\item Photonen haben aber keine Ruhemasse. Ihre Masse lässt sich nur durch Umformen der Gleichung der speziellen Relativitätstheorie $E = mc^2$ ermitteln.
+Das Problem bei der Anwendung auf Photonen ist, dass Photonen keine Ruhemasse haben, ihre effektive Masse lässt sich nur durch Umformen der Gleichung der Einstein'schen Relativitätstheorie ermitteln:
 
-$m = \frac{E}{c^2}$
+\begin{align}
+\begin{split}
+	E &= mc^2 \\
+	m &= \frac{E}{c^2}
+\end{split}
+\end{align}
 
-daraus folgt:
+\noindent Hierbei ist $c$ die Lichtgeschwindigkeit mit der sich Photonen bewegen. Daher folgt:
 
-$\vec{p} = \frac{E}{c^2} \cdot \vec{c}$ \tabto{0.5\textwidth} ; $\vec{v} = \vec{c}$ da Photonen sich stets mit Lichtgeschwindigkeit fortbewegen.
+\begin{align}
+\begin{split}
+	p &= m \cdot v \\
+	p &= \frac{E}{c^2} \cdot c \\
+	p &= \frac{E}{c}
+\end{split}
+\end{align}
 
-$\vec{p} = \frac{h \cdot f}{\vec{c}}$ \tabto{0.5\textwidth} ; $E_{phot} = h \cdot f$
+\noindent Mit der Photonenenergie (Siehe: \gleichungsreferenz{eq:einsteinscheGleichung}) und der Beziehung für die Ausbreitungsgeschwindigkeit $c=\lambda \cdot f$ gilt:
 
-$\vec{p} = \frac{h}{\lambda \cdot f}$ \tabto{0.5\textwidth} ; $c = \lambda \cdot f$
+\begin{align}	\label{eq:Photonenimpuls}
+\begin{split}
+	p &= \frac{h \cdot f}{c} = \frac{h}{\lambda}
+\end{split}
+\end{align}
 
-$\vec{p} = \frac{h}{\lambda}$
-\item Das heißt das, dass alles mit einem Impuls eine Wellenlänge hat, \referenz{sec:debroglie}
-\item Nice to know: $F = \frac{\Delta p}{\Delta t}$
-\end{itemize}
+\begin{NiceToKnow}
+	Für viele Berechnungen mit dem Photonenimpuls: $F = \frac{\Delta p}{\Delta t}$
+\end{NiceToKnow}
+
 
 \subsection{Elastischer Stoß}
-\begin{itemize}
-\item Bei einem elastischen Stoß bleibt die Summe der kinetischen Energien der Stoßpartner unverändert.
 
-$\frac{1}{2}m_1 \cdot v_1^2 = \frac{1}{2}m_1 \cdot (v'_1)^2 + \frac{1}{2}m_2 \cdot (v'_2)^2$
-\item Wenn $m_1 << m_2$ (wie bei Experiment Lichtmühle bzw. Photon Reflektor) ist $v'_1 \approx -v_1$ und $\vec{p'} \approx -2 \vec{p}$
-\end{itemize}
+Bei einem elastischen Stoß bleibt, neben der Summe des Impulses, die Summe der kinetischen Energien der Stoßpartner unverändert (Siehe: \referenz{sec:stoesse}).
+
+Für Photonen kann man dann folgern: wenn $m_1 << m_2$ (wie beim Vorgang Photon auf Reflektor) ist nach dem Stoß der Betrag der Geschwindigkeit des Photon in guter Näherung dieselbe wie zu Beginn, aber in die entgegengesetzte Richtung: $v'_1 \approx -v_1$. Der Impulsübertrag ist also $2p$.
+
 
 \subsection{Unelastischer Stoß}
-\begin{itemize}
-\item Der Vorgang ist nicht reibungsfrei, es geht kinetische Energie "verloren" (Umwandlung in Wärme).
-\item Beispiel Elektronen auf schwarze Fläche, es kommt nur zum einfachen Impulsübertrag, die verlorene Energie wird in Wärme umgewandelt.
-\end{itemize}
+
+Dieser Vorgang ist nicht reibungsfrei, es geht kinetische Energie "verloren" (Umwandlung in Wärme).
+
+Ein Beispiel wäre, wenn Photonen auf eine schwarze Fläche treffen: es kommt nur zum einfachen Impulsübertrag, die restliche Energie wird in Wärme umgewandelt.
 
 
