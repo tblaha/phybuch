@@ -19,21 +19,38 @@ Der Impuls ist das zeitliche Integral der Kraft: $\int F \ dt = \int m \cdot a \
 
 Aus den zwei Stoßarten (elastisch und unelastisch) ist der elastische Stoß der ideale Stoß, bei dem keine Reibung zwischen den beiden aufeinandertreffenden Körpern stattfindet. In der Praxis geschieht das natürlich trotzdem, aber bspw. sind Stahlkugeln in guter Näherung reibungsfrei, sodass bei diesen und ähnlichen Versuchen von einem elastischen Stoß ausgegangen werden kann.
 
-Da keine Energie durch Reibung in Wärme oder Verformung umgewandelt wird und somit \glqq verloren geht\grqq , muss neben dem Impuls auch die Energie erhalten bleiben, also während des Versuches konstant sein. Wenn die Indices $_1$ bzw. $_2$ für die Körper $1$ bzw. $2$ stehen, müssen bei einem elastischen Stoß folgende Gesetze gelten:
+Da keine Energie durch Reibung in Wärme oder Verformung umgewandelt wird und somit \glqq verloren geht\grqq , muss neben dem Impuls auch die Energie erhalten bleiben, also während des Versuches konstant sein. Daher gestaltet sich die Herleitung für eine Gleichung, die die Geschwindigkeiten nach dem Stoß voraussagt, recht komplex; beide Sätze müssen berücksichtigt werden. Daher wird hier dieses Gesetz nur genannt:
+
+Wenn ein Körper mit der Masse $m_1$ und der Geschwindigkeit $v_1$ auf einen zweiten Körper mit der Masse $m_2$ und der Geschwindigkeit $v_2$ unter den Voraussetzungen eines elastischen Stoßes aufeinander treffen, gilt für die Geschwindigkeit des zweiten Körpers nach dem Stoß $v_2'$:
 
 \begin{align}
 \begin{split}
-	p_{ges} &= p_{ges}' \\
-	p_1 + p_2 &= p_1' + p_2'
+	v_2'=\frac{m_2 \cdot v_2 + m_1(2v_1 - v_2)}{m_1 + m_2}
 \end{split}
 \end{align}
 
-\noindent und:
+\noindent Für $v_1'$ gilt dann:
 
 \begin{align}
 \begin{split}
-	E_{ges} &= E_{ges}' \\
-	\frac{1}{2} m_1 \cdot v_1^2 + \frac{1}{2} m_2 \cdot v_2^2 &= \frac{1}{2} m_1' \cdot v_1'^2 + \frac{1}{2} m_2' \cdot v_2'^2
+	v_1'=\frac{m_1 \cdot v_1 + m_2(2v_2 - v_1)}{m_1 + m_2}
+\end{split}
+\end{align}
+
+
+\subsection{Unelastischer Stoß}
+
+Bei einem unelastischen Stoß geht ein Teil der kinetischen Energie der zwei Stoßkörper in Wärme oder Verformung \glqq verloren\grqq , dass heißt sie steckt nachher nicht mehr in der kinetischen Energie der Körper. 
+
+Bei einem perfekt unelastischen Stoß, bei dem die beiden Körper sich \glqq verkeilt\grqq{} zusammen mit der selben Geschwindigkeit fortbewegen. 
+
+Der Impulserhaltungssatz muss trotzdem erhalten bleiben und aus diesem geht für $v'$ nach dem Stoß hervor:
+
+\begin{align}
+\begin{split}
+	p' &= p_1 + p_2 \\
+	v'(m_1 + m_2) &= v_1 \cdot m_1 + v_2 \cdot m_2 \\
+	v' &= \frac{v_1 \cdot m_1 + v_2 \cdot m_2}{m_1 + m_2}
 \end{split}
 \end{align}
 

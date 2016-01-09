@@ -1,3 +1,16 @@
+10.01.2016 -- Till Blaha -- Version 0.6 Alpha
+
+Quanten überarbeitet, immernoch unvollständig. Stöße fertig bearbeitet.
+Struktur von Atommodellen hinzugefügt.
+
+Aktuelle Lage:
+-- Kapitel Elektrisches Feld, Magnetisches Feld, Induktion, Wechselstrom, Schwingungen, Wellen und Optik gelten als stabil.
+-- Quanten: Beschreibung von Quantenobjekten fehlt noch
+-- Optik: Interferenz an dünnen Schichten bedarf Kontrolle.
+-- Nicht für die allgemeine Veröffentlichung bestimmt!
+
+
+
 06.01.2016 -- Till Blaha -- Version 0.5 Alpha
 
 Quanten überarbeitet, immernoch unvollständig.
