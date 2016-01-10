@@ -1,13 +1,13 @@
-\documentclass[9pt, twopage]{book}
+\documentclass{book}
 
 % Language and Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 
 % Paper and Font sizes
-\usepackage{extsizes}
 \usepackage{geometry}
-\geometry{papersize={125mm, 190mm}, margin=20mm}
+\geometry{papersize={3.6in, 4.8in}, margin=0.5cm}
+\setlength{\parskip}{2pt}
 \sloppy
 
 % Numbering of Sections
@@ -30,11 +30,11 @@
 \newcommand{\casio}[1]{Casio fx-991xx: Konstante Nr. #1}
 
 % Additional Environments
+\usepackage{framed}
 \usepackage{wrapfig}
 \usepackage{multicol}
 \usepackage{tabto}
 \usepackage{verbatim}
-\usepackage{framed}
 \newenvironment{NiceToKnow}
                {\begin{leftbar}
                \noindent \textbf{Nice to know:} }
@@ -75,9 +75,8 @@
 
 % Fonts
 \usepackage[T1]{fontenc}
-\usepackage{newtxtext}
-\usepackage{sectsty}
-\allsectionsfont{\sffamily}
+\usepackage[default]{lato}
+\renewcommand{\familydefault}{\sfdefault}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,7 +84,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Version
-\newcommand{\version}{0.6 Alpha}
+\newcommand{\version}{0.6 Alpha, optimiert für EBook-Reader}
 
 % Meta
 \title{Physik Kompendium -- 11. Klasse bis zum Abitur}
@@ -94,8 +93,6 @@
 
 \begin{document}
 \maketitle
-
-\newgeometry{top=21mm, bottom=15mm, outer=10mm, inner=17mm}
 
 \section*{\Huge Vorwort} \label{sec:Vorwort}
 \input{ZZ_OtherTeX/vorwort}
