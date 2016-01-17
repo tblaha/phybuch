@@ -1,18 +1,53 @@
-Die Gesetze der Bewegung, auch Translation genannt ist ein wiederkehrendes Thema in der Physik. Die Gesetze beschreiben die Bewegung von Körpern und geben den Ort in Abhängigkeit einer Variablen, meistens der Zeit, an:
+Die Gesetze der Bewegung, auch Translation genannt, ist ein wiederkehrendes Thema in der Physik. Die Gesetze beschreiben die Bewegung von Körpern und geben deren Ort in Abhängigkeit einer Variablen, meistens der Zeit, an:
 
 \subsection{Gleichförmige Bewegung} \label{subsec:gleichfoermig}
 
-Die gleichförmige Bewegung ist eine Bewegung, die nicht beschleunigt ist. Also bewegt sich der Körper mit einer konstanten Geschwindigkeit fort, daher gilt für die insgesamt zurückgelegte Strecke $s$:
+Die gleichförmige Bewegung ist eine Bewegung, die nicht beschleunigt ist; der Körper bewegt sich mit einer konstanten Geschwindigkeit fort. Daher gilt für die insgesamt zurückgelegte Strecke $s$:
 
 \begin{align} \label{eq:gleichfoermig}
 	s(t) = v \cdot t + s_0
 \end{align}
 
-\noindent Dabei ist $s_0$ die Anfangsstrecke, die schon zu Beginn, bevor die Translation betrachtet wird, zurückgelegt wurde.
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}[b]{0.4\linewidth}
+		\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "s(t)"
+set output "plot_bewegung_gleichfoermig_s.png"
+plot s(x) = 1x ls 1
+		\end{comment}
+    	\includegraphics[width=\textwidth]{plot_bewegung_gleichfoermig_s}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.4\linewidth}
+		\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "v(t)"
+set output "plot_bewegung_gleichfoermig_v.png"
+plot 1 ls 1
+		\end{comment}
+    	\includegraphics[width=\textwidth]{plot_bewegung_gleichfoermig_v}
+	\end{minipage}
+\end{figure}
+
 
 \begin{Wichtig}
 $v$ ist konstant!
 \end{Wichtig}
+
+\noindent Dabei ist $s_0$ die Anfangsstrecke, die schon zu Beginn, bevor die Translation betrachtet wird, zurückgelegt wurde.
+
+\begin{figure}[h!]
+	\centering
+	\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "v(t)"
+set output "plot_bewegung_gleichfoermig_s+s0.png"
+plot v(x) = 1x+1 ls 1
+	\end{comment}
+	\includegraphics[width=0.6\textwidth]{plot_bewegung_gleichfoermig_s+s0}
+\end{figure}
 
 \subsection{Gleichmäßig beschleunigte Bewegung}
 % Cue for diagrams
@@ -27,6 +62,39 @@ Dann kann dieses $\frac{1}{2}a \cdot t$ für das $v$ im ersten Glied der Gleichu
 \begin{align} \label{eq:streckegleichmaessig}
 	s(t) = \frac{1}{2}a \cdot t^2 + v_0 \cdot t + s_0
 \end{align}
+
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}[b]{0.3\linewidth}
+		\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "s(t)"
+set output "plot_bewegung_beschleunigt_s.png"
+plot 0.5 * 1 * x * x ls 1
+		\end{comment}
+    	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_s}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.3\linewidth}
+		\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "v(t)"
+set output "plot_bewegung_beschleunigt_v.png"
+plot x ls 1
+		\end{comment}
+    	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_v}
+	\end{minipage}
+	\quad
+	\begin{minipage}[b]{0.3\linewidth}
+		\begin{comment} Gnuplot:
+set xlabel "t"
+set ylabel "a(t)"
+set output "plot_bewegung_beschleunigt_a.png"
+plot 1 ls 1
+		\end{comment}
+    	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_a}
+	\end{minipage}
+\end{figure}
 
 \noindent Neben der Anfangsstrecke $s_0$ kommt nun aber auch noch die Anfangsgeschwindigkeit $v_0$ dazu, die von Belang ist, wenn man einen Fall hat, bei dem der Körper vor Einwirkung der Beschleunigung schon eine Geschwindigkeit $>0$ hatte.
 
