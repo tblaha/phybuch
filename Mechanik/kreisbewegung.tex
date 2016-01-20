@@ -3,9 +3,9 @@ Die Gesetze der Kreisbewegung beschreiben einen Körper, der sich mit einer kons
 
 \subsection{Frequenz}
 
-Die Frequenz $f$ bezeichnet die Anzahl an Kreisumläufen pro Zeiteinheit. Die Einheit ist $Hz$ (sprich: \glqq Hertz\grqq ), also $\frac{1}{s}$.
+Die Frequenz $f$ bezeichnet die Anzahl an Kreisumläufen pro Zeiteinheit. Die Einheit ist $Hz$ (sprich: \glqq Hertz\grqq ):  $Hz = \frac{1}{s}$.
 
-Die Dauer \emph{eines} Kreisumlaufes nennt man auch die Periodendauer $T$. Dann gilt:
+Die Dauer \emph{eines} Kreisumlaufes nennt man auch die Periodendauer $T$. Es gilt:
 
 \begin{align}
 	f = \frac{1}{T}
@@ -22,7 +22,7 @@ Die Winkelgeschwindigkeit gibt an, wie groß der Umfangsabschnitt ist, der in ei
 \noindent Die Einheit ist $\frac{rad}{s}$ (sprich: \glqq Radiant pro Sekunde\grqq ) und ein Umlauf entspricht $2\pi$.
 
 \begin{Wichtig}
-Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq w\grqq .
+Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq $w$\grqq .
 \end{Wichtig}
 
 
@@ -31,32 +31,36 @@ Das Formelzeichen $\omega$ ist \glqq klein Omega\grqq{} und nicht \glqq w\grqq .
 Die Bahngeschwindigkeit gibt in absoluten Einheiten ($\frac{m}{s}$) an, wie schnell sich das Objekt auf der Bahn fortbewegt. Zusätzlich zur Winkelgeschwindigkeit, muss bei der Kreisbahn daher noch der Radius bekannt sein:
 
 \begin{align} \label{eq:bahngeschwindigkeit}
-	v=\omega r= 2r\pi f = \frac{2r\pi}{T}
+	v_{Bahn}=\omega r= 2r\pi f = \frac{2r\pi}{T}
 \end{align}
 
 Eine andere Herleitung aus dem Kreisumfang $U=2r\pi$, der Periodendauer $T$ und der generellen Formel für Bahngeschwindigkeit $v=\frac{s}{t}$ könnte wie folgt Aussehen:
 
 \begin{align}
+\begin{split}
 	v &=\frac{s}{t} \\
-	v &=\frac{2r\pi}{T}
+	v &=\frac{2r\pi}{T} = \omega r
+\end{split}
 \end{align}
 
 
 \subsection{Zentripetalbeschleunigung}
-%Cue for herleitung
-Um auf einer Kreisbahn zu bleiben, muss eine Zentripetalbeschleunigung auf einen Körper wirken, die zum Kreiszentrum hin zeigt. Die Formel lautet:
+
+Um auf einer Kreisbahn zu bleiben, muss eine Zentripetalbeschleunigung auf den Körper wirken, die zum Kreiszentrum hin zeigt. Die Formel lautet:
 
 \begin{align}
 	a_z=\frac{v^2}{r}=\omega^2 r
 \end{align}
 
-Eine tolle Herleitung findet sich \href{http://www.schule-bw.de/unterricht/faecher/physik/online\_material/mechanik2/kreis/zentripetalkraft.htm}{hier}\footnote{\url{http://www.schule-bw.de/unterricht/faecher/physik/online_material/mechanik2/kreis/zentripetalkraft.htm}}.
+\noindent Eine tolle Herleitung findet sich \href{http://www.schule-bw.de/unterricht/faecher/physik/online\_material/mechanik2/kreis/zentripetalkraft.htm}{hier}\footnote{\url{http://www.schule-bw.de/unterricht/faecher/physik/online_material/mechanik2/kreis/zentripetalkraft.htm}}.
 
 \subsection{Zentripetalkraft}
 
 Dies ist die Kraft, die auf einen Körper ausgewirkt werden muss, damit er auf einer Kreisbahn bleibt. Zusätzlich zur Zentripetalbeschleunigung muss nun also noch gemäß Newtons zweiten Axiom $F=a \cdot m$ die Masse als Faktor in die Gleichung aufgenommen werden:
 
 \begin{align}
+\begin{split}
 	F_z &= a_z \cdot m \\
 	F_z &= \frac{v^{2}m}{r}
+\end{split}
 \end{align}

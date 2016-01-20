@@ -32,7 +32,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 
 
-Der Millikanversuch war ein Experiment des amerikanischen Physikers Robert Millikan von 1910, dessen Ergebnisse ihm 1923 den Nobelpreis einbrachte. Mit diesem Versuch konnte die Existenz einer kleinsten Elementarladung nachgewiesen werden und diese Elektronenladung recht genau bestimmt werden.
+Der Millikanversuch war ein Experiment des amerikanischen Physikers Robert Millikan von 1910, dessen Ergebnisse ihm 1923 den Nobelpreis einbrachten. Mit diesem Versuch konnte die Existenz einer kleinsten Elementarladung nachgewiesen werden und diese Elektronenladung recht genau bestimmt werden.
 
 \subsection{Vorgehensweise}
 
@@ -52,13 +52,23 @@ Damit ergab sich der Ansatz, die elektrische Kraft $F_{el}=q \cdot E$ (\gleichun
 
 \subsection{Umgehung der direkten Massebestimmung}
 
-Bis auf die Masse sind in der obigen Gleichung alle Größen gegeben bzw. messbar. Das bestimmen der Masse stellte allerdings ein Problem dar, da die Tröpfchen viel zu klein waren um ihre Masse auf klassische Art zu bestimmen (z.B. wiegen). Auch die Bestimmung über das Volumen und die Dichte des Öls erwiesen sich als unpraktisch, da der Durchmesser eines Tröpfchens aufgrund von optischen Eigenschaften der Mikroskoplinsen nur sehr unpräzise gemessen werden konnte.
+Bis auf die Masse sind in der obigen Gleichung alle Größen gegeben bzw. messbar. Das bestimmen der Masse stellte allerdings ein Problem dar, da die Tröpfchen viel zu klein waren um ihre Masse auf klassische Art zu bestimmen (z.B. wiegen). Auch die Bestimmung über das Volumen und die Dichte des Öls erwiesen sich als unpraktisch, da der Durchmesser eines Tröpfchens aufgrund der optischen Eigenschaften der Mikroskoplinsen nur sehr unpräzise gemessen werden konnte.
 
 Daher hat sich Robert Millikan dem Gesetz von Stokes\footnote{Gesetz von Stokes: \url{https://de.wikipedia.org/wiki/Gesetz_von_Stokes}} zur Reibung von spährischen (\glqq kugelförmigen\grqq) Körpern in Gasen oder Flüssigkeiten bedient: 
 
-Mit dem Gesetz lässt sich der Radius eines Öltröpfchens über dessen Fallgeschwindigkeit berechnen, welche im selben Experiment bestimmt werden kann: Durch Abschalten der Kondensatorspannung und Stoppen der Zeit, die der Tropfen für das Zurücklegen einer bestimmten Strecke benötigte, die in Form eines Rasters auf dem Mikroskop erkennbar war, konnte die Fallgeschwindigkeit berechnet werden. Zudem war diese Geschwindigkeit nach einer kurzen Beschleunigungsphase durch die Luftreibung konstant.
+Mit dem Gesetz lässt sich der Radius eines Öltröpfchens über dessen Fallgeschwindigkeit berechnen, welche im selben Experiment bestimmt werden kann: Durch Abschalten der Kondensatorspannung und Stoppen der Zeit, die der Tropfen für das Zurücklegen einer bestimmten Strecke benötigte, die in Form eines Rasters auf dem Mikroskop erkennbar war, konnte die Fallgeschwindigkeit berechnet werden. Zudem war diese Geschwindigkeit nach einer kurzen Beschleunigungsphase durch die Luftreibung konstant, da die Luftreibung enorm ist.
 
-Die Stokesreibung ist im Schwebefall gleich der Differenz aus Gewichtskraft und Auftrieb des Tröpfchens: $F_R = F_G - F_A$. Setzt man die entsprechenden Teilgleichungen (Gewichtskraft einer Kugel $F_G = V \rho g = \frac{4}{3} \pi r^3 \rho_{O} g$ und Auftrieb einer Kugel in der Luft $F_A = V \rho g = \frac{4}{3} \pi r^3 \rho_L g$) ein, erhält man für $r$:
+Die Stokesreibung ist, wenn sich das Öltröpfchen mit konstanter Geschwindigkeit fortbewegt, gleich der Differenz aus Gewichtskraft und Auftrieb des Tröpfchens: $F_R = F_G - F_A$.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.24\textwidth]{MillikanMasse}
+	\caption{Kräftebeziehungen beim Fall des Öltröpfchens}
+	\label{fig:MillikanMasse}
+\end{figure}
+
+
+Setzt man die entsprechenden Teilgleichungen (Gewichtskraft einer Kugel $F_G = V \rho g = \frac{4}{3} \pi r^3 \rho_{O} g$ und Auftrieb einer Kugel in der Luft $F_A = V \rho g = \frac{4}{3} \pi r^3 \rho_L g$) ein, erhält man für $r$:
 
 \begin{align} \label{eq:StokesReibungFuerR}
 \begin{split}
@@ -68,9 +78,16 @@ Die Stokesreibung ist im Schwebefall gleich der Differenz aus Gewichtskraft und 
 \end{split}
 \end{align}
 
-Hierbei ist $v_{0}$ besagte Fallgeschwindigkeit, $\eta$ (spricht: \glqq klein Eta\grqq) die Viskosität der Luft, $\rho$ (sprich: \glqq klein Rho\grqq) jeweils die Dichte des Öls ($\rho_O$), respektive von Luft ($\rho_L$) und $g$ die Fallbeschleunigung.
+Hierbei ist $v_{0}$ besagte Fallgeschwindigkeit, $\eta$ (sprich: \glqq klein Eta\grqq) die Viskosität der Luft, $\rho$ (sprich: \glqq klein Rho\grqq) jeweils die Dichte des Öls ($\rho_O$), respektive von Luft ($\rho_L$) und $g$ die Fallbeschleunigung.
 
-Nun muss $F_{el}$ nicht gleich $F_{G}$ gesetzt werden, sondern gleich der Differenz $F_{G} - F_{A}$ um den Auftrieb in der Luft, welcher klein, aber bei dieser Größenordnung nicht zu vernachlässigen ist, mit einzubeziehen:
+Da man nun den Radius $r$ bestimmen kann, kann man auch das Volumen und dann, über die Dichte, auch die Masse des Ölkörpers berechnen:
+
+
+\subsection{Bestimmung von $q$}
+
+Die eigentlich Bestimmung von $q$ ergibt sich aus dem Gleichsetzen von $F_{el}$ und $F_G$, wie schon angesprochen. Allerdings muss hier auch noch die Auftriebskraft $F_A$ in der Luft mit eingerechnet werden, welche in der gegebenen Größenordnung nicht zu vernachlässigen ist.
+
+Anstelle von $F_{el} = F_G$ ergibt sich:
 
 \begin{align}
 \begin{split}
@@ -81,7 +98,7 @@ Nun muss $F_{el}$ nicht gleich $F_{G}$ gesetzt werden, sondern gleich der Differ
 \end{split}
 \end{align}
 
-\noindent Jetzt noch $r$ von der Stokesreibung einsetzten:
+\noindent Jetzt noch den Radius $r$ von der Stokesreibung einsetzten:
 
 \begin{align}
 \begin{split}
@@ -118,7 +135,7 @@ Diese Elementarladung (in Coulomb $C$) mit Formelzeichen $q_e$ oder $e$ (seltene
 Alle Ladungen, die uns begegnen sind also Vielfache dieser Elementarladung. Dies war eine ziemlich bahnbrechende Entdeckung, die Millikan schließlich auch den Nobelpreis einbrachte. Man kann mit ihr z.B. berechnen, wie groß der Überschuss an Elektronen über Protonen auf einem Körper ist, wenn man dessen Ladung kennt:
 
 \begin{align}
-	n_{ueberschuss} = \frac{Q}{q_e}
+	n_{ueberschuss} = \frac{q}{q_e}
 \end{align}
 
 

@@ -43,7 +43,7 @@ Der Plattenkondensator (im Folgenden nur noch Kondensator genannt) ist ein wicht
 	\label{fig:CapWiring}
 \end{figure}
 
-Ein Plattenkondensator besteht aus zwei ungleichnamig geladenen Platten, die sich parallel gegenüberstehen. Sie sind an ein Spannungsquelle angeschlossen. In einem Schaltplan wird er wie in Abbildung \ref{fig:CapWiring} \footnote{"RC switch" by PureCore - Own work. Licensed under CC BY-SA 3.0 via Commons - \url{https://commons.wikimedia.org/wiki/File:RC_switch.svg}} notiert.
+Ein Plattenkondensator besteht aus zwei ungleichnamig geladenen Platten, die sich parallel gegenüberstehen. Sie sind an eine Spannungsquelle angeschlossen. In einem Schaltplan wird ein Kondensator wie in Abbildung \ref{fig:CapWiring} \footnote{"RC switch" by PureCore - Own work. Licensed under CC BY-SA 3.0 via Commons, Slightly modified by Till Blaha (removal of voltage direction) - \url{https://commons.wikimedia.org/wiki/File:RC_switch.svg}} notiert.
 
 \begin{Wichtig}
 An sich fließt kein Strom durch den Kondensator! Die Platten sind elektrisch getrennt; das Dielektrikum, also das nicht-leitende Material zwischen den Platten (z.B. Luft), isoliert. 
@@ -58,7 +58,7 @@ An sich fließt kein Strom durch den Kondensator! Die Platten sind elektrisch ge
 	\caption{Das elektrische Feld in und um einen Plattenkondensator}
 \end{figure}
 
-Durch den Überschuss positiver Ladungen auf der einen Seite und negativer Ladungen auf der Anderen, ergibt sich ein homogenes Magnetfeld zwischen den Platten.\footnote{„E Feld Kondensator“. Über Wikibooks - \url{https://de.wikibooks.org/wiki/Datei:E_Feld_Kondensator.png}}
+Durch den Überschuss positiver Ladungen auf der einen Seite und negativer Ladungen auf der Anderen, ergibt sich ein homogenes Magnetfeld zwischen den parallelen Platten.\footnote{„E Feld Kondensator“. Über Wikibooks - \url{https://de.wikibooks.org/wiki/Datei:E_Feld_Kondensator.png}}
 
 \subsubsection{Feldstärke}
 
@@ -71,26 +71,26 @@ Die Stärke des Feldes im Inneren lässt sich auf recht einfach Art aus der anli
 Die resultierende Einheit $\frac{V}{m}$ ist äquivalent zu $\frac{N}{C}$, der generellen Einheit für die Feldstärke (Siehe \referenz{subsec:Feldstaerke}).
 
 \begin{Aufgabe}
-Zeige, dass $\frac{V}{m}$ äquivalent zu $\frac{N}{C}$ ist, indem Du die Definitionen der Einheiten Volt $V=\frac{kg \cdot m^2}{A \cdot s^3}$, Newton und Coulomb einsetzt.
+Zeige, dass $\frac{V}{m}$ äquivalent zu $\frac{N}{C}$ ist, indem du die Definitionen der Einheiten Volt $V=\frac{kg \cdot m^2}{A \cdot s^3}$, Newton und Coulomb einsetzt.
 
 Einheitenrechnungen sind praktisch, um Ansätze für Herleitungen zu verifizieren. Am Ende muss auch immer die richtige Einheit für eine Größe aus den Größen in der Formel herauskommen.
 
-Der Leser fühle sich hiermit eingeladen, eine Einheitenrechnung für jede hier aufgeführte Gleichung anzustellen. 
+Der Leser fühle sich hiermit eingeladen bis aufgefordert, eine Einheitenrechnung für jede hier aufgeführte Gleichung anzustellen. 
 \end{Aufgabe}
 
 \subsubsection{Kraft auf Körper}
 
-In die allgemeine Gleichung für eine Kraft auf einen geladenen Körpern (Gleichung \ref{eq:feldstaerke_nach_F} auf Seite \pageref{eq:feldstaerke_nach_F}: $\vec{F} = q \cdot \vec{E}$) kann nun die obige Gleichung für $E$ im Kondensator eingesetzt werden (Gleichung \ref{eq:feldstaerke_kondensator}):
+In die allgemeine Gleichung für eine Kraft auf einen geladenen Körpern im elektrischen Feld (Gleichung \ref{eq:feldstaerke_nach_F} auf Seite \pageref{eq:feldstaerke_nach_F}: $\vec{F} = q \cdot \vec{E}$) kann nun die obige Gleichung für $E$ im Kondensator eingesetzt werden (Gleichung \ref{eq:feldstaerke_kondensator}):
 
 \begin{equation} \label{eq:kraft_kondensator}
 	F = q \cdot \frac{U}{d}
 \end{equation}
 
-In diesem Fall kann sowieso auf eine Vektorrechnung verzichtet werden, da die Richtung der des elektrischen Felds klar und das Feld homogen ist.
+In diesem Fall kann sowieso auf eine Vektorrechnung verzichtet werden, da die Richtung des elektrischen Feldes klar ist; es ist ja homogen.
 
 \subsubsection{Energieumsatz bei einer Bewegung eines Körpers}
 
-Wenn ein Körper in einem Kondensator bewegt wird, wird dabei Energie umgesetzt. Eine äquivalente Ausdrucksweise wäre, es wird \glqq Arbeit verrichtet\grqq . Das geschieht gemäß dieser Formel, bei der $s$ die Strecke ist, um die der Körper verschoben wird:
+Wenn ein Körper in einem Kondensator bewegt wird, wird dabei Energie umgesetzt. Eine äquivalente Ausdrucksweise wäre, es wird \glqq Arbeit verrichtet\grqq . Das geschieht gemäß der allgemeinen Formel (Siehe: \gleichungsreferenz{eq:Arbeit}) für die Arbeit, bei der $s$ die Strecke ist, um die der Körper verschoben wird:
 
 \begin{equation} \label{eq:arbeit}
 	W = F \cdot s
@@ -111,7 +111,7 @@ $W = q \cdot E \cdot s$ ist analog zur Lagearbeit aus der Mechanik: $W_{pot} = m
 
 \subsection{Flächenladungsdichte}
 
-Die elektrische Feldstärke im Inneren eines Kondensators lässt sich auch über die Flächenladungsdichte berechnen. Die Flächenladungsdichte $\sigma$ (Spricht: \glqq klein Sigma\grqq ) gibt an, wie \emph{dicht} Ladungen auf den Kondensatorplatten verteilt sind:
+Die elektrische Feldstärke im Inneren eines Kondensators lässt sich auch über die Flächenladungsdichte berechnen. Die Flächenladungsdichte $\sigma$ (Sprich: \glqq klein Sigma\grqq ) gibt an, wie \emph{dicht} Ladungen auf den Kondensatorplatten verteilt sind:
 
 \begin{equation} \label{eq:flaechenladungsdichte}
 	\sigma = \frac{Q}{A}
@@ -121,7 +121,7 @@ Die elektrische Feldstärke im Inneren eines Kondensators lässt sich auch über
 Man schreibt $q$ für eine spezifische, unveränderbare Ladung eines Probekörpers und $Q$ für z.B. die Ladung von Kondensatorplatten oder den Betrag eines Ladungsflusses durch einen Leiter.
 \end{NiceToKnow}
 
-Die Flächenladungsdichte ist im homogenen Feld proportional zur Feldstärke ($\sigma \sim E$). Die Proportionalitätskonstante hierbei ist $\frac{1}{\epsilon_0}$ (Siehe \referenz{subsec:CoulombGesetz}), sodass sich ergibt:
+Die Flächenladungsdichte ist bei Betrachtung des homogenen Feldes zwischen den Platten proportional zur Feldstärke ($\sigma \sim E$). Die Proportionalitätskonstante hierbei ist $\frac{1}{\epsilon_0}$ (Siehe \referenz{subsec:CoulombGesetz}), sodass sich ergibt:
 
 \begin{equation} \label{eq:feldstaerke_mit_sigma}
 	E = \frac{\sigma}{\epsilon_0} = \frac{1}{\epsilon_0} \cdot \frac{Q}{A}
@@ -148,7 +148,11 @@ Die wichtigste elektrische Größe eines Kondensators ist die Kapazität $C$ mit
 
 Die Kapazität gibt also an, wie viel Ladung ein Kondensator bei einer definierten Spannung fasst, bzw. wie hoch die Spannung sein muss, damit die definierte Ladung $Q$ auf den Kondensator \glqq geht\grqq .
 
-Für eine Bestimmungsgleichung, welche nur aus Kenngrößen besteht, muss $Q$ ersetzt werden. Mit den beiden Definitionen für die Feldstärke ($E = \frac{\sigma}{\epsilon_0}$ und $E=\frac{U}{d}$) ergibt sich für $Q$:
+\begin{NiceToKnow}
+Natürlich gibt es in der Realität eine Obergrenze für die Spannung, die sogenannte \glqq Durchschlagsspannung\grqq , bei der der Kondensator durchschlägt, das heißt, dass nun \emph{doch} Ladungen unter einem relativ niedrigen Widerstand von einer zur anderen Platte wandern können. Damit ergibt sich ein Stromfluss, der meist so hoch ist, dass er den Kondensator oder andere Komponenten beschädigt.
+\end{NiceToKnow}
+
+Für eine Bestimmungsgleichung für die Kapazität eines Kondensators, welche nur aus Kenngrößen besteht, muss $Q$ ersetzt werden. Mit den beiden Definitionen für die Feldstärke ($E = \frac{\sigma}{\epsilon_0}$ und $E=\frac{U}{d}$) ergibt sich für $Q$:
 
 \begin{align}
 \begin{split}
@@ -161,11 +165,11 @@ Für eine Bestimmungsgleichung, welche nur aus Kenngrößen besteht, muss $Q$ er
 
 \noindent Dieses $Q$ lässt sich in die Gleichung für $C$ einsetzen:
 
-\begin{equation}
-	C = \epsilon_0 \cdot \frac{U \cdot A}{d \cdot U} = \epsilon_0 \epsilon_r \cdot \frac{A}{d}
+\begin{equation} \label{eq:bestimmung_kondensator}
+	C = \frac{Q}{U} = \epsilon_0 \cdot \frac{U \cdot A}{d \cdot U} = \epsilon_0 \epsilon_r \cdot \frac{A}{d}
 \end{equation}
 
-Die Spannung $U$ kürzt sich und es wurde ein weitere Konstante $\epsilon_r$ eingeführt. Die \glqq relative Feldkonstante\grqq{} charakterisiert die verstärkenden oder schwächenden Eigenschaften des Dielektrikum (\referenz{subsec:kon_def}). Für Luft bzw. Vakuum ist sie $\approx 1$. Es gibt jedoch Materialien, die durch eine hohe relative Feldkonstante die Kapazität um Faktoren bis ca. $10^3$ erhöhen.
+Die Spannung $U$ kürzt sich und es wurde ein weitere Konstante $\epsilon_r$ eingeführt. Die einheitenlose \glqq relative Permittivität\grqq{}  (auch \glqq relative Feldkonstante\grqq) charakterisiert die verstärkenden oder schwächenden Eigenschaften des Dielektrikum (\referenz{subsec:kon_def}). Für Luft und Vakuum ist sie $\approx 1$. Es gibt jedoch Materialien, die durch eine hohe relative Feldkonstante die Kapazität um Faktoren bis ca. $50 \cdot 10^3$ erhöhen.
 
 \begin{NiceToKnow}
 $BaTiO_3$, Bariumthiooxid, hat eine $\epsilon_r$ von $10^2-10^3$\footnote{Aus: \url{http://www.techniklexikon.net/d/dielektrizitaetskonstante/dielektrizitaetskonstante.htm}}
@@ -182,7 +186,7 @@ $BaTiO_3$, Bariumthiooxid, hat eine $\epsilon_r$ von $10^2-10^3$\footnote{Aus: \
 	\caption{Parallelschaltung zweier Kapazitäten (= Kondensatoren) $C_1$ und $C_2$}
 \end{figure}
 
-Wenn Kondensatoren in einem Stromkreis parallel\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, addieren sich die Kapazitäten. Man kann sagen, dass die effektive Platte größer wird und daher mehr Ladung pro Spannung tragen kann (Siehe \gleichungsreferenz{eq:kapazitaet}):
+Wenn Kondensatoren in einem Stromkreis parallel\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, addieren sich die Kapazitäten. Man kann sagen, dass die effektive Platte größer wird und daher mehr Ladung pro Spannung tragen kann (Siehe \gleichungsreferenz{eq:kapazitaet} und \ref{eq:bestimmung_kondensator}):
 
 \begin{equation}
 	C_{ges} = \sum\limits_{i=1}^n C_i = C_1 + C_2 + \cdots + C_n
@@ -203,7 +207,7 @@ Wenn Kondensatoren in einem Stromkreis parallel\footnote{Abbildung von: \url{htt
 	\caption{Reihenschaltung zweier Kapazitäten (= Kondensatoren) $C_1$ und $C_2$}
 \end{figure}
 
-Wenn Kondensatoren in einem Stromkreis in Reihe\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, ist die Summe der Kehrwerte der einzelnen Kapazitäten der Kehrwert der Gesamtkapazität. Das liegt daran, dass das \glqq Mittelstück\grqq , also die positive Plattes von $C_1$ und die negative Platte von $C_2$, ein definierte Ladung tragen, das heißt die positiven und negativen Ladungen können nur durch Influenz (Siehe \referenz{subsec:Influenz}) auftreten, da dieses Stück elektrisch vom Rest des Schaltkreises, also auch von einer mögliches Ladungsquelle getrennt ist.
+Wenn Kondensatoren in einem Stromkreis in Reihe\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, ist die Summe der Kehrwerte der einzelnen Kapazitäten der Kehrwert der Gesamtkapazität. Das liegt daran, dass das \glqq Mittelstück\grqq , also die positive Platte von $C_1$ und die negative Platte von $C_2$, eine definierte Ladung trägt. Daraus folgt, dass die positiven und negativen Ladungen an den Platten nur durch Influenz (Siehe \referenz{subsec:Influenz}) auftreten können, da dieses Stück elektrisch vom Rest des Schaltkreises getrennt ist, also auch von einer mögliches Ladungsquelle.
 
 Daher ist die Gesamtkapazität der Schaltung $0F$, wenn einer der beiden Kondensatoren die Kapazität $0F$ hat; $0,5F$, wenn beide Kondensatoren die Kapazität $1F$ haben; und die Gesamtkapazität kann nie größer sein als die niedrigste Einzelkapazität in der Kondensatorschaltung.
 

@@ -10,7 +10,7 @@ Die gleichförmige Bewegung ist eine Bewegung, die nicht beschleunigt ist; der K
 
 \begin{figure}[h!]
 	\centering
-	\begin{minipage}[b]{0.4\linewidth}
+	\begin{minipage}[b]{0.45\linewidth}
 		\begin{comment} Gnuplot:
 set xlabel "t"
 set ylabel "s(t)"
@@ -19,8 +19,7 @@ plot s(x) = 1x ls 1
 		\end{comment}
     	\includegraphics[width=\textwidth]{plot_bewegung_gleichfoermig_s}
 	\end{minipage}
-	\quad
-	\begin{minipage}[b]{0.4\linewidth}
+	\begin{minipage}[b]{0.45\linewidth}
 		\begin{comment} Gnuplot:
 set xlabel "t"
 set ylabel "v(t)"
@@ -29,6 +28,7 @@ plot 1 ls 1
 		\end{comment}
     	\includegraphics[width=\textwidth]{plot_bewegung_gleichfoermig_v}
 	\end{minipage}
+	\caption{Gleichförmige Bewegung: Beziehung zwischen Weg und Geschwindigkeit}
 \end{figure}
 
 
@@ -42,15 +42,16 @@ $v$ ist konstant!
 	\centering
 	\begin{comment} Gnuplot:
 set xlabel "t"
-set ylabel "v(t)"
+set ylabel "s(t)+s_0"
 set output "plot_bewegung_gleichfoermig_s+s0.png"
-plot v(x) = 1x+1 ls 1
+plot s(x) = 1x+1 ls 1
 	\end{comment}
 	\includegraphics[width=0.6\textwidth]{plot_bewegung_gleichfoermig_s+s0}
+	\caption{Mit Anfangsgeschwindigkeit: Der Graph ist verschoben}
 \end{figure}
 
 \subsection{Gleichmäßig beschleunigte Bewegung}
-% Cue for diagrams
+
 Eine Bewegung kann auch mit einer sich ändernden Geschwindigkeit von statten gehen. Sollte diese Beschleunigung konstant sein, nennt man diese Bewegung gleichmäßig beschleunigte Bewegung.
 
 \subsubsection{Gesamtstrecke}
@@ -65,7 +66,7 @@ Dann kann dieses $\frac{1}{2}a \cdot t$ für das $v$ im ersten Glied der Gleichu
 
 \begin{figure}[h!]
 	\centering
-	\begin{minipage}[b]{0.3\linewidth}
+	\begin{minipage}[b]{0.32\linewidth}
 		\begin{comment} Gnuplot:
 set xlabel "t"
 set ylabel "s(t)"
@@ -74,8 +75,7 @@ plot 0.5 * 1 * x * x ls 1
 		\end{comment}
     	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_s}
 	\end{minipage}
-	\quad
-	\begin{minipage}[b]{0.3\linewidth}
+	\begin{minipage}[b]{0.32\linewidth}
 		\begin{comment} Gnuplot:
 set xlabel "t"
 set ylabel "v(t)"
@@ -84,8 +84,7 @@ plot x ls 1
 		\end{comment}
     	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_v}
 	\end{minipage}
-	\quad
-	\begin{minipage}[b]{0.3\linewidth}
+	\begin{minipage}[b]{0.32\linewidth}
 		\begin{comment} Gnuplot:
 set xlabel "t"
 set ylabel "a(t)"
@@ -94,18 +93,16 @@ plot 1 ls 1
 		\end{comment}
     	\includegraphics[width=\textwidth]{plot_bewegung_beschleunigt_a}
 	\end{minipage}
+	\caption{Gleichmäßig beschleunigte Bewegung: Beziehung zwischen Weg, Geschwindigkeit und Beschleunigung}
+	\label{fig:beschleunigt}
 \end{figure}
 
 \noindent Neben der Anfangsstrecke $s_0$ kommt nun aber auch noch die Anfangsgeschwindigkeit $v_0$ dazu, die von Belang ist, wenn man einen Fall hat, bei dem der Körper vor Einwirkung der Beschleunigung schon eine Geschwindigkeit $>0$ hatte.
 
-\begin{NiceToKnow}
-	Diese Gleichung ist das zeitliche Integral der Bewegungsgleichung für $s$ der gleichförmigen Bewegung.
-\end{NiceToKnow}
-
 
 \subsubsection{Endgeschwindigkeit}
 
-Wie schon angesprochen, ist die Endgeschwindigkeit proportional zur verstrichenen Zeit, was aber oben in der Herleitung noch nicht berücksichtigt wurde, (in der Gleichung schon) ist, dass auch für die Endgeschwindigkeit im Zeitraum $t$ die Anfangsgeschwindigkeit $v_0$ eine Rolle spielt:
+Wie schon angesprochen, ist die Endgeschwindigkeit proportional zur verstrichenen Zeit. Was aber dort noch nicht berücksichtigt wurde, ist, dass auch für die Endgeschwindigkeit nach der verstrichenen Zeit $t$ die Anfangsgeschwindigkeit $v_0$ eine Rolle spielt:
 
 \begin{align}	\label{eq:geschwindigkeitgleichmaessig}
 	v(t) = a \cdot t + v_0
@@ -116,9 +113,9 @@ Wie schon angesprochen, ist die Endgeschwindigkeit proportional zur verstrichene
 
 \subsubsection{Beziehungen über die Ableitungen}
 
-Würde man noch eine Ableitung machen bekäme man die Gleichung für die Beschleunigung. Das wäre aber witzlos, da die Beschleunigung konstant ist und damit ist $s''(t)=v'(t)=a(t)=a= const$.
+Würde man noch eine Ableitung der Gleichung \ref{eq:geschwindigkeitgleichmaessig} machen bekäme man die Gleichung für die Beschleunigung. Das wäre aber witzlos, da die Beschleunigung einer gleichmäßig beschleunigten Bewegung konstant ist und damit $s''(t)=v'(t)=a(t)=a= const.$ ist.
 
-Dennoch ist es hilfreich, diese Beziehungen im Kopf zu haben:
+Dennoch ist es hilfreich, diese Beziehungen im Kopf zu haben (Man beziehe auch Abbildung \ref{fig:beschleunigt}):
 
 \begin{align}
 \begin{split}
