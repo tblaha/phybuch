@@ -38,63 +38,45 @@ Der Wien'sche Geschwindigkeitsfilter ist eine Möglichkeit, einen Elektronenstra
 \begin{figure}[h!]
 	\centering
 	\vspace*{-10pt}
-	\includegraphics[width=0.6\textwidth]{Wien}
-	\caption{Der Geschwindigkeitsfilter nach Wien}
+	\includegraphics[width=0.8\textwidth]{WienscherFilter}
+	\caption{Der Geschwindigkeitsfilter nach Wien. Die Pfeile charakterisieren die Richtung des elektrischen Feldes, die Kreuze die des Magnetfeldes}
 	\label{fig:Wien}
 \end{figure}
 
 Grundbaustein bildet eine Ablenkeinheit mit einem Kondensator, wie sie in der Braun'schen Röhre (Siehe: \referenz{sec:BraunscheRoehre}) verwendet wird. Allerdings wird nun ein homogenes Magnetfeld so über den Kondensator gelegt, dass die Feldlinien dieses Feldes senkrecht auf der Elektronenrichtung \emph{und} den Feldlinien des elektrischen Feldes stehen.
 
-Abbildung \ref{fig:Wien} \footnote{„Geschwindigkeitsfilter nach Wien“ von Miessen - Eigenes Werk. Lizenziert unter CC0 über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Geschwindigkeitsfilter\_nach\_Wien.svg}} zeigt den schematischen Aufbau, jedoch werden positiv geladene Körper ($q>0$) betrachtet und nicht wie hier Elektronen.
+Abbildung \ref{fig:Wien} \footnote{„Wienscher Geschwindigkeitsfilter“ von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei} zeigt den schematischen Aufbau und die grobe Funktionsweise für einen Versuch mit Elektronen.
 
 
-\begin{leftbar}
-	Anmerkung: Da die magnetischen Feldlinien nicht zeichenbar sind, da sie \glqq in die Papierebene\grqq{} gehen. Dafür wird $\odot$ verwendet, um Anzuzeigen, dass der Pfeil aus der Ebene hinaus verläuft und $\otimes$ um Anzuzeigen, dass der Pfeil in die Ebene hinein verläuft.
+\begin{Anmerkung}
+	Die magnetischen Feldlinien sind nicht direkt zeichenbar, da sie \glqq in die Papierebene\grqq{} gehen. Es wird $\odot$ verwendet, um Anzuzeigen, dass der Pfeil aus der Ebene hinaus verläuft und $\otimes$ um Anzuzeigen, dass der Pfeil in die Ebene hinein verläuft.
 	
 	Eselsbrücke: Wenn man mit einem Bogen einen Pfeil verschießt, sie man das Kreuz der Federn; im letzten Moment, bevor man von einem getroffen wird, sieht man den Punkt der Pfeilspitze.
-\end{leftbar}
+\end{Anmerkung}
 
 
 
 \subsection{Funktionsweise}
 
-Das Magnetfeld und der Kondensator werden so gepolt, dass die, gemäß linker Handregel resultierende, Lorentzkraft $F_{Lr}$ der Coulombkraft $F_{el}$ entgegenwirkt. Da die Lorentzkraft abhängig von der Geschwindigkeit des Elektrons ist und die elektrische Kraft nicht, gibt es eine Geschwindigkeit, bei der sich die beiden Kräfte die Waage halten:
+Das Magnetfeld und der Kondensator werden so gepolt, dass die, gemäß linker Handregel resultierende, Lorentzkraft $F_{Lr}$ der Coulombkraft $F_{el}$ entgegenwirkt. Da die Lorentzkraft abhängig von der Geschwindigkeit des Elektrons ist und die elektrische Kraft nicht, gibt es eine Geschwindigkeit $v_f$, bei der sich die beiden Kräfte die Waage halten. Dies ist die Geschwindigkeit, die vom Filter durchgelassen wird:
 
 \begin{align}
 \begin{split}
 	F_{Lr} &= F_{el} \\
-	q_e \cdot B \cdot v &= q_E \cdot E \\
-	v &= \frac{E}{B}
+	q_e \cdot B \cdot v_f &= q_e \cdot E \\
+	v_f &= \frac{E}{B}
 \end{split}
 \end{align}
 
 \noindent \emph{Man nehme Notiz von dieser simplen und unglaublich schönen Beziehung!}
 
-Eine Einheitenrechnung folgt:
+Eine Einheitenrechnung folgt und zeigt, dass die Einheiten aufgehen:
 
 \begin{align}
 \begin{split}
-	v &= \frac{E}{B} \\
+	v_f &= \frac{E}{B} \\
 	\frac{m}{s} &= \frac{N}{C} \cdot \frac{1}{T} \\
 	\frac{m}{s} &= \frac{kg \cdot m}{s^2 \cdot As} \cdot \frac{As^2}{kg} \\
 	\frac{m}{s} &= \frac{m}{s}
 \end{split}
 \end{align}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

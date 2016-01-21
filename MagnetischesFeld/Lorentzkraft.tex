@@ -33,14 +33,12 @@
 
 \subsection{Geladenes Teilchen}
 
-Die Lorentzkraft wirkt auf jedes geladene, in einem Magnetfeld bewegte Teilchen, wenn sich dieses Teilchen nicht parallel zu den Feldlinien bewegt. Die Lorentzkraft ist abhängig von der Flussdichte des Magnetfeldes, der Ladung und Geschwindigkeit des Teilchens und von dem Winkel zu den Feldlinien. Im Folgenden werden jedoch nur noch Fälle betrachtet, bei denen sich Teilchen senkrecht zu den Feldlinien bewegen.
+Die Lorentzkraft wirkt auf jedes geladene, in einem Magnetfeld bewegte Teilchen, wenn sich dieses Teilchen nicht parallel zu den Feldlinien bewegt. Die Lorentzkraft ist abhängig von der Flussdichte des Magnetfeldes, der Ladung und Geschwindigkeit des Teilchens und von dem Winkel zu den Feldlinien. Im Folgenden werden jedoch nur noch Fälle betrachtet, bei denen sich Teilchen senkrecht zu den Feldlinien bewegen, was Berechnungen vereinfacht.
 
 
 \subsection{Stromdurchflossener Leiter}
 
 Durch einen stromdurchflossenen Leiter fließen Elektronen vom Minuspol zum Pluspol. Da Elektronen negativ geladene Teilchen sind, wirkt auch in diesem Fall die Lorentzkraft auf den Leiter, wenn sich der Leiter in einem magnetischen Feld befindet.
-
-%Cue for schwierige Aufgabe: Wie groß Kraft auf geraden Leiter, auf den Stromstärke etc...
 
 \subsection{Handregeln}
 
@@ -51,7 +49,7 @@ Durch einen stromdurchflossenen Leiter fließen Elektronen vom Minuspol zum Plus
 	\label{fig:Handregeln}
 \end{figure}
 
-Bei der Richtung der Lorentzkraft auf ein negativ geladenes Teilchen, das sich senkrecht zu den Feldlinien eines magnetischen Feldes bewegt, gilt die linke Handregel. Bei dieser werden Daumen, Zeige- und Mittelfinger der linken Hand abgespreizt, sodass sie der Zeichnung \ref{fig:Handregeln}\footnote{„UVWREGEL new“ von UVWREGEL.png: Qniemiec 19:15, 14. Jan. 2011 (CET).Original uploader was Qniemiec at de.wikipediaderivative work: Qniemiec (talk) - UVWREGEL.png. Lizenziert unter CC BY-SA 3.0 über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:UVWREGEL_new.png}} entsprechen. Dann bezeichnet der Daumen die Richtung des Teilchens, der Zeigefinger folgt der Richtung des Magnetfeldes und der Mittelfinder zeigt schlussendlich die Richtung der Lorentzkraft an. Für die Kraft auf einen Leiter, der senkrecht in einem Magnetfeld steht, gilt dieselbe Regel wobei der Daumen die die physikalische Stromrichtung anzeigt.
+Bei der Richtung der Lorentzkraft auf ein negativ geladenes Teilchen, das sich senkrecht zu den Feldlinien eines magnetischen Feldes bewegt, gilt die linke Handregel. Bei dieser werden Daumen, Zeige- und Mittelfinger der linken Hand abgespreizt, sodass sie der Zeichnung \ref{fig:Handregeln}\footnote{„UVWREGEL new“ von UVWREGEL.png: Qniemiec 19:15, 14. Jan. 2011 (CET).Original uploader was Qniemiec at de.wikipediaderivative work: Qniemiec (talk) - UVWREGEL.png. Lizenziert unter CC BY-SA 3.0 über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:UVWREGEL_new.png}} entsprechen. Dann bezeichnet der Daumen die Richtung des Teilchens, der Zeigefinger folgt der Richtung des Magnetfeldes und der Mittelfinder zeigt schlussendlich die Richtung der Lorentzkraft an. Für die Kraft auf einen Leiter, der senkrecht in einem Magnetfeld steht, gilt dieselbe Regel wobei der Daumen die physikalische Stromrichtung anzeigt.
 
 Für ein positives Teilchen oder die technische Stromrichtung in einem Leiter kommt die rechte Hand zum Einsatz; die Regel für die Bezeichnung der Finger bleibt gleich.
 
@@ -66,6 +64,20 @@ Der Betrag der Lorentzkraft lässt sich wie folgt berechnen:
 \end{split}
 \end{align}
 
+\begin{NiceToKnow}
+	Es wird zwar im Unterricht nicht, behandelt, ist aber eventuell ein Fall für eine Transferaufgabe im Abitur: Die Lorenzkraft auf ein geladenes Teilchen, welches sich nicht senkrecht zu den Feldlinien bewegt, ist abhängig vom Sinus aus dem Winkel zwischen der Bewegungsrichtung und der Feldlinien, also der Magnetfeldrichtung:
+
+	\begin{equation}
+		F_{Lr} = q \cdot B \cdot v \cdot \sin{(\angle{\vec{v}, \vec{B}})}
+	\end{equation}
+
+	\noindent Mit dem Kreuzprodukt geschrieben:
+
+	\begin{equation}
+		F_{Lr} = q \cdot (\vec{B} \times \vec{v})
+	\end{equation}
+\end{NiceToKnow}
+
 \noindent Interessant ist, dass die Lorentzkraft nicht nur von der Ladung, sondern auch von der Geschwindigkeit des Teilchens abhängig ist. Dies macht man sich z.B. im Massenspektrometer (Siehe: \referenz{sec:Massenspektrometer}) oder im Wien'schen Filter (Siehe: \referenz{sec:Wien}) zu Nutze.
 
 Aus der Lorentzkraft lässt sich auch die Flussdichte $B$ definieren: Die Flussdichte ordnet jedem bewegten, geladenen Körper eine Kraft (die Lorentzkraft) zu:
@@ -76,6 +88,15 @@ Aus der Lorentzkraft lässt sich auch die Flussdichte $B$ definieren: Die Flussd
 \end{split}
 \end{align}
 
+\noindent Daraus folgt auch die Einheit Tesla der Flussdichte:
+
+\begin{align} \label{eq:Flussdichte}
+\begin{split}
+	T &= N \cdot \frac{1}{C \cdot \frac{m}{s}} \\
+	T &= \frac{kg \cdot m}{s^2} \cdot \frac{s}{As \cdot m} \\
+	T &= \frac{kg}{As^2}	
+\end{split}
+\end{align}
 
 
 
