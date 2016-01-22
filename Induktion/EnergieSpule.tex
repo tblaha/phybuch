@@ -1,20 +1,16 @@
-%%%%% Physik Kompendium Nr.2 %%%%%
-%% 01 -- Energie des Magnetfeldes einer Spule %%
-
-
-Die Energie, die in Form eines Magnetfeldes in einer Spule gespeichert ist, ist wie folgt zu berechnen:
+Die Energie, die in Form eines Magnetfeldes in einer Spule gespeichert ist und durch Selbstinduktion wieder in elektrische Energie umgewandelt werden kann, ist wie folgt zu berechnen:
 
 \begin{equation} \label{eq:EnergieSpule}
 	E = \frac{1}{2} L \cdot I^2
 \end{equation}
 
-Eine mögliche Herleitung, die eventuell interessant, aber sicher nicht klausurrelevant ist, ist diese. Sie beruht auf der allgemeinen und der elektrischen Leistung ($P = \frac{\mathrm{d}E}{\mathrm{d}t}$ und $P = U \cdot I$) sowie auf der Induktivitätsbeziehung $U = L \cdot \frac{\mathrm{d}I}{\mathrm{d}t} <=> L = U \cdot \frac{\mathrm{d}t}{\mathrm{d}I}$:
+Eine mögliche Herleitung, die eventuell interessant, aber sicher nicht klausurrelevant ist, ist diese: Sie beruht auf der allgemeinen und der elektrischen Leistung ($P = \frac{\mathrm{d}E}{\mathrm{d}t}$ und $P = |U| \cdot I$) sowie auf der Induktivitätsbeziehung $|U| = L \cdot \frac{\mathrm{d}I}{\mathrm{d}t} <=> L = |U| \cdot \frac{\mathrm{d}t}{\mathrm{d}I}$:
 
 \begin{align*}
 \begin{split}
-	P &= U \cdot I = \frac{\mathrm{d}E}{\mathrm{d}t} \\
-	\mathrm{d}E &= U \cdot I \cdot \mathrm{d}t \\
-	\frac{\mathrm{d}E}{\mathrm{d}I} &= U \cdot \frac{\mathrm{d}t}{\mathrm{d}I} \cdot I \\
+	P &= |U| \cdot I = \frac{\mathrm{d}E}{\mathrm{d}t} \\
+	\mathrm{d}E &= |U| \cdot I \cdot \mathrm{d}t \\
+	\frac{\mathrm{d}E}{\mathrm{d}I} &= |U| \cdot \frac{\mathrm{d}t}{\mathrm{d}I} \cdot I \\
 	\frac{\mathrm{d}E}{\mathrm{d}I} &= L \cdot I \\
 	E &= \int L \cdot I \ \mathrm{d}I \\
 	E &= \frac{1}{2}L \cdot I^2

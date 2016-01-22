@@ -1,46 +1,8 @@
-%%%%% Magnetisches Feld %%%%%
-%%  %%
-
-
-%Some sample text to be displayed above the first subsection
-
-%\subsection{Prinzip}
-
-%Ein Zyklotron besteht aus Zwei hohlen, halbzylindrischen und Duanden an denen eine Spannung mit unterschiedlichem Vorzeichen anliegt, und darüber bzw. darunter liegende Magneten, die ein homogenes Magnetfeld erzeugen. Zudem gibt es einen Einlass und einen Auslass für Teilchen.
-
-%\begin{wrapfigure}{r}{0.4\textwidth} \label{Zyklo}
-%
-%	\vspace{-10pt}
-%	\includegraphics[width=0.35\textwidth]{Zyklotron_Prinzipskizze02.png}
-%	\vspace{-13pt}
-%	\caption{Prinzipskizze eines Zyklotrons}
-%	\vspace{-5pt}	
-%	
-%\end{wrapfigure}
-
-%\subsubsection{Anwendung}
-
-% Some Formula:
-
-%\begin{equation}
-%	x= \frac{y \cdot 13 \pi z}
-%			{\cos \alpha}
-%\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%
-% Eigentlicher Beginn %
-%%%%%%%%%%%%%%%%%%%%%%%
-
 \subsection{Geladenes Teilchen}
 
 Die Lorentzkraft wirkt auf jedes geladene, in einem Magnetfeld bewegte Teilchen, wenn sich dieses Teilchen nicht parallel zu den Feldlinien bewegt. Die Lorentzkraft ist abhängig von der Flussdichte des Magnetfeldes, der Ladung und Geschwindigkeit des Teilchens und von dem Winkel zu den Feldlinien. Im Folgenden werden jedoch nur noch Fälle betrachtet, bei denen sich Teilchen senkrecht zu den Feldlinien bewegen, was Berechnungen vereinfacht.
 
-
-\subsection{Stromdurchflossener Leiter}
-
-Durch einen stromdurchflossenen Leiter fließen Elektronen vom Minuspol zum Pluspol. Da Elektronen negativ geladene Teilchen sind, wirkt auch in diesem Fall die Lorentzkraft auf den Leiter, wenn sich der Leiter in einem magnetischen Feld befindet.
-
-\subsection{Handregeln}
+\subsection{Handregeln} \label{subsec:handregeln}
 
 \begin{figure}[h!]
 	\centering
@@ -79,6 +41,21 @@ Der Betrag der Lorentzkraft lässt sich wie folgt berechnen:
 \end{NiceToKnow}
 
 \noindent Interessant ist, dass die Lorentzkraft nicht nur von der Ladung, sondern auch von der Geschwindigkeit des Teilchens abhängig ist. Dies macht man sich z.B. im Massenspektrometer (Siehe: \referenz{sec:Massenspektrometer}) oder im Wien'schen Filter (Siehe: \referenz{sec:Wien}) zu Nutze.
+
+\subsection{Stromdurchflossener Leiter}
+
+Durch einen stromdurchflossenen Leiter fließen Elektronen vom Minuspol zum Pluspol. Da Elektronen negativ geladene Teilchen sind (es \emph{sind} negative Ladungen), wirkt auch in diesem Fall die Lorentzkraft auf den Leiter, wenn sich der Leiter in einem magnetischen Feld, nichtparallel zu den Feldlinien, befindet.
+
+Die Kraft verhält sich gemäß folgender Formel, wobei $l$ die Länge des Leiterstücks, welches sich senkrecht zu den Feldlinien befindet und $I$ die Stromstärke ist:
+
+\begin{align}
+\begin{split}
+	F_{Lr} = l \cdot I \cdot B
+\end{split}
+\end{align}
+
+
+\subsection{Relation zur Flussdichte}
 
 Aus der Lorentzkraft lässt sich auch die Flussdichte $B$ definieren: Die Flussdichte ordnet jedem bewegten, geladenen Körper eine Kraft (die Lorentzkraft) zu:
 
