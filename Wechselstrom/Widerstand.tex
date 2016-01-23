@@ -1,8 +1,4 @@
-%%%%% Physik Kompendium Nr.2 %%%%%
-%% 05 -- Widerstände im Wechselstromkreis %%
-
-
-Während es im Gleichstromkreis nur den Ohm'schen Widerstand gibt, verfügt man Wechselstromkreis über drei Typen.
+Während es im Gleichstromkreis nur den Ohm'schen Widerstand gibt, verfügt man im Wechselstromkreis über drei Typen.
 
 Die restlichen zwei Arten, der kapazitive und der induktive Widerstand, generieren Phasenverschiebungen, welche in sogenannten Blindwiderständen resultieren.
 
@@ -18,7 +14,7 @@ Das bedeutet, er verursacht keine Phasenverschiebung und kann wie ein Widerstand
 
 Kondensatoren verursachen kapazitive Widerstände. Da Kondensatoren keinen Durchfluss erlauben, wäre ihr Widerstand im Gleichstromkreis unendlich. Im Wechselstromkreis verursacht er aber eine Phasenverschiebung des Stromes, welcher dann um 90\degree{} der Spannung vorauseilt.
 
-Beim Wechselstrom schwingen die elektrischen Ladungen nämlich hin und her. Ein Kondensator im Wechselstromkreis wird also abwechselnd geladen, wieder entladen und dann anders gepolt geladen. Die Spannung zwischen den Kondensatorplatten baut sich während den Ladevorgängen mit der Zeit auf und erreicht ihr Maximum dann, wenn der Kondensator vollständig aufgeladen und der Stromfluss zum Erliegen gekommen ist. Bei den Entladevorgängen sind die Verhältnisse umgekehrt: Die Stromstärke ist dann am größten, wenn der Kondensator vollständig entladen ist.\footnote{Paragraph von: \url{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}}
+Beim Wechselstrom schwingen die elektrischen Ladungen nämlich hin und her. Ein Kondensator im Wechselstromkreis wird also abwechselnd geladen, wieder entladen und dann anders gepolt geladen. Die Spannung zwischen den Kondensatorplatten baut sich während den Ladevorgängen mit der Zeit auf und erreicht ihr Maximum dann, wenn der Kondensator vollständig aufgeladen und der Stromfluss zum Erliegen gekommen ist. Bei den Entladevorgängen sind die Verhältnisse umgekehrt: Die Stromstärke ist dann am größten, wenn der Kondensator vollständig entladen ist.\endnote{Paragraph von: \url{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}}
 
 \glqq Der Strom eilt der Spannung voraus.\grqq
 
@@ -56,7 +52,7 @@ Daraus folgt:
 
 \subsection{Auswirkungen von Blindwiderständen auf die Stromstärke} \label{subsec:AuswirkungenWiderstand}
 
-Man kann die Gleichung für die Impedanz (Gleichung \ref{eq:Impedanz} auf Seite \pageref{eq:Impedanz}) nach $I$ umstellen, um sich zu verdeutlichen, dass eine erhöhte Impedanz eine niedrigere Stromstärke zur Folge hat, genau wie der Ohm'sche Widerstand im Wechselstromkreis:
+Man kann die Gleichung für die Impedanz (Gleichung \ref{eq:Impedanz} auf Seite \pageref{eq:Impedanz}) nach $I$ umstellen, um sich zu verdeutlichen, dass eine erhöhte Impedanz, in welcher der Blindwiderstand steckt, eine niedrigere Stromstärke zur Folge hat, genau wie der Ohm'sche Widerstand im Wechselstromkreis:
 
 \begin{equation}	\label{eq:ImitZ}
 	I_{eff}=\frac{U_{eff}}{Z}
@@ -77,15 +73,26 @@ Diese Eigenschaften macht man sich in der Audiotechnik bei Frequenzweichen oder 
 
 \subsection{Zeigerdiagramm}	\label{subsec:WiderstaendeZeigerdiagram}
 
-Die Impedanz ist auch berechenbar, wenn der Ohm'sche Widerstand und der Blindwiderstand bekannt ist. Bevor Gesetze betrachtet werden, ist das Zeigerdiagramm eine gute Veranschaulichung.
-
-Auf einem Zeigerdiagramm lässt sich die Relation von Blindwiderstand, Ohmschen Widerstand, Scheinwiderstand (Impedanz) und dem Phasenverschiebungswinkel darstellen\footnote{Abbildung von: \url{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}}:
+Die Impedanz ist auch berechenbar, wenn der Ohm'sche Widerstand und der Blindwiderstand bekannt sind. Bevor Gesetze betrachtet werden, ist das Zeigerdiagramm\endnote{"Zeigerdiagramm für Widerstände" by Till Blaha - Mit Gnuplot selbst erstellt. Lizenziert unter Gemeinfrei.} eine gute Veranschaulichung für die Beziehungen und den Phasenverschiebungswinkel.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Zeigerdiagramm}
-	\caption{Zeigerdiagramm mit Widerständen: Blau: Ohm'scher Widerstand, Rot: Blindwiderstand, Grau: Impedanz, $\varphi$: Phasenverschiebungswinkel}
+	\includegraphics[width=0.8\textwidth]{plot_zeigerdiagramm}
+	\begin{comment} Gnuplot:
+set ylabel "X_L - X_C"
+set label "R" at 2.5,-0.2
+set label "Z" at 2.7,0.6
+set arrow from graph 0,0.5 to graph 0,0.9 size screen 0.01,22,60 filled ls 1 front
+set arrow from graph 0,0.5 to graph 0.85,0.5 size screen 0.01,22,60 filled ls 3 front
+set arrow from graph 0,0.5 to graph 0.85,0.9 size screen 0.01,22,60 filled ls 2 front
+set arrow from graph 0.85,0.5 to graph 0.85,0.9 size screen 0.01,22,60 filled ls 1 front
+unset key
+set output "plot_zeigerdiagramm.png"
+plot 100
+	\end{comment}
+	\caption{Zeigerdiagramm mit Widerständen: Blau: Ohm'scher Widerstand, Rot: Blindwiderstand, Schwarz: Impedanz, Der Phasenverschiebungswinkel ist der Winkel zwischen der Impedanz (Hypothenuse) und dem Ohm'schen Widerstand (Kathete)}
 \end{figure}
+
 
 Das Diagramm veranschaulicht den Zusammenhang zwischen dem Verhältnis des Blindwiderstandes und dem Ohm'schen Widerstand. Dieses Verhältnis ist nämlich immer gleich dem Tangens des Winkels $\varphi$.
 
@@ -108,14 +115,14 @@ Nun ist auch die Betrachtung der Gesetze, angelehnt an diese Darstellungsform, d
 
 Für die Impedanz können nun, zusätzlich zur \gleichungsreferenz{eq:Impedanz}, noch andere Betrachtungen gefunden werden:
 
-In Abhängigkeit von $X$ und $R$:
+In Abhängigkeit von $X$ und $R$ mit dem Satz des Pythagoras:
 
 \begin{equation}	\label{eq:ImepdanzXR}
 	Z = \sqrt{X^2 + R^2}
 \end{equation}
 
 
-\noindent In Abhängigkeit von $X$ und $\varphi$:
+\noindent In Abhängigkeit von $X$ und $\varphi$ mit weiteren Winkelbeziehungen im rechtwinkligen Dreieck:
 
 \begin{equation}	\label{eq:ImepdanzXphi}
 	Z = \frac{X}{\sin\varphi}
@@ -127,15 +134,3 @@ In Abhängigkeit von $X$ und $R$:
 \begin{equation}	\label{eq:ImepdanzRphi}
 	Z = \frac{R}{\cos\varphi}
 \end{equation}
-
-
-
-
-
-
-
-
-
-
-
-

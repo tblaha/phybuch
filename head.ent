@@ -378,24 +378,20 @@ Gemeinfrei
 \@endanenote 
 \@doanenote {33}
 macro:->"Phasenverschiebung
-kapazitiv"
+Spannung
+vor
+Strom"
 by
-Hyperstryke
+Till
+Blaha
 -
-In
-Inkscape
+Mit
+Gnuplot
 selbst
 erstellt.
-Licensed
-under
-Public
-Domain
-via
-Wikimedia
-Commons
--
-\url
-{https://commons.wikimedia.org/wiki/File:Phasenverschiebung_kapazitiv.svg}
+Lizenziert
+unter
+Gemeinfrei.
 \@endanenote 
 \@doanenote {34}
 macro:->Abbildung
@@ -432,10 +428,20 @@ von:
 {http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
 \@endanenote 
 \@doanenote {38}
-macro:->Abbildung
-von:
-\url
-{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
+macro:->"Zeigerdiagramm
+für
+Widerstände"
+by
+Till
+Blaha
+-
+Mit
+Gnuplot
+selbst
+erstellt.
+Lizenziert
+unter
+Gemeinfrei.
 \@endanenote 
 \@doanenote {39}
 macro:->„SchwingkreisSchaltung“
@@ -528,6 +534,22 @@ _{deg}
 $
 \@endanenote 
 \@doanenote {44}
+macro:->"Phasenverschiebung
+minus
+0,5pi"
+by
+Till
+Blaha
+-
+Mit
+Gnuplot
+selbst
+erstellt.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {45}
 macro:->Umrechnung
 des
 Winkels
@@ -559,7 +581,7 @@ _{deg}
 }
 $
 \@endanenote 
-\@doanenote {45}
+\@doanenote {46}
 macro:->„Onde
 electromagnetique“
 von
@@ -582,7 +604,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}
 \@endanenote 
-\@doanenote {46}
+\@doanenote {47}
 macro:->„Refraction
 -
 Huygens-Fresnel
@@ -611,14 +633,14 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Refraction\_-\_Huygens-Fresnel\_principle.svg}
 \@endanenote 
-\@doanenote {47}
+\@doanenote {48}
 macro:->Animiertes
 .gif
 von:
 \url
 {https://www.itp.uni-hannover.de/~zawischa/ITP/beugg.html}
 \@endanenote 
-\@doanenote {48}
+\@doanenote {49}
 macro:->„Double-slit
 schematic“
 von
@@ -642,7 +664,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Double-slit_schematic.svg}
 \@endanenote 
-\@doanenote {49}
+\@doanenote {50}
 macro:->"Brewsters-angle"
 by
 Pajs
@@ -664,7 +686,7 @@ von
 Till
 Blaha
 \@endanenote 
-\@doanenote {50}
+\@doanenote {51}
 macro:->"Photoelectric
 effect
 diagram
@@ -689,7 +711,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Photoelectric_effect_diagram_no_label.svg}
 \@endanenote 
-\@doanenote {51}
+\@doanenote {52}
 macro:->"Bragg"
 by
 Dipl.-Phys.

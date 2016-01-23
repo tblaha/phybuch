@@ -1,16 +1,10 @@
-%%%%% Physik Kompendium Nr.2 %%%%%
-%% 04 -- Erläuterungen zum Wechselstromkreis %%
-
-
-
 \subsection{Grundlegende Begriffe}		\label{subsec:ErlaeuterungenGrundlegend}
-
 
 \subsubsection{Wechselstrom}
 
-Mit Wechselstrom bezeichnet einen Strom, der nicht nur von einem Punkt zum Anderen fließt, sondern mit einer Frequenz die Fließrichtung wechselt. Interessant ist, dass obwohl unter dem Strich keine Elektronen vollständig \glqq überlaufen\grqq{} , trotzdem Energie verbraucht wird.
+Mit Wechselstrom bezeichnet man einen Strom, der nicht nur von einem Punkt zum anderen fließt, sondern mit einer Frequenz die Fließrichtung wechselt. Interessant ist, dass obwohl unter dem Strich keine Elektronen vollständig \glqq überlaufen\grqq{} , trotzdem Energie umgesetzt werden kann.
 
-Im Idealfall, von dem auch bei allen folgenden Betrachtungen ausgegangen wird, weist die Spannungs- und Stromkurve den Verlauf einer Sinuskurve auf.
+Im Idealfall, von dem auch bei allen folgenden Betrachtungen ausgegangen wird, weist die Spannungs- und Stromkurve, über der Zeit, den Verlauf einer Sinuskurve auf.
 
 
 \subsubsection{Amplitude}
@@ -78,18 +72,26 @@ Für eine Sinuskurve lässt sie sich wie folgt, in Abhängigkeit der maximalen S
 
 \subsubsection{Phasenverschiebung}
 
-Eine Phasenverschiebung ist die Verschiebung einer Kurve entlang der x-Achsen, typischerweise die Verschiebung der Kurve des Stroms relativ zur Kurve der Spannung. Sie wird in Grad oder im Bogenmaß angegeben.\footnote{"Phasenverschiebung kapazitiv" by Hyperstryke - In Inkscape selbst erstellt. Licensed under Public Domain via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Phasenverschiebung_kapazitiv.svg}}
+Eine Phasenverschiebung ist die Verschiebung einer Kurve entlang der x-Achsen, typischerweise die Verschiebung der Kurve des Stroms relativ zur Kurve der Spannung. Sie wird in Grad oder im Bogenmaß angegeben.\endnote{"Phasenverschiebung Spannung vor Strom" by Till Blaha - Mit Gnuplot selbst erstellt. Lizenziert unter Gemeinfrei.}
+
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Phasenverschiebung}
-	\caption{\glqq Der Strom hinkt der Spannung um $\frac{1}{2}\pi$ bzw. 90\degree{} hinterher.\grqq }
+	\begin{comment} Gnuplot: xpitics.p
+set xlabel "t"
+set ylabel "I, U"
+set output "plot_spannungen_vor_strom.png"
+plot cos(x)*0.7 title "Strom" ls 1, sin(x) title "Spannung" ls 3
+	\end{comment}
+	\includegraphics[width=0.7\textwidth]{plot_spannungen_vor_strom}
+	\caption{\glqq Der Strom hinkt der Spannung um $\frac{\pi}{2}$ bzw. 90\degree{} hinterher.\grqq }
 \end{figure}
+
 
 
 \subsubsection{Impedanz}
 
-Die Impedanz $Z$ ist der effektive Gesamtwiderstand im Wechselstromkreis. Die Impedanz trägt wie der Ohm'sche Widerstand die Einheit Ohm mit Zeichen $\Omega$. Sie ist der Quotient aus der Spannung und der Stromstärke:
+Die Impedanz $Z$ ist der effektive Gesamtwiderstand im Wechselstromkreis. Die Impedanz trägt wie der Ohm'sche Widerstand die Einheit \emph{Ohm} mit Zeichen $\Omega$. Sie ist der Quotient aus der Spannung und der Stromstärke:
 
 \begin{equation}		\label{eq:Impedanz}
 	Z = \frac{U_{eff}}{I_{eff}}

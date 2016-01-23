@@ -2,11 +2,13 @@
 
 Aus der maximalen Geschwindigkeit und der Frequenz, Periodendauer oder Winkelgeschwindigkeit lässt sich sofort auf die Amplitude schließen, da in der Funktion für die Geschwindigkeit bei einer Schwingung (\referenz{sec:schwingungsgleichungen}) $v(t)=\omega \cdot y_{max} \cdot \cos{(\omega t)}$ das Maxima dann erreicht ist, wenn der Cosinus seinen Maximalwert $1$ annimmt. Dann gilt folgendes:
 
-\begin{align*} \label{eq:geschwindigkeit_amplitude}
+\begin{align} \label{eq:geschwindigkeit_amplitude}
+\begin{split}
 	v_{max} &= \omega \cdot y_{max} \\
 	v_{max} &= 2\pi f \cdot y_{max} \\
 	y_{max} &= \frac{v_{max}}{2\pi f}
-\end{align*}
+\end{split}
+\end{align}
 
 
 \subsection{Gesetze am Federpendel} \label{subsec:gesetze_federpendel}
@@ -15,42 +17,45 @@ Aus der maximalen Geschwindigkeit und der Frequenz, Periodendauer oder Winkelges
 
 Das Hooke'sche Gesetz gibt die Federhärte einer Feder, also dessen Kenngröße, an. Die Einheit $\frac{N}{m}$ erklärt selbst die Formel:
 
-\begin{equation*}
+\begin{equation}
 	D=\frac{F}{l}
-\end{equation*}
+\end{equation}
 
-Mit dem Gesetz ist gezeigt, dass an einem Federpendel die Rückstellkraft $F$ proportional zur Auslenkung $l$ ist. Damit ist es eine harmonische Schwingung. (\referenz{subsec:harmonisch})
+Mit dem Gesetz ist gezeigt, dass an einem Federpendel die Rückstellkraft $F$ proportional zur Auslenkung $l$ ist, da $D$ konstant ist. Damit handelt es sich um eine harmonische Schwingung (\referenz{subsec:harmonisch}).
 
 \subsubsection{Periodendauer beim Federpendel}
 
 Die Periodendauer beim Federpendel ist abhängig von der Masse $m$ und der Federkonstante $D$:
 
-\begin{equation*}
+\begin{equation}
 	T_{Feder}=2\pi \cdot \frac{m}{D}
-\end{equation*}
+\end{equation}
 
 Die Herleitung gestaltet sich folgendermaßen: Die zur Auslenkung $y$ proportionale Kraft $F$ ist die Rückstellende Kraft; beschrieben durch eine Umformung des Hooke'schen Gesetzes: $F_{r}=D \cdot y$. 
-%Der Vektor dieser Rückstellende Kraft zeigt dem der Auslenkenden Kraft genau entgegen, daher muss der Term in diesem Fall negiert werden: $F_{r}=-D \cdot y$.
 
 In einem geschlossenen System ist die Summe aller Kräfte $0$. Es ergibt sich Folgendes:
 
-\begin{align*}
+\begin{align}
+\begin{split}
 	F_a + F_r &= 0 \\
 	F_a &= -F_r \\
-\end{align*}
+\end{split}
+\end{align}
 
-Die Kraft $F_a$ kann wie jede Kraft mit Newtons zweitem Gesetz als $F_a=m \cdot a$ beschrieben werden. Die Beschleunigung in $a$ kann dann als zweite Ableitung der Auslenkung $y$ nach der Zeit beschrieben werden. Aus den Schwingungsgleichungen (\referenz{sec:schwingungsgleichungen}) geht hervor, dass $y''=-\omega^{2} \cdot y$ ist. Daher kann man wie folgt einsetzen:
+Die auslenkende Kraft $F_a$ kann wie jede Kraft mit Newtons zweitem Gesetz als $F_a=m \cdot a$ beschrieben werden. Die Beschleunigung in $a$ kann dann als zweite Ableitung der Auslenkung $y$ nach der Zeit beschrieben werden. Aus den Schwingungsgleichungen (\referenz{sec:schwingungsgleichungen}) geht hervor, dass $y''=-\omega^{2} \cdot y$ ist. Daher kann man wie folgt einsetzen:
 
-\begin{align*}
+\begin{align}
+\begin{split}
 	m \cdot a &= -D \cdot y \\
 	m \cdot y'' &= -D \cdot y \\
 	m \cdot -\omega^{2} \cdot y &= -D \cdot y \\
 	- m \cdot \omega^{2} &= -D \\
 	\omega &= \sqrt{\frac{D}{m}}
-\end{align*}
+\end{split}
+\end{align}
 
 Für aus $\omega=\frac{2\pi}{T}$ folgt für $T$:
 
-\begin{equation*}
+\begin{equation}
 	T = 2\pi \cdot \sqrt{\frac{m}{D}}
-\end{equation*}
+\end{equation}
