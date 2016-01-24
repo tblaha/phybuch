@@ -1,22 +1,26 @@
-Die Wellengleichung gibt die Elongation des Teilchens mit dem Abstand $x$ zum Ausgangspunkt zum Zeitpunkt $t$ an:
+Die Wellengleichung gibt die Elongation des Teilchens mit dem Abstand $x$ zum Ausgangspunkt beim Zeitpunkt $t$ an:
 
-\begin{equation} \label{eq:wellengleichung_y}
+\begin{align} \label{eq:wellengleichung_y}
 	y(x,t) = y_{max} \cdot sin{ (2\pi(\frac{t}{T}-\frac{x}{\lambda})) }
-\end{equation}
+\end{align}
 
-Zur Herleitung aus der Schwingungsgleichung muss Folgendes beachtet werden. Die Zeit $t_x$ bis das räumliche Teilchen $x$ von der Front der Welle erfasst wird, lässt sich recht einfach berechnen. Gebraucht wird dabei die Ausbreitungsgeschwindigkeit $c=\frac{\lambda}{T}$ die generelle Formulierung der Geschwindigkeit $v=\frac{s}{t}$:
+Zur Herleitung aus der Schwingungsgleichung muss Folgendes beachtet werden. Die Zeit $t_x$ bis das räumliche Teilchen $x$ von der Front der Welle erfasst wird, lässt sich recht einfach berechnen. Gebraucht wird dabei die Ausbreitungsgeschwindigkeit $c=\frac{\lambda}{T}$ und die generelle Formulierung der Geschwindigkeit $v=\frac{s}{t}$:
 
-\begin{align*}
+\begin{align}
+\begin{split}
 	t   &= \frac{s}{v} \\
 	t_x &= \frac{x}{c} \\
 	t_x &= \frac{x \cdot T}{\lambda}
-\end{align*}
+\end{split}
+\end{align}
 
 Analog zur Verschiebung nach rechts von beispielsweise einer Parabel, muss der Term für $t_x$ von $t$ in der Schwingungsgleichung abgezogen werden. Damit ist die Variable $x$ mit in der Gleichung und der Term \glqq kompensiert\grqq{} den \glqq Offset\grqq{}, der sich durch das spätere Erfassen ergibt:
 
-\begin{align*}
+\begin{align}
+\begin{split}
 	y(x,t) &= y_{max} \cdot sin{[\omega \cdot (t-\frac{x}{\lambda} \cdot T)]} \\
 	y(x,t) &= y_{max} \cdot sin{[\frac{2\pi}{T} \cdot (t-\frac{x}{\lambda} \cdot T)]} \\
 	y(x,t) &= y_{max} \cdot sin{[2\pi \cdot (\frac{t}{T}-\frac{x}{\lambda \cdot T} \cdot T)]} \\
 	y(x,t) &= y_{max} \cdot sin{[2\pi \cdot (\frac{t}{T}-\frac{x}{\lambda})]}
-\end{align*}
+\end{split}
+\end{align}

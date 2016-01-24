@@ -1,38 +1,39 @@
 Aufgrund der De Broglie-Wellenlänge haben auch Elektronen eine Wellenlänge, wenn sie einen Impuls besitzen, also bewegt sind.
 
-Nun gilt es, Interferenzerscheinungen zu zeigen, was die Theorie beweisen würde, da es Wellencharakteristika zeigen würden.
+Nun gilt es, Interferenzerscheinungen zu zeigen, was die Theorie beweisen würde, da es Wellencharakteristika zeigen würde.
 
 \subsection{Theoretische Bestimmung der Wellenlänge}
 
-Theoretisch lässt sich seine Wellenlänge $\lambda$ durch das Gleichsetzen der Gleichung des Impulses $\vec{p}=m\cdot\vec{v}$ mit der Formel für den Photonenimpuls $\vec{p}=\frac{h}{\lambda}$ berechnen:
+Theoretisch lässt sich die De-Broglie-Wellenlänge $\lambda$ durch das Gleichsetzen der Gleichung des Impulses $\vec{p}=m\cdot\vec{v}$ mit der Formel für den Photonenimpuls $\vec{p}=\frac{h}{\lambda}$ berechnen:
 
 \begin{align}	\label{eq:LambdaTheorie}
 \begin{split}
-	m \cdot v &= \frac{h}{\lambda} \\
-	\lambda &= \frac{h}{m \cdot v}
+	m_e \cdot v &= \frac{h}{\lambda} \\
+	\lambda &= \frac{h}{m_e \cdot v}
 \end{split}
 \end{align}
 
-Um die Geschwindigkeit $v$, bei einem Versuch mit Elektronenbeschleunigung durch ein elektrisches Feld zu ersetzen, setzt man die Gleichungen der kinetischen Energie $E_{kin}$ mit der Gleichung der Elektrischen $E_{el}$ gleich und formt anschließend nach $v$ um (Siehe: \referenz{sec:BraunscheRoehre}):
+Um die Geschwindigkeit $v$ bei einem Versuch mit Elektronenbeschleunigung durch ein elektrisches Feld zu ersetzen, setzt man die Gleichungen der kinetischen Energie $E_{kin}$ mit der Gleichung der Elektrischen $E_{el}$ gleich und formt anschließend nach $v$ um (Siehe: \referenz{sec:BraunscheRoehre}):
 
 \begin{align}
 \begin{split}
-	v = \sqrt{\frac{2e \cdot U_B}{m_e}}
+	v = \sqrt{\frac{2q_e \cdot U_B}{m_e}}
 \end{split}
 \end{align}
 
-\noindent Durch Einsetzen in Gleichung \ref{eq:LambdaTheorie} folgt dann:
+\noindent Durch Einsetzen in Gleichung \ref{eq:LambdaTheorie} folgt dann die theoretische Wellenlänge des Elektrons, die aus dem Versuchsaufbau zu erwarten ist:
 
 \begin{align}
 \begin{split}
-	\lambda = \frac{h \sqrt{m_e}}{m \cdot \sqrt{2e \cdot U_B}}
+	\lambda &= \frac{h \sqrt{m_e}}{m_e \cdot \sqrt{2q_e \cdot U_B}} \\
+	\lambda &= \frac{h}{\sqrt{m_e} \cdot \sqrt{2q_e \cdot U_B}}
 \end{split}
 \end{align}
+
 
 \subsection{Interferenz an Graphit}
 
-Da Elektronen der Theorie nach eine sehr kleine Wellenlänge haben, benutzt man oft Kristalle um Interferenzmuster zu erzeugen. An den Netzebenen des Kristalls, in denen die Atome regelmäßig angeordnet sind, werden Elektronen, ähnlich wie Licht an dünnen Schichten%Cue for ref
-, gestreut. Auf dem Leuchtschirm der Röhre kommt es je nach Gangunterschied über die verschiedenen Netzebenen zu Maxima und Minima.
+Da Elektronen der Theorie nach eine sehr kleine Wellenlänge haben, benutzt man Kristalle, um Interferenzmuster zu erzeugen. An den Netzebenen des Kristalls, in denen die Atome regelmäßig angeordnet sind, werden Elektronen gestreut, ähnlich wie Licht an dünnen Schichten (Siehe: \referenz{subsec:duenneschicht}). Auf dem Leuchtschirm der Röhre kommt es je nach Gangunterschied über die verschiedenen Netzebenen zu Maxima und Minima.
 
 \begin{Wichtig}
 	Bei Grafit haben die Atome in einer Ebene einen anderen Abstand $d$ zu einander, als die Atome zwischen den Ebenen. Es gibt also zwei "Spaltabstände" und folglich auch zwei Maxima 1. (2., $\cdots$, n.) Ordnung.
@@ -45,9 +46,7 @@ Da Elektronen der Theorie nach eine sehr kleine Wellenlänge haben, benutzt man 
 	\label{fig:e-angrafit}
 \end{figure}
 
-Abbildung von: \url{https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bragg.svg/548px-Bragg.svg.png}
-
-Der Gangunterschied $\delta$, siehe Zeichnung\footnote{"Bragg" by Dipl.-Phys. (JPG-version), Matthias M. (SVG-version) - /home/matthias/Desktop. Licensed under Public Domain via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Bragg.svg}}, ist $\delta = 2d \cdot \sin{\alpha}$ und für konstruktive Interferenz, also ein Maximum, muss er natürliches vielfaches der Wellenlänge $\lambda$ sein:
+Der Gangunterschied $\delta$, siehe Zeichnung\footnote{"Bragg" by Dipl.-Phys. (JPG-version), Matthias M. (SVG-version) - /home/matthias/Desktop. Licensed under Public Domain via Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Bragg.svg}}, ist $\delta = 2d \cdot \sin{\alpha}$ und für konstruktive Interferenz, also ein Maximum, muss er ein natürliches Vielfaches der Wellenlänge $\lambda$ sein:
 
 \begin{align}
 \begin{split}
@@ -66,9 +65,9 @@ Der Gangunterschied $\delta$, siehe Zeichnung\footnote{"Bragg" by Dipl.-Phys. (J
 
 \subsubsection{Versuch}
 
-Im Versuch wird ein Elektronenstrahl auf einen Graphitkristall geleitet. An diesem kommt es zu Streuung und es bilden sich jeweils zwei ringförmige Maxima auf dem Schirm.
+Im Versuch wird ein beschleunigter Elektronenstrahl auf einen Graphitkristall geleitet. An diesem kommt es zur Streuung und es bilden sich zwei ringförmige Maxima auf dem Schirm, welcher so beschichtet ist, dass er unter Elektronenstimulation leuchtet.
 
-Bezeichnet man den Abstand vom Maximum n. Ordnung zum Maximum 0. Ordnung mit $r$ und den Abstand vom Kristall zum Schirm mit $a$ folgt gemäß Winkelbeziehungen:
+Bezeichnet man den Abstand vom Maximum $n.$ Ordnung zum Maximum $0.$ Ordnung mit $r$ und den Abstand vom Kristall zum Schirm mit $a$ folgt gemäß Winkelbeziehungen:
 
 \begin{align}
 	\tan{2\alpha} = \frac{r}{a}
@@ -100,7 +99,7 @@ Um die Wellenlänge der Elektronen nun experimentell zu bestimmen, setzt man die
 	2\cdot\arcsin(\frac{n\cdot \lambda}{2d}) &= \arctan(\frac{r}{l})  \\
 	\arcsin(\frac{n\cdot \lambda}{2d}) &= \frac{1}{2}\cdot\arctan(\frac{r}{l}) \\
 	\frac{n\cdot \lambda}{2d} &= \sin(\frac{1}{2}\cdot\arctan(\frac{r}{l})) \\
-	\lambda &= \sin(\frac{1}{2}\cdot\arctan(\frac{r}{l}))\cdot 2d \cdot \frac{1}{n}
+	\lambda &= \sin(\frac{1}{2}\cdot\arctan(\frac{r}{l}))\cdot \frac{2d}{n}
 \end{split}
 \end{align}
 
@@ -111,9 +110,9 @@ Es kommt nur zur Interferenz, wenn die Bragg'sche Gleichung erfüllt ist. Dafür
 
 \subsection{Interferenz am Doppelstpalt}
 
-Grundsätzlich gelten die gleichen Formeln wie bei der Interferenz mit Licht (Siehe \referenz{sec:interferenz_licht}). Allerdings muss der Spaltabstand $d$, aufgrund der ebenfalls sehr kleinen Wellenlängen, sehr klein sein, damit man überhaupt ein Interferenzmuster detektieren kann. Das Interferenz Muster ist trotzdem so klein, dass man es nur mit einem Elektronenmikroskop sichtbar machen kann.
+Grundsätzlich gelten die gleichen Formeln wie bei der Interferenz mit Licht (Siehe \referenz{sec:interferenz_licht}). Allerdings muss der Spaltabstand $d$, aufgrund der sehr kleinen Wellenlängen, ebenfalls sehr klein sein, damit man überhaupt ein Interferenzmuster detektieren kann. Auch wenn man dies berücksichtigt, ist das Interferenzmuster trotzdem so klein, dass man es nur mit einem Elektronenmikroskop sichtbar machen kann.
 
-Bedingungen für konstruktive Interferenz: $\delta = n \cdot \lambda$; für destruktive Interferenz: $\delta = (n-\frac{1}{2}) \cdot \lambda$
+Bedingungen für konstruktive Interferenz: $\delta = n \cdot \lambda$; für destruktive Interferenz: $\delta = (n-\frac{1}{2}) \cdot \lambda$.
 
 
 \subsubsection{Versuch}
