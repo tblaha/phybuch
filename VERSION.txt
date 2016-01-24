@@ -1,3 +1,15 @@
+25.01.2016 -- Till Blaha -- Version 0.7 Alpha
+
+Generelle Überarbeitung
+
+Aktuelle Lage:
+-- Alle Kapitel, bis auf Atommodelle gelten als stabil
+-- Optik: Interferenz an dünnen Schichten bedarf Kontrolle.
+-- Einige Abbildungen sowie Urheberangaben müssen noch überarbeitet werden
+-- Nicht für die allgemeine Veröffentlichung bestimmt!
+
+
+
 10.01.2016 -- Till Blaha -- Version 0.6 Alpha
 
 Quanten überarbeitet, immernoch unvollständig. Stöße fertig bearbeitet.
