@@ -1,36 +1,3 @@
-%%%%% Elektrisches Feld %%%%%
-%% #3 Kondensator %%
-
-
-%Some sample text to be displayed above the first subsection
-
-%\subsection{Prinzip}
-
-%Ein Zyklotron besteht aus Zwei hohlen, halbzylindrischen und Duanden an denen eine Spannung mit unterschiedlichem Vorzeichen anliegt, und darüber bzw. darunter liegende Magneten, die ein homogenes Magnetfeld erzeugen. Zudem gibt es einen Einlass und einen Auslass für Teilchen.
-
-%\begin{wrapfigure}{r}{0.4\textwidth} \label{Zyklo}
-%
-%	\vspace{-10pt}
-%	\includegraphics[width=0.35\textwidth]{Zyklotron_Prinzipskizze02.png}
-%	\vspace{-13pt}
-%	\caption{Prinzipskizze eines Zyklotrons}
-%	\vspace{-5pt}	
-%	
-%\end{wrapfigure}
-
-%\subsubsection{Anwendung}
-
-% Some Formula:
-
-%\begin{equation}
-%	x= \frac{y \cdot 13 \pi z}
-%			{\cos \alpha}
-%\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%
-% Eigentlicher Beginn %
-%%%%%%%%%%%%%%%%%%%%%%%
-
 Der Plattenkondensator (im Folgenden nur noch Kondensator genannt) ist ein wichtiges Element der Elektrotechnik. Auch eignet er sich seht gut, um in der Schulphysik verschiedene Aspekte von elektrischen Feldern zu zeigen.
 
 
@@ -43,7 +10,7 @@ Der Plattenkondensator (im Folgenden nur noch Kondensator genannt) ist ein wicht
 	\label{fig:CapWiring}
 \end{figure}
 
-Ein Plattenkondensator besteht aus zwei ungleichnamig geladenen Platten, die sich parallel gegenüberstehen. Sie sind an eine Spannungsquelle angeschlossen. In einem Schaltplan wird ein Kondensator wie in Abbildung \ref{fig:CapWiring} \footnote{"RC switch" by PureCore - Own work. Licensed under CC BY-SA 3.0 via Commons, Slightly modified by Till Blaha (removal of voltage direction) - \url{https://commons.wikimedia.org/wiki/File:RC_switch.svg}} notiert.
+Ein Plattenkondensator besteht aus zwei ungleichnamig geladenen Platten, die sich parallel gegenüberstehen. Sie sind an eine Spannungsquelle angeschlossen. In einem Schaltplan wird ein Kondensator wie in Abbildung \ref{fig:CapWiring} \endnote{"RC switch" by PureCore - Own work. Licensed under CC BY-SA 3.0 via Commons, Slightly modified by Till Blaha (removal of voltage direction) - \url{https://commons.wikimedia.org/wiki/File:RC_switch.svg}} notiert.
 
 \begin{Wichtig}
 An sich fließt kein Strom durch den Kondensator! Die Platten sind elektrisch getrennt; das Dielektrikum, also das nicht-leitende Material zwischen den Platten (z.B. Luft), isoliert. 
@@ -58,7 +25,7 @@ An sich fließt kein Strom durch den Kondensator! Die Platten sind elektrisch ge
 	\caption{Das elektrische Feld in und um einen Plattenkondensator}
 \end{figure}
 
-Durch den Überschuss positiver Ladungen auf der einen Seite und negativer Ladungen auf der Anderen, ergibt sich ein homogenes Magnetfeld zwischen den parallelen Platten.\footnote{„E Feld Kondensator“. Über Wikibooks - \url{https://de.wikibooks.org/wiki/Datei:E_Feld_Kondensator.png}}
+Durch den Überschuss positiver Ladungen auf der einen Seite und negativer Ladungen auf der Anderen, ergibt sich ein homogenes Magnetfeld zwischen den parallelen Platten.\endnote{„E Feld Kondensator“. Über Wikibooks - \url{https://de.wikibooks.org/wiki/Datei:E_Feld_Kondensator.png}}
 
 \subsubsection{Feldstärke}
 
@@ -172,7 +139,7 @@ Für eine Bestimmungsgleichung für die Kapazität eines Kondensators, welche nu
 Die Spannung $U$ kürzt sich und es wurde ein weitere Konstante $\epsilon_r$ eingeführt. Die einheitenlose \glqq relative Permittivität\grqq{}  (auch \glqq relative Feldkonstante\grqq) charakterisiert die verstärkenden oder schwächenden Eigenschaften des Dielektrikum (\referenz{subsec:kon_def}). Für Luft und Vakuum ist sie $\approx 1$. Es gibt jedoch Materialien, die durch eine hohe relative Feldkonstante die Kapazität um Faktoren bis ca. $50 \cdot 10^3$ erhöhen.
 
 \begin{NiceToKnow}
-$BaTiO_3$, Bariumthiooxid, hat eine $\epsilon_r$ von $10^2-10^3$\footnote{Aus: \url{http://www.techniklexikon.net/d/dielektrizitaetskonstante/dielektrizitaetskonstante.htm}}
+$BaTiO_3$, Bariumthiooxid, hat eine $\epsilon_r$ von $10^2-10^3$\endnote{Angabe von: \url{http://www.techniklexikon.net/d/dielektrizitaetskonstante/dielektrizitaetskonstante.htm}, abgerufen am 21.12.2015}
 \end{NiceToKnow}
 
 
@@ -186,7 +153,7 @@ $BaTiO_3$, Bariumthiooxid, hat eine $\epsilon_r$ von $10^2-10^3$\footnote{Aus: \
 	\caption{Parallelschaltung zweier Kapazitäten (= Kondensatoren) $C_1$ und $C_2$}
 \end{figure}
 
-Wenn Kondensatoren in einem Stromkreis parallel\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, addieren sich die Kapazitäten. Man kann sagen, dass die effektive Platte größer wird und daher mehr Ladung pro Spannung tragen kann (Siehe \gleichungsreferenz{eq:kapazitaet} und \ref{eq:bestimmung_kondensator}):
+Wenn Kondensatoren in einem Stromkreis parallel\endnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, addieren sich die Kapazitäten. Man kann sagen, dass die effektive Platte größer wird und daher mehr Ladung pro Spannung tragen kann (Siehe \gleichungsreferenz{eq:kapazitaet} und \ref{eq:bestimmung_kondensator}):
 
 \begin{equation}
 	C_{ges} = \sum\limits_{i=1}^n C_i = C_1 + C_2 + \cdots + C_n
@@ -207,7 +174,7 @@ Wenn Kondensatoren in einem Stromkreis parallel\footnote{Abbildung von: \url{htt
 	\caption{Reihenschaltung zweier Kapazitäten (= Kondensatoren) $C_1$ und $C_2$}
 \end{figure}
 
-Wenn Kondensatoren in einem Stromkreis in Reihe\footnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, ist die Summe der Kehrwerte der einzelnen Kapazitäten der Kehrwert der Gesamtkapazität. Das liegt daran, dass das \glqq Mittelstück\grqq , also die positive Platte von $C_1$ und die negative Platte von $C_2$, eine definierte Ladung trägt. Daraus folgt, dass die positiven und negativen Ladungen an den Platten nur durch Influenz (Siehe \referenz{subsec:Influenz}) auftreten können, da dieses Stück elektrisch vom Rest des Schaltkreises getrennt ist, also auch von einer mögliches Ladungsquelle.
+Wenn Kondensatoren in einem Stromkreis in Reihe\endnote{Abbildung von: \url{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}} geschaltet werden, ist die Summe der Kehrwerte der einzelnen Kapazitäten der Kehrwert der Gesamtkapazität. Das liegt daran, dass das \glqq Mittelstück\grqq , also die positive Platte von $C_1$ und die negative Platte von $C_2$, eine definierte Ladung trägt. Daraus folgt, dass die positiven und negativen Ladungen an den Platten nur durch Influenz (Siehe \referenz{subsec:Influenz}) auftreten können, da dieses Stück elektrisch vom Rest des Schaltkreises getrennt ist, also auch von einer mögliches Ladungsquelle.
 
 Daher ist die Gesamtkapazität der Schaltung $0F$, wenn einer der beiden Kondensatoren die Kapazität $0F$ hat; $0,5F$, wenn beide Kondensatoren die Kapazität $1F$ haben; und die Gesamtkapazität kann nie größer sein als die niedrigste Einzelkapazität in der Kondensatorschaltung.
 

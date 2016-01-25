@@ -5,6 +5,8 @@ build/
 *.toc
 *.out
 head.pdf
+head.txt
 *.synctex.gz
+*.ent
 *~
 .~lock*
