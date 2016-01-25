@@ -26,7 +26,13 @@ Enzyklopädie:
 {https://de.wikipedia.org/wiki/Actio_und_Reactio}
 \@endanenote 
 \@doanenote {4}
-macro:->Abbildung
+macro:->Abbildungen
+\ref
+{fig:kraefte_beliebig}-\ref
+{fig:kraefte_gleich}
+\glqq
+Kräfteaddition\grqq
+{}
 von
 Till
 Blaha
@@ -68,12 +74,47 @@ Commons
 {https://commons.wikimedia.org/wiki/File:Four_pulleys.svg}
 \@endanenote 
 \@doanenote {6}
+macro:->Abbildungen
+\ref
+{fig:gleichfoermig}-\ref
+{fig:beschleunigt}:
+\glqq
+Translationsdiagramme\grqq
+{}
+von
+Till
+Blaha
+-
+Eigene
+Werke.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {7}
+macro:->\glqq
+Abwurfgrößen
+beim
+schiefen
+Wurf\grqq
+{}
+von
+Till
+Blaha
+-
+Eigenes
+Werk.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {8}
 macro:->Abbildung
 von:
 \url
 {https://elearning.physik.uni-frankfurt.de/data/FB13-PhysikOnline/lm_data/lm_282/auto/kap16/picts/epm.gif}
 \@endanenote 
-\@doanenote {7}
+\@doanenote {9}
 macro:->Paragraph
 von:
 Armin
@@ -87,15 +128,17 @@ Klausur\grqq
 vom
 09.10.2014
 \@endanenote 
-\@doanenote {8}
+\@doanenote {10}
 macro:->Abbildung
 von:
 \url
 {http://www.schule.promathika.de/uploads/PhysikSkript/Faraday_Becher.jpg}
 \@endanenote 
-\@doanenote {9}
-macro:->"RC
-switch"
+\@doanenote {11}
+macro:->\glqq
+RC
+switch\grqq
+{}
 by
 PureCore
 -
@@ -121,7 +164,7 @@ direction)
 \url
 {https://commons.wikimedia.org/wiki/File:RC_switch.svg}
 \@endanenote 
-\@doanenote {10}
+\@doanenote {12}
 macro:->„E
 Feld
 Kondensator“.
@@ -131,7 +174,7 @@ Wikibooks
 \url
 {https://de.wikibooks.org/wiki/Datei:E_Feld_Kondensator.png}
 \@endanenote 
-\@doanenote {11}
+\@doanenote {13}
 macro:->Angabe
 von:
 \url
@@ -140,64 +183,69 @@ abgerufen
 am
 21.12.2015
 \@endanenote 
-\@doanenote {12}
-macro:->Abbildung
-von:
-\url
-{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}
-\@endanenote 
-\@doanenote {13}
-macro:->Abbildung
-von:
-\url
-{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}
-\@endanenote 
 \@doanenote {14}
-macro:->Gesetz
-von
-Stokes:
+macro:->Abbildung
+von:
 \url
-{https://de.wikipedia.org/wiki/Gesetz_von_Stokes}
+{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}
 \@endanenote 
 \@doanenote {15}
 macro:->Abbildung
 von:
 \url
-{http://physik-am-gymnasium.de/SekII/Elektrisches_Feld/millikan_auswertung.html}
+{http://farside.ph.utexas.edu/teaching/302l/lectures/node46.html}
 \@endanenote 
 \@doanenote {16}
-macro:->\url
-{https://nl.wikipedia.org/wiki/Proef_van_Millikan}
+macro:->Siehe:
+\url
+{https://de.wikipedia.org/wiki/Gesetz_von_Stokes}
 \@endanenote 
 \@doanenote {17}
-macro:->Z.B.:
+macro:->Abbildung
+von:
+\url
+{http://physik-am-gymnasium.de/SekII/Elektrisches_Feld/millikan_auswertung.html}
+\@endanenote 
+\@doanenote {18}
+macro:->Phrase
+von:
+\url
+{https://nl.wikipedia.org/wiki/Proef_van_Millikan}
+\@endanenote 
+\@doanenote {19}
+macro:->Millikanversuch
+als
+Applet:
 \url
 {http://ne.lo-net2.de/selbstlernmaterial/p/e/mi/java1/mi_java1.html}
 \@endanenote 
-\@doanenote {18}
+\@doanenote {20}
 macro:->Siehe
 auch:
 \url
 {https://de.wikipedia.org/wiki/Edison-Richardson-Effekt}
 \@endanenote 
-\@doanenote {19}
+\@doanenote {21}
 macro:->Abbildung
 von
 \url
 {http://www.abi-physik.de/buch/das-elektrische-feld/braunsche-roehre/}
 \@endanenote 
-\@doanenote {20}
+\@doanenote {22}
 macro:->Siehe:
 \url
 {https://de.wikipedia.org/wiki/Elementarmagnet}
 \@endanenote 
-\@doanenote {21}
-macro:->Abbildung
+\@doanenote {23}
+macro:->Abbildungen
+\ref
+{fig:stab}-\ref
+{fig:hufeisen}
 von
 \url
 {https://lp.uni-goettingen.de/get/text/3791}
 \@endanenote 
-\@doanenote {22}
+\@doanenote {24}
 macro:->„Gerader
 leiter“
 von
@@ -218,7 +266,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Gerader_leiter.svg}
 \@endanenote 
-\@doanenote {23}
+\@doanenote {25}
 macro:->„Stromschleife“
 von
 30px
@@ -241,7 +289,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Stromschleife.svg}
 \@endanenote 
-\@doanenote {24}
+\@doanenote {26}
 macro:->„VFPt
 cylindrical
 coil
@@ -268,7 +316,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:VFPt_cylindrical_coil_real.svg}
 \@endanenote 
-\@doanenote {25}
+\@doanenote {27}
 macro:->„UVWREGEL
 new“
 von
@@ -301,7 +349,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:UVWREGEL_new.png}
 \@endanenote 
-\@doanenote {26}
+\@doanenote {28}
 macro:->„Cyclotron
 motion
 wider
@@ -322,7 +370,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Cyclotron\_motion\_wider\_view.jpg}
 \@endanenote 
-\@doanenote {27}
+\@doanenote {29}
 macro:->„Wienscher
 Geschwindigkeitsfilter“
 von
@@ -335,7 +383,7 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {28}
+\@doanenote {30}
 macro:->„Zyklotron
 Prinzipskizze02“
 von
@@ -353,10 +401,9 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Zyklotron_Prinzipskizze02.svg}
 \@endanenote 
-\@doanenote {29}
+\@doanenote {31}
 macro:->\glqq
-SelbstinduktionGlimmlampeSchaltkreis
-\grqq
+SelbstinduktionGlimmlampeSchaltkreis\grqq
 {}
 von
 Till
@@ -368,11 +415,13 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {30}
-macro:->"Phasenverschiebung
+\@doanenote {32}
+macro:->\glqq
+Phasenverschiebung
 Spannung
 vor
-Strom"
+Strom\grqq
+{}
 by
 Till
 Blaha
@@ -385,7 +434,7 @@ Lizenziert
 unter
 Gemeinfrei.
 \@endanenote 
-\@doanenote {31}
+\@doanenote {33}
 macro:->Abbildung
 von
 LeiFi
@@ -393,7 +442,7 @@ Physik:
 \url
 {http://www.leifiphysik.de/sites/default/files/medien/generator02_elmagnetindukt_ver.gif}
 \@endanenote 
-\@doanenote {32}
+\@doanenote {34}
 macro:->„Betrag
 von
 sinx“
@@ -407,35 +456,35 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {33}
-macro:->Paragraph
-von:
-\url
-{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
-\@endanenote 
-\@doanenote {34}
-macro:->Paragraph
-von:
-\url
-{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
-\@endanenote 
 \@doanenote {35}
-macro:->"Zeigerdiagramm
+macro:->Paragraph
+von:
+\url
+{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
+\@endanenote 
+\@doanenote {36}
+macro:->Paragraph
+von:
+\url
+{http://files.sma.de/dl/10040/BLINDLEISTUNG-ADE094210.pdf}
+\@endanenote 
+\@doanenote {37}
+macro:->\glqq
+Zeigerdiagramm
 für
-Widerstände"
-by
+Widerstände\grqq
+{}
+von
 Till
 Blaha
 -
-Mit
-Gnuplot
-selbst
-erstellt.
+Eigenes
+Werk.
 Lizenziert
 unter
 Gemeinfrei.
 \@endanenote 
-\@doanenote {36}
+\@doanenote {38}
 macro:->„SchwingkreisSchaltung“
 von
 Till
@@ -447,7 +496,7 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {37}
+\@doanenote {39}
 macro:->„Sine
 cosine
 one
@@ -469,7 +518,7 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}
 \@endanenote 
-\@doanenote {38}
+\@doanenote {40}
 macro:->„SiebkreisSchaltung“
 von
 Till
@@ -481,7 +530,7 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {39}
+\@doanenote {41}
 macro:->„SiebkreisGraph“
 von
 Till
@@ -493,87 +542,69 @@ Lizenziert
 unter
 Gemeinfrei
 \@endanenote 
-\@doanenote {40}
-macro:->Umrechnung
-des
-Winkels
-$\alpha
-$
+\@doanenote {42}
+macro:->„Diagramm
+Schwingung“
 von
-Grad
-nach
-Bogenmaß:
-$\alpha
-_{rad}
-=
-\alpha
-_{deg}
-\cdot
-\frac
-{2\pi
-}{360
-\degree
-}
-=
-\alpha
-_{deg}
-\cdot
-\frac
-{\pi
-}{180
-\degree
-}
-$
-\@endanenote 
-\@doanenote {41}
-macro:->"Phasenverschiebung
-minus
-0,5pi"
-by
 Till
 Blaha
 -
-Mit
-Gnuplot
-selbst
-erstellt.
+Eigenes
+Werk.
 Lizenziert
 unter
 Gemeinfrei.
 \@endanenote 
-\@doanenote {42}
-macro:->Umrechnung
-des
-Winkels
-$\alpha
-$
-von
-Grad
-nach
-Bogenmaß:
-$\alpha
-_{rad}
-=
-\alpha
-_{deg}
-\cdot
-\frac
-{2\pi
-}{360
-\degree
-}
-=
-\alpha
-_{deg}
-\cdot
-\frac
-{\pi
-}{180
-\degree
-}
-$
-\@endanenote 
 \@doanenote {43}
+macro:->\glqq
+Phasenverschiebung
+minus
+0,5pi\grqq
+{}
+von
+Till
+Blaha
+-
+Eigenes
+Werk.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {44}
+macro:->\glqq
+Interferenzbedingungen\grqq
+{}
+von
+Till
+Blaha
+-
+Eigenes
+Werk.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {45}
+macro:->\glqq
+Stehende
+Wellen
+bei
+Flageoletttönen
+bei
+Gitarren\grqq
+{}
+von
+Till
+Blaha
+-
+Eigenes
+Werk.
+Lizenziert
+unter
+Gemeinfrei.
+\@endanenote 
+\@doanenote {46}
 macro:->„Onde
 electromagnetique“
 von
@@ -596,11 +627,13 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Onde_electromagnetique.svg}
 \@endanenote 
-\@doanenote {44}
-macro:->„Refraction
+\@doanenote {47}
+macro:->\glqq
+Refraction
 -
 Huygens-Fresnel
-principle“
+principle\grqq
+{}
 von
 Arne
 Nordmann
@@ -625,14 +658,14 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Refraction\_-\_Huygens-Fresnel\_principle.svg}
 \@endanenote 
-\@doanenote {45}
+\@doanenote {48}
 macro:->Animiertes
 .gif
-von:
+auf:
 \url
 {https://www.itp.uni-hannover.de/~zawischa/ITP/beugg.html}
 \@endanenote 
-\@doanenote {46}
+\@doanenote {49}
 macro:->„Double-slit
 schematic“
 von
@@ -660,8 +693,76 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Double-slit_schematic.svg}
 \@endanenote 
-\@doanenote {47}
-macro:->"Brewsters-angle"
+\@doanenote {50}
+macro:->By
+Mbhsb.Matthias
+B.
+Hullin,
+Elmar
+Eisemann,
+Hans-Peter
+Seidel,
+Sungkil
+Lee:
+Physically-Based
+Real-Time
+Lens
+Flare
+Rendering.
+In:
+ACM
+Transactions
+on
+Graphics,
+Vol.
+30
+(4),
+2011
+(Proc.
+SIGGRAPH).
+-
+Own
+work,
+CC
+BY-SA
+3.0,
+\$3
+\@endanenote 
+\@doanenote {51}
+macro:->„Reflection
+in
+a
+soap
+bubble
+edit“
+von
+Brocken
+Inaglory.
+The
+image
+was
+edited
+by
+user:Alvesgaspar
+-
+Eigenes
+Werk.
+Lizenziert
+unter
+CC
+BY-SA
+3.0
+über
+Wikimedia
+Commons
+-
+\url
+{https://commons.wikimedia.org/wiki/File:Reflection_in_a_soap_bubble_edit.jpg}
+\@endanenote 
+\@doanenote {52}
+macro:->\glqq
+Brewsters-angle\grqq
+{}
 by
 Pajs
 -
@@ -682,12 +783,14 @@ von
 Till
 Blaha
 \@endanenote 
-\@doanenote {48}
-macro:->"Photoelectric
+\@doanenote {53}
+macro:->\glqq
+Photoelectric
 effect
 diagram
 no
-label"
+label\grqq
+{}
 by
 Klaus-Dieter
 Keller
@@ -707,8 +810,10 @@ Commons
 \url
 {https://commons.wikimedia.org/wiki/File:Photoelectric_effect_diagram_no_label.svg}
 \@endanenote 
-\@doanenote {49}
-macro:->"Bragg"
+\@doanenote {54}
+macro:->\glqq
+Bragg\grqq
+{}
 by
 Dipl.-Phys.
 (JPG-version),

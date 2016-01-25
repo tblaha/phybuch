@@ -1,3 +1,15 @@
+25.01.2016 -- Till Blaha -- Version 0.8 Alpha
+
+Generelle Überarbeitung
+
+Aktuelle Lage:
+-- Alle Kapitel sind soweit stabil
+-- Einige Abbildungen müssen noch überarbeitet werden
+-- Kapitel Atommodelle wurde postponed
+-- Beinah für die allgemeine Veröffentlichung bestimmt!
+
+
+
 25.01.2016 -- Till Blaha -- Version 0.7 Alpha
 
 Generelle Überarbeitung

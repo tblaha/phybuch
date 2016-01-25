@@ -4,13 +4,13 @@ Diese Stromkreise haben in der Wechselstromumgebung frequenzabhängige Eigenscha
 
 \subsection{Natürliche Schwingkreis}
 
-Der Schwingkreis\endnote{„SchwingkreisSchaltung“ von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei} ist ein essentieller Bestandteil von Oszillatoren, also Schwingungsgeneratoren. 
-
-\begin{figure}[h!]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Schwingkreis}
+	\includegraphics[width=0.7\textwidth]{Schwingkreis}
 	\caption{Diagramm des Schwingkreises}
 \end{figure}
+
+Der Schwingkreis\endnote{„SchwingkreisSchaltung“ von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei} ist ein essentieller Bestandteil von Oszillatoren, also Schwingungsgeneratoren. 
 
 Im Stromkreis sind alle Bauteile in Reihe geschaltet und es gibt keine externe Spannungsquelle. Jedoch ist der Kondensator zu Anfang geladen; er trägt anfangs die gesamte Energie des Aufbaus.
 
@@ -20,7 +20,7 @@ Im Stromkreis sind alle Bauteile in Reihe geschaltet und es gibt keine externe S
 	\caption{Spannung (blau) und Stromstärke (rot) in einem Schwingkreis über der Zeit}
 \end{figure}
 
-Sobald der Kreis, bspw. über einen Schalter, geschlossen wurde, entlädt sich der Kondensator; die Spannung fällt. Durch die Selbstinduktion an der Spule steigt die Stromstärke jedoch langsam an, welche ohne diesen induktiven Widerstand sofort nach dem schließen des Schalters auf ihrem Maximum gewesen wäre.
+Sobald der Kreis, beispielsweise über einen Schalter, geschlossen wurde, entlädt sich der Kondensator; die Spannung fällt. Durch die Selbstinduktion an der Spule steigt die Stromstärke jedoch langsam an, welche ohne diesen induktiven Widerstand sofort nach dem schließen des Schalters auf ihrem Maximum gewesen wäre.
 
 Auch wenn der Kondensator vollständig entladen ist (Stelle $\frac{1}{2}\pi$ im Diagramm\endnote{„Sine cosine one period“ von Geek3 - Eigenes Werk. Lizenziert unter CC BY 3.0 über Wikimedia Commons - \url{https://commons.wikimedia.org/wiki/File:Sine_cosine_one_period.svg}}), also die Spannung $0V$ beträgt, ist immer noch eine Stromstärke messbar, da der Ladungsfluss durch die Selbstinduktion in der Spule verzögert ist. Allerdings ist der Verlauf der Stromstärke fallend, da keine weitere Ladung mehr in die Spule fließt (der Kondensator ist entladen). An der Stelle $\frac{1}{2}\pi$ trägt der Kondensator keine Ladung und die maximale Stromstärke ist erreicht, was bedeutet, dass zu diesem Zeitpunkt die gesamte Energie der Schaltung im Magnetfeld der Spule gespeichert ist.
 
@@ -48,18 +48,17 @@ Um eine kleinstmögliche Impedanz zu erreichen, muss der Blindwiderstand $0$ sei
 
 \subsection{Siebkreis} \label{subsec:Siebkreis}
 
-Der Siebkreis (manchmal auch LCR-Schaltung oder Reihenschwingkreis genannt) ist eine bekannte technische Anwendung, deren Aufgabe es ist, aus einem bestehenden Signal (angedeutet im Diagramm\endnote{„SiebkreisSchaltung“ von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei}) einen bestimmten Frequenzbereich \glqq herauszufiltern\grqq , will sagen, dort die geringste Impedanz und folglich die höchste Stromstärke aufzuweisen.
-
-\begin{figure}[h!]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Siebkreis}
+	\includegraphics[width=0.7\textwidth]{Siebkreis}
 	\caption{Diagramm eines Siebkreises}
 \end{figure}
+
+Der Siebkreis (manchmal auch LCR-Schaltung oder Reihenschwingkreis genannt) ist eine bekannte technische Anwendung, deren Aufgabe es ist, aus einem bestehenden Signal (angedeutet im Diagramm\endnote{„SiebkreisSchaltung“ von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei}) einen bestimmten Frequenzbereich \glqq herauszufiltern\grqq , will sagen, dort die geringste Impedanz und folglich die höchste Stromstärke aufzuweisen.
 
 Der Kondensator \glqq schneidet\grqq{} die hohen Frequenzen \glqq ab\grqq , die Spule die tiefen. Siehe Sektionen \referenz{subsec:Frequenzabhaengigkeit} und \referenz{subsec:AuswirkungenWiderstand} für weitere Erläuterungen.
 
 Der Frequenzbereich, also dessen Lage im Spektrum und dessen Breite, wird durch die Daten der Bauteile bestimmt.
-
 
 \subsubsection{Resonanzfrequenz}
 

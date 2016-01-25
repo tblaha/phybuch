@@ -55,11 +55,7 @@ Nun ist es praktisch, nur eine Gleichung für die Beschreibung einer Bewegung zu
 
 Beim schiefen Wurf wird ein Körper unter einem Winkel geworfen, sodass dieser eine Wurfparabel beschreibt.
 
-Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten wie beim waagerechten Wurf, aber mit der Schwierigkeit, dass aus dem Abwurfwinkel $\alpha$ und der Abwurfgeschwindigkeit $v_0$ erst die Anfangsgeschwindigkeiten in die beiden Richtungen, $v_x$ in Richtung des Wurfes und $v_y0$ in die Höhe, berechnet werden müssen. Die Anfangsgeschwindigkeit in y-Richtung wird deshalb nicht einfach $v_y$ genannt, weil sie, im Gegensatz von $v_x$, im Laufe des Wurfes variiert:
-
-
-
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\begin{comment} Gnuplot:
 set xlabel "x"
@@ -75,7 +71,11 @@ plot (-0.26*(x*x)+1.25*x) ls 1
 	\end{comment}
 	\includegraphics[width=0.6\textwidth]{schraeger_wurf.png}
 	\caption{Geschwindigkeitsbeziehungen beim schrägen Wurf}
+	\label{fig:abwurf}
 \end{figure}
+
+Der schiefe Wurf ist prinzipiell dieselbe Kombination aus beiden Bewegungsarten wie beim waagerechten Wurf, aber mit der Schwierigkeit, dass aus dem Abwurfwinkel $\alpha$ und der Abwurfgeschwindigkeit $v_0$ erst die Anfangsgeschwindigkeiten in die beiden Richtungen, $v_x$ in Richtung des Wurfes und $v_y0$ in die Höhe, berechnet werden müssen. Die Anfangsgeschwindigkeit in y-Richtung wird deshalb nicht einfach $v_y$ genannt, weil sie, im Gegensatz von $v_x$, im Laufe des Wurfes variiert, wie in Grafik \ref{fig:abwurf}\endnote{\glqq Abwurfgrößen beim schiefen Wurf\grqq{} von Till Blaha - Eigenes Werk. Lizenziert unter Gemeinfrei.}.
+
 
 \begin{align}
 \begin{split}
