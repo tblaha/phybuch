@@ -1,10 +1,10 @@
 \subsection{Funktionsprinzip}
 
-Eine Spule, oder der Anschaulichkeit halber, eine Leiterschleife, befindet sich in einem magnetischen Feld (Siehe Abbildung).\endnote{Abbildung von LeiFi Physik: \url{http://www.leifiphysik.de/sites/default/files/medien/generator02_elmagnetindukt_ver.gif}}
+Eine Spule, oder der Anschaulichkeit halber, eine Leiterschleife, befindet sich in einem magnetischen Feld (Siehe Abbildung).\endnote{„Dynamo.pul.gleich.wiki.v.1.00“ von Arthur Kronenberger - www.physik3d.de. Lizenziert unter CC BY-SA 3.0 de über Wikimedia Commons, modifiziert von Till Blaha (conversion nach .png) - \url{https://commons.wikimedia.org/wiki/File:Dynamo.pul.gleich.wiki.v.1.00.gif}} Die Abbildung gibt es auch als animiertes \emph{.gif}\footnote{\url{https://commons.wikimedia.org/wiki/File:Dynamo.pul.gleich.wiki.v.1.00.gif}}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{GeneratorSchema}
+	\includegraphics[width=0.8\textwidth]{GeneratorSchema}
 	\caption{Schema eines Wechselstromgenerators mit Kommutator} 
 \end{figure}
 
@@ -15,6 +15,8 @@ Wenn sich die Schleife nun um 90\degree{} gedreht hat, bewegen sich beide Pole k
 
 Nach weiteren 90\degree{} ist das ursprünglich obige Stück Schleife unten und nun der Minus-Pol. Das ist der Grund für die negativen Passagen der Spannungskurve.
 
+Ebenfalls korrekt wäre eine Herleitung über das Induktionsgesetz (Siehe: \gleichungsreferenz{eq:InduGe}), welche unter anderem aussagt, dass eine Flächenänderung der Fläche der Spule (hier Leiterschleife, also Spule mit nur \emph{einer} Windung) die von den Feldlinien durchsetzt wird (in der Abbildung rot gekennzeichnet) eine Induktion bewirkt.
+
 
 \subsubsection{Kommutator}
 
@@ -24,7 +26,10 @@ Die Spannungskurve\endnote{„Betrag von sinx“ von Till Blaha - Eigenes Werk. 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Betragsinx}
+	\includegraphics[width=0.8\textwidth]{plot_betrag_sinx}
+	\begin{comment}
+Gnuplot: './plot_abssinx.p'
+	\end{comment}
 	\caption{Ideale Spannungskurve mit einem Kommutator.} 
 \end{figure}
 

@@ -1,3 +1,15 @@
+29.01.2016 -- Till Blaha -- Version 1.0 Beta
+
+Generelle Überarbeitung zur ersten Beta Version!
+
+Aktuelle Lage:
+-- Alle Kapitel sind soweit stabil
+-- Rechtschreib- und Formfehler sind wahrscheinlich noch anzutreffen
+-- geplante Kapitel Atommodelle und Atomphysik wurde zeitlich verschoben, sind also nicht enthalten
+-- Für die Veröffentlichung bestimmt
+
+
+
 25.01.2016 -- Till Blaha -- Version 0.8 Alpha
 
 Generelle Überarbeitung
