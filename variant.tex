@@ -1,42 +1,13 @@
-% 190x130 booksize papersize
-\documentclass[9pt, twopage]{book}
-\usepackage{extsizes}
+% ebook size 3.6x4.8 inch
+\documentclass{book}
+\def\isebook{1}
+
 \usepackage{geometry}
-\geometry{papersize={130mm, 190mm}, margin=20mm}
+\geometry{papersize={3.6in,4.8in}, margin=5mm}
 
 \usepackage[T1]{fontenc}
-\usepackage{newtxtext}
-\usepackage{sectsty}
-\allsectionsfont{\sffamily}
+\usepackage[default]{lato}
+\renewcommand{\familydefault}{\sfdefault}
 
-\newcommand{\version}{1.2 Beta, Taschenbuchgröße}
-
-
-
-% ebook size 3.6x4.8 inch
-% \documentclass{book}
-% \def\isebook{1}
-% 
-% \usepackage{geometry}
-% \geometry{papersize={3.6in,4.8in}, margin=5mm}
-% 
-% \usepackage[T1]{fontenc}
-% \usepackage[default]{lato}
-% \renewcommand{\familydefault}{\sfdefault}
-% 
-% \newcommand{\version}{1.2 Beta, eBook Größe}
-% 
-% 
-% % a5 papersize
-% \documentclass[9pt, twopage, a5paper]{book}
-% \usepackage{extsizes}
-% \usepackage{geometry}
-% \geometry{margin=20mm}
-% 
-% \usepackage[T1]{fontenc}
-% \usepackage{newtxtext}
-% \usepackage{sectsty}
-% \allsectionsfont{\sffamily}
-% 
-% \newcommand{\version}{1.2 Beta, A5 Größe}
+\newcommand{\version}{1.2 Beta, eBook Größe}
 
