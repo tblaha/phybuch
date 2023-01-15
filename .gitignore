@@ -4,7 +4,7 @@ build/
 *.aux
 *.toc
 *.out
-head.pdf
+#head.pdf
 head.txt
 *.synctex.gz
 *.ent

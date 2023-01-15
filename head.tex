@@ -1,13 +1,11 @@
-\documentclass[9pt, twopage]{book}
+% import papersizes/fonts etc
+\input{variant}
 
 % Language and Encoding
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 
-% Paper and Font sizes
-\usepackage{extsizes}
-\usepackage{geometry}
-\geometry{papersize={125mm, 190mm}, margin=20mm}
+% Geometry changes
 \setlength{\parskip}{2pt}
 \sloppy
 
@@ -77,19 +75,9 @@
 \renewcommand*{\sqrt}[2][\ ]{\oldsqrt[#1]{#2}}
 \makeatother
 
-% Fonts
-\usepackage[T1]{fontenc}
-\usepackage{newtxtext}
-\usepackage{sectsty}
-\allsectionsfont{\sffamily}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Begin of Awesome Stuff %
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Version
-\newcommand{\version}{1.1 Beta}
+%%% CONTENT
 
 % Meta
 \title{Physik Kompendium -- Klassische Mechanik bis Quantenphysik}
@@ -99,7 +87,9 @@
 \begin{document}
 \maketitle
 
+\ifx\isebook\undefined
 \newgeometry{top=21mm, bottom=15mm, outer=10mm, inner=17mm}
+\fi
 
 \section*{\Huge Vorwort} \label{sec:Vorwort}
 \input{ZZ_OtherTeX/vorwort}
